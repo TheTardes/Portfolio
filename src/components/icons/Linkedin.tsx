@@ -1,8 +1,4 @@
-interface Props {
-  className?: string;
-}
-
-export default function Linkedin({ className }: Props) {
+export default function Linkedin() {
   return (
     <span
       className="w-[44px] h-[44px] rounded-[10px] bg-gray-200 flex items-center justify-center
@@ -14,7 +10,6 @@ export default function Linkedin({ className }: Props) {
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={` ${className || ""}`}
       >
         <path d="M5.5834 7.72168H0.765504C0.551664 7.72168 0.378418 7.89502 0.378418 8.10877V23.5868C0.378418 23.8006 0.551664 23.9738 0.765504 23.9738H5.5834C5.79724 23.9738 5.97049 23.8006 5.97049 23.5868V8.10877C5.97049 7.89502 5.79724 7.72168 5.5834 7.72168Z" />
         <path d="M3.17923 0.0263672C1.42619 0.0263672 0 1.45101 0 3.20213C0 4.954 1.42619 6.37921 3.17923 6.37921C4.93087 6.37921 6.35593 4.95395 6.35593 3.20213C6.35598 1.45101 4.93091 0.0263672 3.17923 0.0263672Z" />

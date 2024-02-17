@@ -8,13 +8,18 @@ export default {
       desktop: "1440px",
     },
     fontSize: {
+      "card-title": ["36px", "42px"],
+      "card-desc": ["24px", "32px"],
+      "card-text": ["18px", "24px"],
       nav: ["20px", { lineHeight: "24px", fontWeight: "600" }],
+      tag: ["12px", "24px"],
     },
     colors: {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
       black: "#000000",
+      light: "#FAFAFF",
       blue: {
         50: "#f6fafe",
         100: "#d9e9fc",
@@ -25,6 +30,14 @@ export default {
       gray: {
         200: "#E9E9E9",
       },
+      purple: {
+        50: "#E8E5F5",
+        100: "#E8E6F5",
+      },
+      dark: "#090029",
+    },
+    transitionTimingFunction: {
+      gentle: "cubic-bezier(0.47, 0, 0.23, 1.38)",
     },
     extend: {},
   },

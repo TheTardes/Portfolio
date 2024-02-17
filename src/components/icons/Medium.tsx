@@ -1,8 +1,4 @@
-interface Props {
-  className?: string;
-}
-
-export default function Medium({ className }: Props) {
+export default function Medium() {
   return (
     <span
       className="w-[44px] h-[44px] rounded-[10px] bg-gray-200 flex items-center justify-center
@@ -14,7 +10,6 @@ export default function Medium({ className }: Props) {
         viewBox="0 0 24 14"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={` ${className || ""}`}
       >
         <path d="M13.5361 7.0001C13.5361 10.7639 10.5063 13.8147 6.76756 13.8147C3.0298 13.8147 0 10.7639 0 7.0001C0 3.23635 3.0298 0.185547 6.76856 0.185547C10.5063 0.185547 13.5361 3.23635 13.5361 7.0001Z" />
         <path d="M20.9619 7.00052C20.9619 10.5433 19.447 13.4151 17.5781 13.4151C15.7092 13.4151 14.1943 10.5433 14.1943 7.00052C14.1943 3.45775 15.7092 0.585938 17.5781 0.585938C19.446 0.585938 20.9619 3.45775 20.9619 7.00052Z" />
