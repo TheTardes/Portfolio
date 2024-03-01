@@ -8,6 +8,7 @@ export default {
       desktop: "1440px",
     },
     fontSize: {
+      h1: ["40px", "48px"],
       "card-title": ["36px", "42px"],
       "card-desc": ["24px", "32px"],
       "card-text": ["18px", "24px"],
@@ -33,6 +34,9 @@ export default {
       purple: {
         50: "#E8E5F5",
         100: "#E8E6F5",
+        400: "#9379FF",
+        500: "#5000D4",
+        600: "#7240FF",
       },
       dark: "#090029",
     },
