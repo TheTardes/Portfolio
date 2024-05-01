@@ -1,0 +1,82 @@
+@import "./tailwind.scss";
+
+.top-right {
+  left: 120%;
+  bottom: 110%;
+  animation: slideTopRight 800ms ease-in-out 0ms backwards;
+  .tail {
+    left: 0;
+    bottom: 0;
+    transform: skew(-10deg, -20deg);
+  }
+}
+@keyframes slideTopRight {
+  0% {
+    opacity: 0;
+    translate: -20px 20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.top-left {
+  right: 120%;
+  bottom: 130%;
+  animation: slideTopLeft 800ms ease-in-out 200ms backwards;
+  .tail {
+    right: 0;
+    bottom: 0;
+    transform: skew(20deg, 10deg);
+  }
+}
+@keyframes slideTopLeft {
+  0% {
+    opacity: 0;
+    translate: 20px 20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+.bottom-right {
+  left: 120%;
+  top: 110%;
+  animation: slideBottomRight 800ms ease-in-out 400ms backwards;
+  .tail {
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 10deg);
+  }
+}
+@keyframes slideBottomRight {
+  0% {
+    opacity: 0;
+    translate: -20px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+.bottom-left {
+  right: 120%;
+  top: 120%;
+  animation: slideBottomLeft 800ms ease-in-out 600ms backwards;
+  .tail {
+    right: 0;
+    top: 0;
+    transform: skew(-10deg, -20deg);
+  }
+}
+@keyframes slideBottomLeft {
+  0% {
+    opacity: 0;
+    translate: 20px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
