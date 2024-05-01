@@ -1,61 +1,29 @@
 import Card from "./components/Card";
+import Copy from "./components/icons/Copy";
+import { projects } from "./data/projects";
 import Medium from "./components/icons/Medium";
 import Behance from "./components/icons/Behance";
 import Linkedin from "./components/icons/Linkedin";
-import ArrowRight from "./components/icons/ArrowRight";
-import Copy from "./components/icons/Copy";
 import Envelope from "./components/icons/Envelope";
+import ArrowRight from "./components/icons/ArrowRight";
 import CursorClick from "./components/icons/CursorClick";
 
-export interface Project {
-  size: "small" | "medium" | "large";
-  image: string;
-  title: string;
-  text: string;
-  description: string;
-  tags: string[];
-}
-
-const projects: Project[] = [
+const chats = [
   {
-    size: "small",
-    image: "Card1.png",
-    title: "GrowYOU",
-    text: "Mobile App | Mental Health",
-    description: "Matching people with the dream houses",
-    tags: ["2020", "Cool"],
+    text: "I am Inji",
+    class: "top-right",
   },
   {
-    size: "medium",
-    image: "Card2.png",
-    title: "HomeMatch",
-    text: "Mobile App | Real Estate",
-    description: "Matching people with the dream houses",
-    tags: ["2020", "Cool"],
+    text: "I am a Designer",
+    class: "top-left",
   },
   {
-    size: "large",
-    image: "Card3.png",
-    title: "SAAS Dashboard",
-    text: "Web App | Education",
-    description: "Matching people with the dream houses",
-    tags: ["2020", "Cool"],
+    text: "I am professional figma user",
+    class: "bottom-left",
   },
   {
-    size: "medium",
-    image: "Card4.png",
-    title: "TheraPair",
-    text: "Mobile App | Mental Health",
-    description: "Matching people with the dream houses",
-    tags: ["2020", "Cool"],
-  },
-  {
-    size: "small",
-    image: "Card5.png",
-    title: "YapiKredi Bank",
-    text: "Web Redesign | Bank",
-    description: "Matching people with the dream houses",
-    tags: ["2020", "Cool"],
+    text: "I am a Designer",
+    class: "bottom-right",
   },
 ];
 
@@ -90,15 +58,29 @@ export default function App() {
             <div className="flex justify-center">
               <div>
                 <div>
-                  <img
-                    src="src/assets/inji.png"
-                    alt="inji mammadli"
-                    className="mx-auto"
-                  />
-                  <div className="py-3 px-8 bg-purple-400 rounded-2xl">
-                    <h2 className="text-center text-light text-card-desc">
-                      Inji Mammadli
-                    </h2>
+                  <div className="outer flex justify-center items-center">
+                    <div className="inner relative">
+                      {chats.map((bubble) => (
+                        <div
+                          className={`absolute slide-down ${bubble.class} bg-purple-100 rounded-xl py-2 px-4`}
+                        >
+                          <div className="tail bg-purple-100 absolute w-5 h-5 -z-[1]" />
+                          <span className="truncate text-black font-bold">
+                            {bubble.text}
+                          </span>
+                        </div>
+                      ))}
+                      <img
+                        src="src/assets/inji.png"
+                        alt="inji mammadli"
+                        className="mx-auto"
+                      />
+                      <div className="py-3 px-8 bg-purple-100 rounded-2xl">
+                        <h2 className="text-center text-black text-card-desc">
+                          Inji Mammadli
+                        </h2>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div

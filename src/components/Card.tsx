@@ -1,14 +1,5 @@
-import { Project } from "../App";
+import { Project } from "../store/types";
 import ArrowRight from "./icons/ArrowRight";
-
-// interface Props {
-//   size: "small" | "medium" | "large";
-//   image: string;
-//   title: string;
-//   text: string;
-//   description: string;
-//   tags: string[];
-// }
 
 export default function Card({
   size,

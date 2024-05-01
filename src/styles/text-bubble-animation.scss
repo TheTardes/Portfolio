@@ -1,8 +1,6 @@
-@import "./tailwind.scss";
-
 .top-right {
   left: 120%;
-  bottom: 110%;
+  bottom: 70%;
   animation: slideTopRight 800ms ease-in-out 0ms backwards;
   .tail {
     left: 0;
@@ -22,7 +20,7 @@
 }
 .top-left {
   right: 120%;
-  bottom: 130%;
+  bottom: 90%;
   animation: slideTopLeft 800ms ease-in-out 200ms backwards;
   .tail {
     right: 0;
