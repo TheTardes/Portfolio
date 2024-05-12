@@ -21,7 +21,7 @@ export default function Card({
       className={`${sizes[size]} relative bg-purple-100 flex items-end rounded-[36px] overflow-hidden 
                   cursor-pointer hover:scale-105 duration-[800ms] ease-gentle [&:hover>.popup]:!opacity-100`}
     >
-      <img className="" src={`public/assets/projects/${image}`} alt="project" />
+      <img className="" src={`assets/projects/${image}`} alt="project" />
       <div className="absolute top-8 left-11">
         <p className="text-card-title">{title}</p>
         <p className="text-card-text">{text}</p>
