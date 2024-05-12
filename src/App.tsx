@@ -1,12 +1,10 @@
 import Card from "./components/Card";
-import Copy from "./components/icons/Copy";
 import { projects } from "./data/projects";
 import Medium from "./components/icons/Medium";
 import Behance from "./components/icons/Behance";
+import RevealEmail from "./components/RevealEmail";
 import Linkedin from "./components/icons/Linkedin";
-import Envelope from "./components/icons/Envelope";
 import ArrowRight from "./components/icons/ArrowRight";
-import CursorClick from "./components/icons/CursorClick";
 
 const chats = [
   {
@@ -83,22 +81,7 @@ export default function App() {
                     </div>
                   </div>
                 </div>
-                <div
-                  className="mt-4 bg-purple-600 rounded-[10px] w-fit mx-auto overflow-hidden
-                                max-w-[56px] hover:max-w-[200px] duration-[800ms] ease-gentle [&:hover_hide]:!opacity-100"
-                >
-                  <div className="py-[15px] px-[10px] flex justify-between gap-[10px] w-fit">
-                    <Envelope />
-                    <p className="text-light truncate hide opacity-0">
-                      Reveal Email
-                    </p>
-                    <CursorClick className="hide opacity-0" />
-                  </div>
-                  <span className="hidden sflex gap-[10px]">
-                    <p>mammadlinji@gmail.com</p>
-                    <Copy />
-                  </span>
-                </div>
+                <RevealEmail />
               </div>
             </div>
             <h1 className="text-h1 text-center">
