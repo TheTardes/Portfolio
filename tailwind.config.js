@@ -12,7 +12,7 @@ export default {
       "card-title": ["36px", "42px"],
       "card-desc": ["24px", "32px"],
       "card-text": ["18px", "24px"],
-      nav: ["20px", { lineHeight: "24px", fontWeight: "600" }],
+      nav: ["20px", { lineHeight: "24px", fontWeight: "700" }],
       tag: ["12px", "24px"],
     },
     colors: {
@@ -34,6 +34,7 @@ export default {
       purple: {
         50: "#E8E5F5",
         100: "#E8E6F5",
+        200: "#DDD7FF",
         400: "#9379FF",
         500: "#5000D4",
         600: "#7240FF",

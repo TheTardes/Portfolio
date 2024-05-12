@@ -1,6 +1,6 @@
 .top-right {
   left: 120%;
-  bottom: 70%;
+  bottom: 60%;
   animation: slideTopRight 800ms ease-in-out 0ms backwards;
   .tail {
     left: 0;
@@ -20,7 +20,7 @@
 }
 .top-left {
   right: 120%;
-  bottom: 90%;
+  bottom: 50%;
   animation: slideTopLeft 800ms ease-in-out 200ms backwards;
   .tail {
     right: 0;
@@ -40,7 +40,7 @@
 }
 .bottom-right {
   left: 120%;
-  top: 110%;
+  top: 90%;
   animation: slideBottomRight 800ms ease-in-out 400ms backwards;
   .tail {
     left: 0;
@@ -60,7 +60,7 @@
 }
 .bottom-left {
   right: 120%;
-  top: 120%;
+  top: 100%;
   animation: slideBottomLeft 800ms ease-in-out 600ms backwards;
   .tail {
     right: 0;
