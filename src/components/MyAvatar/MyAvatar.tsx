@@ -40,7 +40,7 @@ export default function MyAvatar() {
                   </div>
                 ))}
                 <img
-                  src="src/assets/inji.png"
+                  src="public/assets/inji.png"
                   alt="inji mammadli"
                   className="mx-auto"
                 />
