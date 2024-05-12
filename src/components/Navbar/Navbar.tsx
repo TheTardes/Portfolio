@@ -14,9 +14,18 @@ export default function Navbar() {
           <a href="/resume">Resume</a>
         </div>
         <div className="flex gap-6">
-          <Linkedin />
-          <Behance />
-          <Medium />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/inji-mammadli-3b7b71168"
+          >
+            <Linkedin />
+          </a>
+          <a target="_blank" href="https://www.behance.net/injimammadli">
+            <Behance />
+          </a>
+          <a target="_blank" href="https://medium.com/@mammadlinji">
+            <Medium />
+          </a>
         </div>
       </nav>
     </>
