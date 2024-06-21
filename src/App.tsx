@@ -14,15 +14,7 @@ export default function App() {
           </section>
           <section className="grid grid-cols-5 gap-y-[60px] gap-x-[30px] w-full">
             {projects.map((project) => (
-              <Card
-                key={project.title}
-                title={project.title}
-                image={project.image}
-                size={project.size}
-                text={project.text}
-                description={project.description}
-                tags={project.tags}
-              />
+              <Card key={project.title} project={project} />
             ))}
           </section>
         </main>

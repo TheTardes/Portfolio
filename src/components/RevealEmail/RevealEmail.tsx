@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Card() {
   const [clicked, setClicked] = useState(false);
+  const text = "mammadlinji@gmail.com";
 
   return (
     <>
@@ -23,14 +24,17 @@ export default function Card() {
         </div>
       ) : (
         <div
-          onClick={() => navigator.clipboard.writeText("mammadlinji@gmail.com")}
+          onClick={() => {
+            navigator.clipboard.writeText(text);
+            setClicked((prev) => !prev);
+          }}
           className="mt-4 bg-white-600 rounded-[10px] w-fit mx-auto overflow-hidden cursor-pointer border border-purple-100"
         >
           <span
             className="py-[15px] px-[10px] flex justify-between gap-[10px] w-fit
                         hover:text-purple-500 [&_path]:fill-black [&:hover_path]:fill-purple-500"
           >
-            <p>mammadlinji@gmail.com</p>
+            <p>{text}</p>
             <Copy />
           </span>
         </div>

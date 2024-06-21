@@ -2,7 +2,7 @@ import RevealEmail from "../RevealEmail";
 import ArrowRight from "../icons/ArrowRight";
 import "./index.scss";
 
-const chats = [
+const bubbles = [
   {
     text: "Continously intrigued by people",
     class: "top-right",
@@ -29,7 +29,7 @@ export default function MyAvatar() {
           <div>
             <div className="outer flex justify-center items-center">
               <div className="inner relative">
-                {chats.map((bubble) => (
+                {bubbles.map((bubble) => (
                   <div
                     className={`absolute slide-down ${bubble.class} bg-purple-200 rounded-2xl py-4 px-4`}
                   >
