@@ -23,7 +23,7 @@ export default function Card({ project }: { project: Project }) {
       <div className="absolute top-8 left-11 flex gap-2">
         {project.labels.map((label) => (
           <span
-            className="text-label font-medium bg-gray-200 rounded-lg px-[10px] py-1"
+            className="text-label font-medium bg-gray-200 rounded-lg px-4 py-2"
             key={label}
           >
             {label}
