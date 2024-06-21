@@ -1,9 +1,6 @@
 export default function Linkedin() {
   return (
-    <span
-      className="w-[44px] h-[44px] rounded-[10px] bg-gray-200 flex items-center justify-center
-                hover:bg-blue-400 hover:text-white cursor-pointer [&_path]:fill-black [&:hover_path]:fill-white"
-    >
+    <span className="icon">
       <svg
         width="24"
         height="24"

@@ -3,6 +3,7 @@ import { projects } from "./data/projects";
 import Navbar from "./components/Navbar";
 import MyAvatar from "./components/MyAvatar";
 import ArrowRight from "./components/icons/ArrowRight";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
           </section>
         </main>
       </div>
+      <Footer />
     </>
   );
 }

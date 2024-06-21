@@ -8,3 +8,17 @@
 body {
   @apply text-dark;
 }
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  @apply flex items-center justify-center cursor-pointer bg-black;
+  & path {
+    fill: white;
+  }
+}
+
+:has(.icon:hover) .icon:not(:hover) {
+  @apply bg-gray-500;
+}
