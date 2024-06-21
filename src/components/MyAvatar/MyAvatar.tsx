@@ -1,5 +1,4 @@
 import RevealEmail from "../RevealEmail";
-import ArrowRight from "../icons/ArrowRight";
 import "./index.scss";
 
 const bubbles = [
@@ -31,9 +30,9 @@ export default function MyAvatar() {
               <div className="inner relative">
                 {bubbles.map((bubble) => (
                   <div
-                    className={`absolute slide-down ${bubble.class} bg-purple-200 rounded-2xl py-4 px-4`}
+                    className={`absolute slide-down ${bubble.class} bg-purple-50 rounded-2xl py-4 px-4`}
                   >
-                    <div className="tail bg-purple-200 absolute w-5 h-5 -z-[1]" />
+                    <div className="tail bg-purple-50 absolute w-5 h-5 -z-[1]" />
                     <span className="truncate text-black font-semibold">
                       {bubble.text}
                     </span>
@@ -44,7 +43,7 @@ export default function MyAvatar() {
                   alt="inji mammadli"
                   className="mx-auto"
                 />
-                <div className="py-3 px-8 bg-purple-100 rounded-2xl">
+                <div className="py-3 px-8 bg-purple-50 rounded-2xl">
                   <h2 className="text-center text-black text-card-desc">
                     Inji Mammadli
                   </h2>
@@ -54,14 +53,6 @@ export default function MyAvatar() {
           </div>
           <RevealEmail />
         </div>
-      </div>
-      <h1 className="text-h1 text-center">
-        I am a <span className="text-purple-500">DESIGNER</span>
-      </h1>
-      <div className="w-full flex justify-center">
-        <span className="bg-purple-500 py-[7px] px-[9px] rounded-2xl rotate-90">
-          <ArrowRight className="[&_path]:fill-white" />
-        </span>
       </div>
     </>
   );
