@@ -16,7 +16,7 @@ export default function Navbar() {
               Portfolio
             </a>
             <a href="/research">Research</a>
-            <a href="/bio">Bio</a>
+            <a href="/about me">About me</a>
             <a href="/resume">Resume</a>
           </div>
         </div>
