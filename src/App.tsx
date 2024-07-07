@@ -1,11 +1,14 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import {
   createBrowserRouter,
   Navigate,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
+import { lazy } from "react";
+
+const Portfolio = lazy(() => import("@/pages/Portfolio"));
 
 const router = createBrowserRouter([
   {
@@ -13,28 +16,33 @@ const router = createBrowserRouter([
     element: <Navigate to="/portfolio" />,
   },
   {
-    path: "/portfolio",
-    element: <Portfolio />,
-  },
-  {
-    path: "/research",
-    element: <Portfolio />,
-  },
-  {
-    path: "/about-me",
-    element: <Portfolio />,
-  },
-  {
-    path: "/resume",
-    element: <Portfolio />,
+    element: (
+      <>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </>
+    ),
+    children: [
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: "/research",
+        element: <Portfolio />,
+      },
+      {
+        path: "/about-me",
+        element: <Portfolio />,
+      },
+      {
+        path: "/resume",
+        element: <Portfolio />,
+      },
+    ],
   },
 ]);
 export default function App() {
-  return (
-    <>
-      <Navbar />
-      <RouterProvider router={router} />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }

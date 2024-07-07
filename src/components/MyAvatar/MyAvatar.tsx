@@ -1,4 +1,4 @@
-import RevealEmail from "../RevealEmail";
+import RevealEmail from "@/components/RevealEmail";
 import "./index.scss";
 
 const bubbles = [

@@ -1,4 +1,4 @@
-import { Project } from "../store/types";
+import { Project } from "@/store/types";
 
 export default function Card({ project }: { project: Project }) {
   const sizes = {

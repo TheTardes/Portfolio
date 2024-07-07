@@ -1,7 +1,7 @@
-import Card from "../../components/Card";
-import { projects } from "../../data/projects";
-import MyAvatar from "../../components/MyAvatar";
-import ArrowRight from "../../components/icons/ArrowRight";
+import Card from "@/components/Card";
+import { projects } from "@/data/projects";
+import MyAvatar from "@/components/MyAvatar";
+import ArrowRight from "@/components/icons/ArrowRight";
 
 export default function Portfolio() {
   return (

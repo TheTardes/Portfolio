@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <>
@@ -12,12 +14,30 @@ export default function Navbar() {
             <span>hamburger</span>
           </div>
           <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase">
-            <a href="/portfolio" className="text-purple-600">
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+            >
               Portfolio
-            </a>
-            <a href="/research">Research</a>
-            <a href="/about me">About me</a>
-            <a href="/resume">Resume</a>
+            </NavLink>
+            <NavLink
+              to="/research"
+              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+            >
+              Research
+            </NavLink>
+            <NavLink
+              to="/about-me"
+              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+            >
+              About me
+            </NavLink>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+            >
+              Resume
+            </NavLink>
           </div>
         </div>
       </nav>

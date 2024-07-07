@@ -1,8 +1,8 @@
-import Envelope from "../icons/Envelope";
-import CursorClick from "../icons/CursorClick";
-import Copy from "../icons/Copy";
 import "./index.scss";
 import { useState } from "react";
+import Copy from "@/components/icons/Copy";
+import Envelope from "@/components/icons/Envelope";
+import CursorClick from "@/components/icons/CursorClick";
 
 export default function Card() {
   const [clicked, setClicked] = useState(false);

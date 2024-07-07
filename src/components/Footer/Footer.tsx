@@ -1,6 +1,6 @@
-import Behance from "../icons/Behance";
-import Linkedin from "../icons/Linkedin";
-import Medium from "../icons/Medium";
+import Behance from "@/components/icons/Behance";
+import Linkedin from "@/components/icons/Linkedin";
+import Medium from "@/components/icons/Medium";
 
 export default function Navbar() {
   return (
