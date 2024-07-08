@@ -6,9 +6,10 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
+const AboutMe = lazy(() => import("@/pages/AboutMe"));
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <Outlet />
+        <div className="container mx-auto flex">
+          <main className="w-full mb-10 pt-[100px] px-4 desktop:px-36">
+            <Outlet />
+          </main>
+        </div>
         <Footer />
       </>
     ),
@@ -34,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about-me",
-        element: <Portfolio />,
+        element: <AboutMe />,
       },
       {
         path: "/resume",
@@ -44,5 +49,9 @@ const router = createBrowserRouter([
   },
 ]);
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
