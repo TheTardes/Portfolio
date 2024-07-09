@@ -1,4 +1,5 @@
 import { Project } from "@/store/types";
+import React from "react";
 
 export default function Card({ project }: { project: Project }) {
   const sizes = {
@@ -39,10 +40,10 @@ export default function Card({ project }: { project: Project }) {
         <p className="text-card-desc mt-2 mb-4">{project.description}</p>
         <span className="flex gap-2 items-center">
           {project.tags.map((tag) => (
-            <>
+            <React.Fragment key={tag}>
               <span className="w-3 h-3 rounded-full bg-purple-600" />
               <p>{tag}</p>
-            </>
+            </React.Fragment>
           ))}
         </span>
       </div>

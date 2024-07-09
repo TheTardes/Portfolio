@@ -1,8 +1,3 @@
-// import Card from "@/components/Card";
-// import { projects } from "@/data/projects";
-// import MyAvatar from "@/components/MyAvatar";
-// import ArrowRight from "@/components/icons/ArrowRight";
-
 import Slider from "@/components/Slider";
 
 export default function AboutMe() {
@@ -81,6 +76,7 @@ export default function AboutMe() {
         <div className="grid grid-cols-3 gap-7">
           {[1, 2, 3].map((i) => (
             <img
+              loading="lazy"
               src={`assets/art${i}.png`}
               alt="art"
               className="h-[405px] w-full rounded-3xl object-cover"
