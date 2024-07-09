@@ -3,6 +3,7 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: Gilroy;
 }
 
 body {
@@ -21,4 +22,8 @@ body {
 
 :has(.icon:hover) .icon:not(:hover) {
   @apply bg-gray-500;
+}
+
+.bg-blur {
+  @apply bg-gray-500/30 backdrop-blur-sm;
 }

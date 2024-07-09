@@ -1,0 +1,32 @@
+.slider:has(#slide-1:checked) > div:first-child {
+  left: 0;
+}
+.slider:has(#slide-2:checked) > div:first-child {
+  left: -100%;
+}
+.slider:has(#slide-3:checked) > div:first-child {
+  left: -200%;
+}
+
+.slider > div:first-child {
+  transition: left 0.5s ease-in-out;
+}
+
+.slider-button {
+  @apply py-1 px-3 rounded-full cursor-pointer;
+  path {
+    @apply fill-white;
+  }
+  input {
+    @apply hidden;
+  }
+}
+.slider-button:hover {
+  @apply bg-gray-200/25;
+}
+.slider-button:has(input:checked) {
+  @apply bg-white;
+  path {
+    @apply fill-black;
+  }
+}

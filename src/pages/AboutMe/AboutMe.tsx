@@ -3,6 +3,8 @@
 // import MyAvatar from "@/components/MyAvatar";
 // import ArrowRight from "@/components/icons/ArrowRight";
 
+import Slider from "@/components/Slider";
+
 export default function AboutMe() {
   return (
     <>
@@ -70,7 +72,7 @@ export default function AboutMe() {
           ))}
         </div>
         <div>
-          <div></div>
+          <Slider />
         </div>
       </section>
       <section>

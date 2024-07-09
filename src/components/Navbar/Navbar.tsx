@@ -11,7 +11,7 @@ export default function Navbar() {
             <span className="text-card-desc font-bold">IM.</span>
           </div>
           <div className="flex tablet:hidden">
-            <span>hamburger</span>
+            <NavLink to="/about-me">hamburger</NavLink>
           </div>
           <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase">
             <NavLink
