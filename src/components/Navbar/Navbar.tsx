@@ -5,7 +5,7 @@ export default function Navbar() {
     <>
       {/*Inji can't decide */}
       {/* <div className="h-[53px]" /> */}
-      <nav className="sticky top-[20px] z-[30]">
+      <nav className="sticky top-[20px] tablet:top-[36px] z-[30]">
         <div className="flex justify-between items-center h-[70px] bg-gray-100 rounded-xl px-8">
           <div>
             <span className="text-card-desc font-bold">IM.</span>
@@ -16,25 +16,25 @@ export default function Navbar() {
           <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase">
             <NavLink
               to="/portfolio"
-              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               Portfolio
             </NavLink>
             <NavLink
               to="/research"
-              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               Research
             </NavLink>
             <NavLink
               to="/about-me"
-              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               About me
             </NavLink>
             <NavLink
               to="/resume"
-              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               Resume
             </NavLink>

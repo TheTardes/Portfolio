@@ -1,11 +1,24 @@
+.top-right,
+.top-left,
+.bottom-right,
+.bottom-left {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6833ff;
+    border: 3px solid white;
+  }
+}
+
 .top-right {
-  left: 120%;
-  bottom: 60%;
   animation: slideTopRight 800ms ease-in-out 0ms backwards;
-  .tail {
-    left: 0;
+  &::after {
     bottom: 0;
-    transform: skew(-10deg, -20deg);
+    transform: translateY(50%);
+    left: 0;
   }
 }
 @keyframes slideTopRight {
@@ -19,13 +32,11 @@
   }
 }
 .top-left {
-  right: 120%;
-  bottom: 50%;
   animation: slideTopLeft 800ms ease-in-out 200ms backwards;
-  .tail {
-    right: 0;
+  &::after {
     bottom: 0;
-    transform: skew(20deg, 10deg);
+    transform: translateY(50%);
+    right: 0;
   }
 }
 @keyframes slideTopLeft {
@@ -39,13 +50,11 @@
   }
 }
 .bottom-right {
-  left: 120%;
-  top: 90%;
   animation: slideBottomRight 800ms ease-in-out 400ms backwards;
-  .tail {
-    left: 0;
+  &::after {
     top: 0;
-    transform: skew(20deg, 10deg);
+    transform: translateY(-50%);
+    left: 0;
   }
 }
 @keyframes slideBottomRight {
@@ -59,13 +68,11 @@
   }
 }
 .bottom-left {
-  right: 120%;
-  top: 100%;
   animation: slideBottomLeft 800ms ease-in-out 600ms backwards;
-  .tail {
-    right: 0;
+  &::after {
     top: 0;
-    transform: skew(-10deg, -20deg);
+    transform: translateY(-50%);
+    right: 0;
   }
 }
 @keyframes slideBottomLeft {

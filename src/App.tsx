@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <main className="w-full mb-10 pt-[100px]">
+        <main className="w-full mb-10">
           <Outlet />
         </main>
         <Footer />
