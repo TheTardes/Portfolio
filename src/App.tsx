@@ -1,12 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import {
-  createBrowserRouter,
-  Navigate,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Navigate, Outlet, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import Research from "./pages/Research";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
@@ -20,11 +16,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <div className="container mx-auto flex">
-          <main className="w-full mb-10 pt-[100px] px-4 desktop:px-36">
-            <Outlet />
-          </main>
-        </div>
+        <main className="w-full mb-10 pt-[100px]">
+          <Outlet />
+        </main>
         <Footer />
       </>
     ),
@@ -35,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/research",
-        element: <Portfolio />,
+        element: <Research />,
       },
       {
         path: "/about-me",

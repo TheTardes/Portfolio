@@ -4,7 +4,7 @@ import Medium from "@/components/icons/Medium";
 
 export default function Navbar() {
   return (
-    <footer className="container mx-auto px-4 desktop:px-36 mb-40">
+    <footer className="mb-40">
       <div></div>
       <div className="w-full bg-gray-100 flex gap-4 flex-col tablet:flex-row px-11 pb-11 pt-6 rounded-3xl">
         <div className="pt-5 flex-[2_2_0%]">

@@ -1,0 +1,29 @@
+nav,
+footer,
+main > :not(.full-width) {
+  width: 335px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  nav,
+  footer,
+  main > :not(.full-width) {
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  nav,
+  footer,
+  main > :not(.full-width) {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav,
+  footer,
+  main > :not(.full-width) {
+    width: 1170px;
+  }
+}
