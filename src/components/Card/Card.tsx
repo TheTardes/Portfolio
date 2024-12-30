@@ -1,52 +1,27 @@
 import { Project } from "@/store/types";
-import React from "react";
+// import React from "react";
 
 export default function Card({ project }: { project: Project }) {
-  const sizes = {
-    small: "tablet:col-span-2",
-    medium: "tablet:col-span-3",
-    large: "tablet:col-span-5",
-  };
-
   return (
-    <div
-      style={{ backgroundColor: project.color }}
-      className={`
-        col-span-5 ${sizes[project.size]} relative flex items-end
-        rounded-[36px] overflow-hidden cursor-pointer 
-        hover:scale-105 duration-[800ms] ease-gentle [&:hover>.popup]:!opacity-100`}
-    >
+    <section className="col-span-2 desktop:col-span-1 bg-gray-200 rounded-2xl tablet:rounded-3xl hover:scale-110 transition-all duration-300">
       <img
-        className=""
-        src={`assets/projects/${project.image}`}
         alt="project"
+        src={`/src/assets/projects/${project.image}`}
+        className="h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"
       />
-      <div className="absolute top-8 left-11 flex gap-2">
-        {project.labels.map((label) => (
-          <span
-            className="text-label font-medium bg-gray-200 rounded-lg px-4 py-2"
-            key={label}
-          >
-            {label}
-          </span>
-        ))}
-      </div>
-      {/* On hover */}
-      <div
-        className="absolute top-1/2 opacity-0 w-[calc(100%-110px)] -translate-y-1/2 popup ease-gentle
-                    px-10 py-[30px] rounded-[40px] duration-[800ms] backdrop-blur-[25px] mx-[55px]"
-      >
-        <p className="text-card-title font-bold">{project.title}</p>
-        <p className="text-card-desc mt-2 mb-4">{project.description}</p>
-        <span className="flex gap-2 items-center">
+      <div className="p-6 tablet:p-11">
+        <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px]">{project.title}</p>
+        <div className="flex gap-3 mt-3 tablet:mt-8">
           {project.tags.map((tag) => (
-            <React.Fragment key={tag}>
-              <span className="w-3 h-3 rounded-full bg-purple-600" />
-              <p>{tag}</p>
-            </React.Fragment>
+            <span
+              key={tag}
+              className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-[12px] leading-[20px] tablet:text-[18px] tablet:leading-[28px]"
+            >
+              {tag}
+            </span>
           ))}
-        </span>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

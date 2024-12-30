@@ -8,8 +8,9 @@ export default function Slider() {
       <div className="w-[300%] h-full absolute -left-[0%] top-0 flex">
         {[1, 2, 3].map((i) => (
           <img
+            key={i}
             loading="lazy"
-            src={`assets/art${i}.png`}
+            src={`/src/assets/arts/art${i}.png`}
             alt="art"
             className="h-full w-1/3 object-cover"
           />

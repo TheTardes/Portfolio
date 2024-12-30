@@ -22,7 +22,7 @@
   }
 }
 .slider-button:hover {
-  @apply bg-gray-200/25;
+  @apply bg-gray-300/25;
 }
 .slider-button:has(input:checked) {
   @apply bg-white;

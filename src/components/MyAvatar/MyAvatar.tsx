@@ -30,6 +30,7 @@ export default function MyAvatar() {
               <div className="inner relative">
                 {bubbles.map((bubble) => (
                   <div
+                    key={bubble.text}
                     className={`absolute slide-down ${bubble.class} bg-purple-50 rounded-2xl py-4 px-4`}
                   >
                     <div className="tail bg-purple-50 absolute w-5 h-5 -z-[1]" />
@@ -39,7 +40,7 @@ export default function MyAvatar() {
                   </div>
                 ))}
                 <img
-                  src="assets/inji.png"
+                  src="/src/assets/common/inji.png"
                   alt="inji mammadli"
                   className="mx-auto"
                 />

@@ -1,4 +1,5 @@
 import Slider from "@/components/Slider";
+import React from "react";
 
 export default function AboutMe() {
   return (
@@ -7,17 +8,17 @@ export default function AboutMe() {
         <div className="flex-1">
           <div className="h-full relative">
             <img
-              src="assets/inji.jpeg"
+              src="/src/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px]"
             />
             <img
-              src="assets/inji.jpeg"
+              src="/src/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px] top-[25%] left-[25%]"
             />
             <img
-              src="assets/inji.jpeg"
+              src="/src/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px] bottom-[0%] left-[10%]"
             />
@@ -44,7 +45,7 @@ export default function AboutMe() {
         <div className="bg-gray-100 p-8 rounded-3xl">
           <div className="h-11 flex gap-4">
             <h2 className="text-card-title">What else</h2>
-            <img src="assets/inji_cloudy.png" alt="inji" className="h-full" />
+            <img src="/src/assets/common/inji_cloudy.png" alt="inji" className="h-full" />
           </div>
           {[
             [
@@ -60,10 +61,10 @@ export default function AboutMe() {
               "I love playing music on violin, piano & guitar while also enjoy singing in some occasions. I have professional primary education (7 years) in music.",
             ],
           ].map((i) => (
-            <>
+            <React.Fragment key={i[0]}>
               <p className="text-card-desc text-gray-500 mt-6">{i[0]}</p>
               <p>{i[1]}</p>
-            </>
+            </React.Fragment>
           ))}
         </div>
         <div>
@@ -76,8 +77,9 @@ export default function AboutMe() {
         <div className="grid grid-cols-3 gap-7">
           {[1, 2, 3].map((i) => (
             <img
+              key={i}
               loading="lazy"
-              src={`assets/art${i}.png`}
+              src={`/src/assets/arts/art${i}.png`}
               alt="art"
               className="h-[405px] w-full rounded-3xl object-cover"
             />

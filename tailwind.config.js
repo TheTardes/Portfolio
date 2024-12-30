@@ -33,7 +33,8 @@ export default {
       },
       gray: {
         100: "#F7F7F7",
-        200: "#E6E8EB",
+        200: "#F5F5F5",
+        300: "#E6E8EB",
         500: "#999999",
       },
       purple: {

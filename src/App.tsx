@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { createBrowserRouter, Navigate, Outlet, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Research from "./pages/Research";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/research",
-        element: <Research />,
+        element: <Portfolio />,
       },
       {
         path: "/about-me",

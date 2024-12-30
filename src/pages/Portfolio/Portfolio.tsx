@@ -23,7 +23,7 @@ export default function Portfolio() {
           </span>
         </div>
       </section>
-      <section className="grid grid-cols-5 gap-y-[60px] gap-x-[30px]">
+      <section className="grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]">
         {projects.map((project) => (
           <Card key={project.title} project={project} />
         ))}
