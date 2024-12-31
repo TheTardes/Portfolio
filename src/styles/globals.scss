@@ -13,6 +13,7 @@ body {
 .icon {
   width: 44px;
   height: 44px;
+  padding: 10px;
   border-radius: 10px;
   @apply flex items-center justify-center cursor-pointer bg-black;
   & path {
