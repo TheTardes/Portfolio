@@ -6,25 +6,18 @@ export default function Navbar() {
   return (
     <footer className="mb-40">
       <div></div>
-      <div className="w-full bg-gray-100 flex gap-4 flex-col tablet:flex-row px-11 pb-11 pt-6 rounded-3xl">
-        <div className="pt-5 flex-[2_2_0%]">
-          <p className="text-card-title font-bold mb-2">
-            Got a query, some thoughts to share, or a wild idea? 🤔
-          </p>
-          <p>
-            Drop me a message at{" "}
-            <span className="font-bold">mammadlinji@gmail.com</span> or get to
-            know me better through my other platforms.
+      <div className="w-full bg-gray-100 flex gap-4 flex-col tablet:flex-row justify-between px-11 py-8 rounded-3xl">
+        <div className="pt-5 max-w-[460px]">
+          <p className="text-card-title font-bold mb-2">Got a query, some thoughts to share, or a wild idea? 🤔</p>
+          <p className="text-[18px] leading-[28px]">
+            Drop me a message at <span className="font-bold text-card-text">mammadlinji@gmail.com</span> or get to know me better
+            through my other platforms.
           </p>
         </div>
-        <div className="relative flex-[1_1_0%]">
-          <img
-            src="/assets/common/ME.png"
-            alt="inji mammadli"
-            className="mx-auto mt-16"
-          />
+        <div className="relative w-[222px]">
+          <img src="/assets/common/ME.png" alt="inji mammadli" className="mx-auto mt-16 w-[116px] h-[120px]" />
           <a
-            className="absolute top-12 left-[20%] -translate-x-1/2"
+            className="absolute top-12 left-0"
             target="_blank"
             href="https://www.linkedin.com/in/inji-mammadli-3b7b71168"
           >
@@ -38,7 +31,7 @@ export default function Navbar() {
             <Behance />
           </a>
           <a
-            className="absolute top-12 left-[80%] -translate-x-1/2"
+            className="absolute top-12 left-full -translate-x-full"
             target="_blank"
             href="https://medium.com/@mammadlinji"
           >
@@ -46,11 +39,9 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-      <div className="mt-8 px-3">
-        <p className="font-bold">
-          Designed and coded by Inji ♥️—much love to XT for help!
-        </p>
-        <p className="text-gray-500">© Inji Mammadli 2024</p>
+      <div className="mt-6 px-3">
+        <p className="font-bold text-card-desc mb-4">Designed and coded by Inji 🌻—much love to XT for the help!</p>
+        <p className="text-gray-500 text-[18px] leading-[28px]">© Inji Mammadli 2024</p>
       </div>
     </footer>
   );

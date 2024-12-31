@@ -5,7 +5,7 @@ export default function Navbar() {
     <>
       {/*Inji can't decide */}
       {/* <div className="h-[53px]" /> */}
-      <nav className="sticky top-[20px] tablet:top-[36px] z-[30]">
+      <nav className="sticky top-5 z-[30]">
         <div className="flex justify-between items-center h-[70px] bg-gray-100 rounded-xl px-8">
           <div>
             <span className="text-card-desc font-bold">IM.</span>
