@@ -8,17 +8,17 @@ export default function AboutMe() {
         <div className="flex-1">
           <div className="h-full relative">
             <img
-              src="/src/assets/common/inji.jpeg"
+              src="/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px]"
             />
             <img
-              src="/src/assets/common/inji.jpeg"
+              src="/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px] top-[25%] left-[25%]"
             />
             <img
-              src="/src/assets/common/inji.jpeg"
+              src="/assets/common/inji.jpeg"
               alt="inji"
               className="absolute h-[46%] w-[45%] object-cover rounded-[25px] bottom-[0%] left-[10%]"
             />
@@ -45,7 +45,7 @@ export default function AboutMe() {
         <div className="bg-gray-100 p-8 rounded-3xl">
           <div className="h-11 flex gap-4">
             <h2 className="text-card-title">What else</h2>
-            <img src="/src/assets/common/inji_cloudy.png" alt="inji" className="h-full" />
+            <img src="/assets/common/inji_cloudy.png" alt="inji" className="h-full" />
           </div>
           {[
             [
@@ -79,7 +79,7 @@ export default function AboutMe() {
             <img
               key={i}
               loading="lazy"
-              src={`/src/assets/arts/art${i}.png`}
+              src={`/assets/arts/art${i}.png`}
               alt="art"
               className="h-[405px] w-full rounded-3xl object-cover"
             />

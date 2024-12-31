@@ -35,7 +35,7 @@ export default function MyAvatar() {
           ))}
         </div>
         <div>
-          <img src="/src/assets/common/inji.png" alt="inji mammadli" className="mx-auto" />
+          <img src="/assets/common/inji.png" alt="inji mammadli" className="mx-auto" />
           <div className="py-3 px-8 bg-purple-50 rounded-2xl">
             <h2 className="text-center text-black text-[22px] leading-[30px]">Inji Mammadli</h2>
           </div>

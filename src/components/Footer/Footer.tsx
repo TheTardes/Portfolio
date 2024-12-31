@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
         <div className="relative flex-[1_1_0%]">
           <img
-            src="/src/assets/common/ME.png"
+            src="/assets/common/ME.png"
             alt="inji mammadli"
             className="mx-auto mt-16"
           />

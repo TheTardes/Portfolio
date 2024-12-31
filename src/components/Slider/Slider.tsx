@@ -10,7 +10,7 @@ export default function Slider() {
           <img
             key={i}
             loading="lazy"
-            src={`/src/assets/arts/art${i}.png`}
+            src={`/assets/arts/art${i}.png`}
             alt="art"
             className="h-full w-1/3 object-cover"
           />
