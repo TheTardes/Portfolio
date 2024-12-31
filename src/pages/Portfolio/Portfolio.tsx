@@ -15,14 +15,20 @@ export default function Portfolio() {
         <section className="flex flex-col items-center mt-[60px] desktop:mt-[82px]">
           <p className="text-gray-500 font-bold uppercase">View my work</p>
 
-          <a href="#projects" className="w-full flex justify-center mt-4 mb-5 pb-5 hover:pt-5 hover:pb-0 transition-all duration-300">
+          <a
+            href="#projects"
+            className="w-full flex justify-center mt-4 mb-5 pb-5 hover:pt-5 hover:pb-0 transition-all duration-300"
+          >
             <span className="bg-purple-600 py-[7px] px-[9px] rounded-2xl rotate-90">
-              <ArrowRight className="[&_path]:fill-white" />
+              <ArrowRight className="[&_path]:fill-white" role="link" aria-label="scroll to projects" />
             </span>
           </a>
         </section>
       </div>
-      <section id="projects" className="scroll-mt-28 pt-[66px] grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]">
+      <section
+        id="projects"
+        className="scroll-mt-28 pt-[66px] grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]"
+      >
         {projects.map((project) => (
           <Card key={project.title} project={project} />
         ))}

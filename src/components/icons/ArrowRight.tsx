@@ -1,10 +1,14 @@
 interface Props {
   className?: string;
+  role?: string;
+  ariaLabel?: string;
 }
 
-export default function ArrowRight({ className }: Props) {
+export default function ArrowRight({ className, role, ariaLabel }: Props) {
   return (
     <svg
+      role={role}
+      aria-label={ariaLabel}
       width="25"
       height="15"
       viewBox="0 0 25 15"
