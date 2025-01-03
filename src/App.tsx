@@ -5,6 +5,7 @@ import { lazy, Suspense } from "react";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
+const Project = lazy(() => import("@/pages/Project"));
 
 const router = createBrowserRouter([
   {
@@ -26,17 +27,21 @@ const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />,
       },
-      {
-        path: "/research",
-        element: <Portfolio />,
-      },
+      // {
+      //   path: "/research",
+      //   element: <Portfolio />,
+      // },
       {
         path: "/about-me",
         element: <AboutMe />,
       },
+      // {
+      //   path: "/resume",
+      //   element: <Portfolio />,
+      // },
       {
-        path: "/resume",
-        element: <Portfolio />,
+        path: "/project/:projectName",
+        element: <Project />,
       },
     ],
   },

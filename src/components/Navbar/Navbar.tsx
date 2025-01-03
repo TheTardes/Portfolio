@@ -20,24 +20,24 @@ export default function Navbar() {
             >
               Portfolio
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/research"
               className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               Research
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/about-me"
               className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               About me
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/resume"
               className={({ isActive }) => (isActive ? "text-purple-800" : "")}
             >
               Resume
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </nav>

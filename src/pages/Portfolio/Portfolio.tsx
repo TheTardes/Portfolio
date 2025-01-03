@@ -6,7 +6,7 @@ import ArrowRight from "@/components/icons/ArrowRight";
 export default function Portfolio() {
   return (
     <>
-      <div className="radial-gradient pt-[110px]">
+      <div className="radial-gradient pt-[180px]">
         <p className="text-black text-center text-[40px] leading-[56px] text-pretty max-w-[1022px] mx-auto font-medium">
           Product/UX designer in <span className="text-purple-700 font-bold">New York City.</span> Currently studying{" "}
           <span className="text-red-500 font-bold">@Parsons School of Design</span> crafting data informed experiences.
@@ -30,7 +30,7 @@ export default function Portfolio() {
         className="scroll-mt-28 pt-[66px] grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]"
       >
         {projects.map((project) => (
-          <Card key={project.title} project={project} />
+          <Card key={project.cardTitle} project={project} />
         ))}
       </section>
     </>

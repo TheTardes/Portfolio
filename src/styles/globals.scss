@@ -4,10 +4,11 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: Gilroy, sans-serif;
+  text-wrap: pretty;
 }
 
 body {
-  @apply text-dark;
+  @apply text-black;
 }
 
 .icon {

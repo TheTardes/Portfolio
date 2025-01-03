@@ -1,6 +1,10 @@
+export type Block = Record<string, string | number | string[]> & { type: string };
+
 export interface Project {
-  // size: "small" | "medium" | "large";
-  image: string;
-  title: string;
+  name: string;
+  cardImage: string;
+  projectImage?: string;
+  cardTitle: string;
   tags: string[];
+  blocks: Block[];
 }

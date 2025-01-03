@@ -6,11 +6,11 @@ export default function Card({ project }: { project: Project }) {
     <section className="col-span-2 desktop:col-span-1 bg-gray-200 rounded-2xl tablet:rounded-3xl hover:scale-110 transition-all duration-300">
       <img
         alt="project"
-        src={`/assets/projects/${project.image}`}
+        src={`/assets/projects/${project.cardImage}`}
         className="h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"
       />
       <div className="p-6 tablet:p-11">
-        <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px] font-semibold">{project.title}</p>
+        <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px] font-semibold">{project.cardTitle}</p>
         <div className="flex gap-3 mt-3 tablet:mt-8">
           {project.tags.map((tag) => (
             <span

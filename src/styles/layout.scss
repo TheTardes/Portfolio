@@ -23,7 +23,15 @@ main > :not(.full-width) {
 @media (min-width: 1440px) {
   nav,
   footer,
-  main > :not(.full-width) {
+  main > :not(.full-width, .small) {
     width: 1170px;
   }
+  .small {
+    width: 900px;
+    margin-inline: auto;
+  }
+}
+
+main {
+  margin-top: -70px;
 }

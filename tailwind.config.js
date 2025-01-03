@@ -32,6 +32,7 @@ export default {
         200: "#F5F5F5",
         300: "#E6E8EB",
         500: "#999999",
+        600: "#7f7f7f",
       },
       purple: {
         50: "#F2F0FF",

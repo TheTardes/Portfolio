@@ -15,7 +15,7 @@ const bubbles = [
     class: "top-right",
   },
   {
-    text: "Overthinking actually helpes to analyze better :D",
+    text: "Overthinking actually helps to analyze better :D",
     class: "bottom-right",
   },
 ];
