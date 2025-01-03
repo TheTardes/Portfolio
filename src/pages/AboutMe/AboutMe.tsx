@@ -4,7 +4,7 @@ import React from "react";
 export default function AboutMe() {
   return (
     <>
-      <section className="flex gap-10">
+      <section className="flex gap-10 pt-[110px]">
         <div className="flex-1">
           <div className="h-full relative">
             <img

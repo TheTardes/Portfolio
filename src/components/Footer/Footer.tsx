@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="w-full bg-gray-100 flex gap-4 flex-col tablet:flex-row justify-between px-11 py-8 rounded-3xl">
         <div className="pt-5 max-w-[460px]">
           <p className="text-card-title font-bold mb-2">Got a query, some thoughts to share, or a wild idea? 🤔</p>
-          <p className="text-[18px] leading-[28px]">
+          <p className="text-[18px] leading-[28px] font-medium">
             Drop me a message at <span className="font-bold text-card-text">mammadlinji@gmail.com</span> or get to know me better
             through my other platforms.
           </p>
@@ -40,8 +40,8 @@ export default function Navbar() {
         </div>
       </div>
       <div className="mt-6 px-3">
-        <p className="font-bold text-card-desc mb-4">Designed and coded by Inji 🌻—much love to XT for the help!</p>
-        <p className="text-gray-500 text-[18px] leading-[28px]">© Inji Mammadli 2024</p>
+        <p className="font-semibold text-card-desc mb-4">Designed and coded by Inji 🌻—much love to XT for the help!</p>
+        <p className="font-medium text-gray-500 text-[18px] leading-[28px]">© Inji Mammadli 2024</p>
       </div>
     </footer>
   );

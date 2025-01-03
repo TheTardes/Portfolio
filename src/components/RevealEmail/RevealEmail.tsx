@@ -14,9 +14,9 @@ export default function Card() {
         <div
           onClick={() => setClicked((prev) => !prev)}
           className="mt-4 bg-purple-600 rounded-xl tablet:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer
-            max-w-[56px] hover:max-w-[220px] [&:hover_.envelope]:rotate-[-11.15deg] phase-1"
+            max-w-[68px] hover:max-w-[220px] [&:hover_.envelope]:rotate-[-11.15deg] phase-1"
         >
-          <div className="px-3 py-4 flex justify-between gap-[10px] w-fit">
+          <div className="p-4 flex justify-between gap-[10px] w-fit">
             <Envelope className="envelope transition-transform duration-[400ms]" />
             <p className="text-light text-card-desc truncate hide opacity-0">Reveal Email</p>
             <CursorClick className="hide opacity-0" />
@@ -31,7 +31,7 @@ export default function Card() {
           className="mt-4 bg-gray-200 rounded-xl tablet:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer border border-purple-100"
         >
           <span
-            className="py-[15px] px-[10px] flex justify-between gap-[10px] w-fit
+            className="p-4 flex justify-between gap-[10px] w-fit
                         hover:text-purple-500 [&_path]:fill-black [&:hover_path]:fill-purple-500"
           >
             <p className="text-card-desc">{email}</p>

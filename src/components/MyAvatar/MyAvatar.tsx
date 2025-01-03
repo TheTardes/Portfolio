@@ -30,23 +30,25 @@ export default function MyAvatar() {
               key={bubble.text}
               className={`relative slide-down ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}
             >
-              <span className="text-black font-medium text-[18px] leading-[24px]">{bubble.text}</span>
+              <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
             </div>
           ))}
         </div>
         <div>
-          <img src="/assets/common/inji.png" alt="inji mammadli" className="mx-auto" />
-          <div className="py-3 px-8 bg-purple-50 rounded-2xl">
-            <h2 className="text-center text-black text-[22px] leading-[30px]">Inji Mammadli</h2>
+          <img src="/assets/common/inji.png" alt="inji mammadli" className="mx-auto w-[185px] h-[200px]" />
+          <div className="relative py-3 px-8 bg-purple-50 rounded-2xl">
+            <h2 className="text-center text-black text-[22px] leading-[30px] font-medium">Inji Mammadli</h2>
+            <img src="/assets/star.svg" alt="stars" className="name-stars star-1" />
+            <img src="/assets/star.svg" alt="stars" className="name-stars star-2" />
           </div>
         </div>
         <div className="flex flex-col justify-between">
           {bubbles.slice(2, 4).map((bubble) => (
             <div
               key={bubble.text}
-              className={`relative slide-down ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}
+              className={`relative slide-down ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6 font-semibold`}
             >
-              <span className="text-black font-medium text-[18px] leading-[24px]">{bubble.text}</span>
+              <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
             </div>
           ))}
         </div>

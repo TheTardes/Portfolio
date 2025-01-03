@@ -13,7 +13,7 @@ export default function Navbar() {
           <div className="flex tablet:hidden">
             <NavLink to="/about-me">hamburger</NavLink>
           </div>
-          <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase">
+          <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase font-semibold">
             <NavLink
               to="/portfolio"
               className={({ isActive }) => (isActive ? "text-purple-800" : "")}
