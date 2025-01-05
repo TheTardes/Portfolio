@@ -1,24 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
   font-family: Gilroy, sans-serif;
-  text-wrap: pretty;
+  @apply m-0 p-0 scroll-smooth box-border text-pretty;
 }
 
 body {
-  @apply text-black;
+  @apply bg-white text-black;
 }
 
 .icon {
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-  border-radius: 10px;
-  @apply flex items-center justify-center cursor-pointer bg-black;
+  @apply w-11 h-11 p-2.5 rounded-[10px] flex items-center justify-center cursor-pointer bg-black;
   & path {
-    fill: white;
+    @apply fill-white;
   }
 }
 
@@ -35,20 +27,16 @@ body {
 }
 
 .name-stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  @apply absolute w-full h-full;
 }
 
 .name-stars.star-1 {
-  width: 20px;
-  height: 20px;
+  @apply w-5 h-5;
   animation: star-1-flowDown 1s linear infinite;
 }
 
 .name-stars.star-2 {
-  width: 10px;
-  height: 10px;
+  @apply w-2.5 h-2.5;
   animation: star-2-flowDown 1s linear infinite;
 }
 
@@ -79,5 +67,24 @@ body {
     opacity: 0;
     right: 30px;
     top: 90%;
+  }
+}
+
+.expanded-image {
+  position: fixed;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+  img {
+    // border: 1px solid black;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 }

@@ -9,7 +9,7 @@ export default function Portfolio() {
       <div className="radial-gradient pt-[180px]">
         <p className="text-black text-center text-[40px] leading-[56px] text-pretty max-w-[1022px] mx-auto font-medium">
           Product/UX designer in <span className="text-purple-700 font-bold">New York City.</span> Currently studying{" "}
-          <span className="text-red-500 font-bold">@Parsons School of Design</span> crafting data informed experiences.
+          <span className="text-red font-bold">@Parsons School of Design</span> crafting data informed experiences.
         </p>
         <MyAvatar />
         <section className="flex flex-col items-center mt-[60px] desktop:mt-[82px]">
