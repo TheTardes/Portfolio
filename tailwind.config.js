@@ -49,6 +49,11 @@ export default {
         800: "#6833FF",
       },
       dark: "#090029",
+
+      primary: {
+        500: "#6833FF",
+      }
+
     },
     transitionTimingFunction: {
       gentle: "cubic-bezier(0.47, 0, 0.23, 1.38)",
