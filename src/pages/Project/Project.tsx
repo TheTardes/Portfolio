@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import MacbookDisplay from "@/components/MacbookDisplay";
+import Swiper from "@/components/Swiper";
 import { projects } from "@/data/projects";
 import { useParams } from "react-router-dom";
 
@@ -443,7 +444,20 @@ export default function ProjectView() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[100px]">THERE WILL BE CAROUSEL HERE</div>
+      <div className="mt-[100px]">
+        <p className="small text-[22px] leading-[34px]">
+          The results highlighted key areas for refinement, ensuring a more seamless and user-friendly experience for
+          future users.
+        </p>
+        <Swiper
+          className="w-full mt-11"
+          images={[
+            "/assets/projects/visa-point/swiper-1-1.png",
+            "/assets/projects/visa-point/swiper-1-2.png",
+            "/assets/projects/visa-point/swiper-1-3.png",
+          ]}
+        />
+      </div>
       {/* block */}
       <div className="smaller mt-36 text-center">
         <p className="text-lg font-bold uppercase">Feedbacks Summarized</p>
