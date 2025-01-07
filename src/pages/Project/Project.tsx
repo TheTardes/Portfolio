@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import MacbookDisplay from "@/components/MacbookDisplay";
 import { projects } from "@/data/projects";
 import { useParams } from "react-router-dom";
 
@@ -501,15 +502,125 @@ export default function ProjectView() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[100px]">
+      <div className="mt-[100px] text-md font-medium">
         <div className="bg-purple-50 rounded-3xl p-11">
           <p className="text-2xl uppercase">
             Solutions <span className="text-xl font-bold">to Cluster and overwhelming application forms</span>
           </p>
-          <p className="text-md mt-6 font-medium">
+          <p className="mt-6">
             Reducing the tendency to <span className="font-bold">seek help</span> for “Form filling process”{" "}
             <span className="font-bold">from external resources,</span> third party agencies.
           </p>
+        </div>
+
+        <div className="mt-[100px] flex items-center gap-8">
+          <MacbookDisplay gif="/assets/projects/visa-point/gif-1.gif" className="min-w-[663px] max-w-[663px]" />
+          <div>
+            <p>
+              Removing the cluster from the landing page <br />
+              <br /> Easy ways to access the services you are looking for
+            </p>
+          </div>
+        </div>
+        <div className="mt-[150px] flex items-center gap-8">
+          <div>
+            <p>
+              Making information accessible through hidden <span className="font-bold truncate"> drop-downs </span> to
+              keep details organized and easy to find.
+              <br />
+              <br />
+              <span className="font-bold">Steps and process flow</span> given in a simplified application process
+            </p>
+          </div>
+          <img src="/assets/projects/visa-point/image-9.png" alt="project" className="w-[670px]" />
+        </div>
+        <MacbookDisplay gif="/assets/projects/visa-point/gif-2.gif" className="mt-[100px] w-[813px] mx-auto" />
+        <div className="bg-purple-50 rounded-3xl p-11 mt-[200px]">
+          <p className="text-2xl uppercase font-bold">Error Prevention and Reducing Uncertainty</p>
+          <p className="mt-6">
+            <span className="font-bold">Improving user uncertainty and confusion</span> during technical issues, wait
+            times and slot availability with additional features that the platform offers.
+          </p>
+        </div>
+        <div className="mt-[100px] flex items-center gap-8">
+          <MacbookDisplay gif="/assets/projects/visa-point/gif-3.gif" className="min-w-[663px] max-w-[663px]" />
+          <p className="text-md font-medium">
+            <span className="font-bold">Real time updated calendar</span> which allows holding or saving
+            date/application before payment.
+          </p>
+        </div>
+        <div className="mt-[100px] flex items-center gap-8">
+          <p className="text-md font-medium">
+            <span className="font-bold">Save, leave and come back later option.</span>
+            <br />
+            <br />
+            This will give giving space & chance <span className="font-bold">not to get exhausted</span> from
+            application process.
+          </p>
+          <MacbookDisplay gif="/assets/projects/visa-point/image-10.png" className="min-w-[663px] max-w-[663px]" />
+        </div>
+        <img src="/assets/projects/visa-point/image-11.png" alt="project" className="mt-[150px] border border-black" />
+      </div>
+      {/* block */}
+      <div className="mt-[100px]">THERE WILL BE CAROUSEL HERE</div>
+      {/* block */}
+      <div className="mt-[200px] bg-purple-50 rounded-3xl p-11">
+        <p className="text-xl uppercase">
+          improving <span className="font-bold">Information Accessibility & customer service</span>
+        </p>
+        <p className="mt-6">
+          Having 7/24 live <span className="font-bold">Chatbot</span> and{" "}
+          <span className="font-bold">“Guides & Resources” page</span> will create easy access to customer support by
+          offering more convenient, text-based options, available outside regular working hours. It will to reduce
+          frustration with long call waits and difficulties in finding contact information.
+        </p>
+      </div>
+      {/* block */}
+      <div className="mt-[100px]">THERE WILL BE CAROUSEL HERE</div>
+      {/* block */}
+      <div className="mt-[100px]">
+        <p className="py-8 text-xl font-bold text-center rounded-3xl bg-gray-200">What Else Can be done?</p>
+        <div className="mt-[100px] small">
+          <div className="border border-black p-11 rounded-3xl">
+            <p className="text-xl font-bold">01</p>
+            <p className="text-md mt-6">
+              User Dashboard individual to the user can be generated. It would function as “User Profile” and gather all
+              past, current and planned VISA appointment booking data to be tracked.
+            </p>
+          </div>
+          <div className="mt-20 flex items-stretch gap-[62px]">
+            <div className="min-w-[398px] max-w-[398px]">
+              <p className="text-base font-medium text-center">Drafted Wireframe Idea for Dashboard</p>
+              <img src="/assets/projects/visa-point/tabletpic.png" alt="tablet" />
+            </div>
+            <ul className="list-disc list-outside pl-6 flex flex-col justify-center gap-4 text-md font-medium">
+              <li>Real-Time Tracking: Eliminating Uncertainty</li>
+              <li>Organized Documents: Making it easy to retrieve information whenever needed.</li>
+              <li>Notifications & Reminders: Ensuring users never miss a step - eliminating confusion & worries</li>
+              <li>
+                Efficient Management: Users can view, edit, and manage multiple applications in one place, which is
+                especially helpful for those applying for multiple visas.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-[100px] border border-black p-11 rounded-3xl">
+            <p className="text-xl font-bold">02</p>
+            <p className="text-md mt-6">
+              Mobile App which would be same as the website but profile more mobility, allowing user to access
+              information more easily
+            </p>
+          </div>
+          <div className="mt-20 flex items-stretch gap-[62px]">
+            <div className="min-w-[398px] max-w-[398px]">
+              <img src="/assets/projects/visa-point/phonepic.png" alt="phone" />
+            </div>
+            <ul className="list-disc list-outside pl-6 flex flex-col justify-center gap-4 text-md font-medium">
+              <li>On-the-Go Accessibility:</li>
+              <li>Real-Time Notifications: Push notifications</li>
+              <li>24/7 Support at Fingertips</li>
+              <li>Offline Access for Important Information</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

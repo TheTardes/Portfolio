@@ -15,6 +15,7 @@ export default {
       nav: ["16px", { lineHeight: "20px", fontWeight: "700" }],
       label: ["16px", "24px"],
       "xs": ["12px", "20px"],
+      "base": ["16px", "24px"],
       "md-alt": ["18px", "24px"],
       "md": ["18px", "28px"],
       "lg": ["22px", "28px"],
