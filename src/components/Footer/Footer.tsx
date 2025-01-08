@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="mt-6 px-3">
-        <p className="font-semibold text-card-desc mb-4">Designed and coded by Inji 🌻—much love to XT for the help!</p>
+        <p className="font-semibold text-card-desc mb-2">Designed and coded by Inji 🌻—much love to XT for the help!</p>
         <p className="font-medium text-gray-500 text-[18px] leading-[28px]">© Inji Mammadli 2024</p>
       </div>
     </footer>

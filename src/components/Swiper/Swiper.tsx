@@ -7,9 +7,10 @@ import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 interface Props {
   images: string[];
   className?: string;
+  title?: string;
 }
 
-export default function SwiperView({ images, className }: Props) {
+export default function SwiperView({ images, className, title }: Props) {
   const [swiperDisabled, setSwiperDisabled] = useState("prev");
   const sliderRef = useRef<SwiperRef>(null);
 
@@ -29,7 +30,8 @@ export default function SwiperView({ images, className }: Props) {
 
   return (
     <div className={`w-[240px] xl:w-[310px] ${className}`}>
-      <div className="flex justify-end mb-11">
+      <div className="flex items-center justify-between mb-11">
+        <p className="text-md font-bold uppercase">{title}</p>
         {images.length > 1 && (
           <div className="flex gap-4">
             <div

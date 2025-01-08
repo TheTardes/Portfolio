@@ -40,6 +40,7 @@ export default {
         400: "#E2E2E5",
         500: "#999999",
         600: "#7f7f7f",
+        700: "#ADADB2",
       },
       purple: {
         50: "#F2F0FF",

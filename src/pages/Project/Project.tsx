@@ -1,8 +1,10 @@
+import { useEffect, useMemo } from "react";
 import Button from "@/components/Button";
-import MacbookDisplay from "@/components/MacbookDisplay";
 import Swiper from "@/components/Swiper";
 import { projects } from "@/data/projects";
 import { useParams } from "react-router-dom";
+import LinkArrow from "@/components/icons/LinkArrow";
+import MacbookDisplay from "@/components/MacbookDisplay";
 
 export default function ProjectView() {
   // get project name from url
@@ -10,9 +12,68 @@ export default function ProjectView() {
 
   const project = projects.find((project) => project.name === params.projectName);
 
+  const sections = useMemo(() => ["research", "ideation", "testing", "final-design"], []);
+
+  useEffect(() => {
+    const setActiveSection = () => {
+      // hide top link
+      const topLink = document.getElementById("top-link");
+      if (topLink) {
+        if (window.scrollY < 150) topLink.classList.add("opacity-0");
+        else topLink.classList.remove("opacity-0");
+      }
+
+      // set active section
+      let farthest = -1;
+      for (let i = 0; i < sections.length; i++) {
+        const section = document.getElementById(sections[i]);
+        if (section && window.scrollY + 150 >= section.offsetTop) farthest = i;
+      }
+      const links = document.querySelectorAll(".section-links");
+      links.forEach((link) => {
+        link.classList.remove("text-purple-800");
+      });
+      farthest > -1 && links[farthest].classList.add("text-purple-800");
+    };
+    window.addEventListener("scroll", setActiveSection);
+    return () => {
+      window.removeEventListener("scroll", setActiveSection);
+    };
+  }, [sections]);
+
   return (
     <>
+      <div className="full-width w-full fixed z-[10] flex justify-center bottom-10">
+        <div
+          style={{ boxShadow: "0px 4px 6px -1px #0000001A, 0px 2px 4px -2px #0000001A" }}
+          className="flex gap-4 bg-gray-200 w-fit rounded-full px-[50px] py-6 uppercase text-nav font-semibold text-gray-700"
+        >
+          <a href="#research" className="hover:text-purple-800 section-links">
+            research
+          </a>
+          <a href="#ideation" className="hover:text-purple-800 section-links">
+            ideation
+          </a>
+          <a href="#testing" className="hover:text-purple-800 section-links">
+            testing
+          </a>
+          <a href="#final-design" className="hover:text-purple-800 section-links">
+            final design
+          </a>
+        </div>
+
+        <a
+          href="#top"
+          id="top-link"
+          style={{ boxShadow: "0px 2px 10px -2px #00000014" }}
+          className="absolute right-0 mr-[60px] bg-gray-200 rounded-xl p-[18px] opacity-0 duration-300"
+        >
+          <LinkArrow className="-rotate-90 [&_path]:fill-black" />
+        </a>
+      </div>
+      {/* Image */}
       <div
+        id="top"
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-contain bg-center"
         style={{
           backgroundImage: `url("/assets/projects/${project?.projectImage}")`,
@@ -58,7 +119,13 @@ export default function ProjectView() {
             <p className="text-md text-purple-800 font-bold uppercase">{project?.blocks[0].toolsTitle}</p>
             <div className="flex gap-2 mt-3">
               {(project?.blocks[0].tools as string[]).map((tool) => (
-                <img src={`/assets/icons/${tool}.svg`} title={tool} alt={tool} className="w-[44px] h-[44px]" />
+                <img
+                  key={tool}
+                  src={`/assets/icons/${tool}.svg`}
+                  title={tool}
+                  alt={tool}
+                  className="w-[44px] h-[44px]"
+                />
               ))}
             </div>
           </div>
@@ -100,7 +167,7 @@ export default function ProjectView() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[150px]">
+      <div id={sections[0]} className="mt-[150px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase">01. Research</p>
           <Button href={""} variant="link-secondary">
@@ -292,7 +359,7 @@ export default function ProjectView() {
         </p>
       </div>
       {/* block */}
-      <div className="mt-[206px]">
+      <div id={sections[1]} className="mt-[206px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase">02. Iteration & Ideation</p>
         </div>
@@ -325,10 +392,10 @@ export default function ProjectView() {
             ))}
           </ul>
         </div>
-        <div className="flex flex-wrap gap-y-36 justify-between">
+        <div className="mt-[100px] flex flex-wrap gap-y-36 justify-between">
           <div className="w-[474px]">
             <p className="text-md-alt font-semibold">Sketching Work in Progress</p>
-            <div className="grid grid-cols-3 gap-x-1.5 gap-y-6 mt-8">
+            <div className="grid grid-cols-3 gap-x-1.5 gap-y-6 mt-8 [&>img]:w-full [&>img]:h-full [&>img]:object-cover">
               <img src="/assets/projects/visa-point/group-1.png" alt="project" />
               <img src="/assets/projects/visa-point/group-2.png" alt="project" />
               <img src="/assets/projects/visa-point/group-3.png" alt="project" />
@@ -384,7 +451,7 @@ export default function ProjectView() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[150px]">
+      <div id={sections[2]} className="mt-[150px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase"> 03. User Testing</p>
           <Button href={""} variant="link-secondary">
@@ -485,7 +552,7 @@ export default function ProjectView() {
         <img className="mt-11" src="/assets/projects/visa-point/image-8.png" alt="project" />
       </div>
       {/* block */}
-      <div className="mt-[194px]">
+      <div id={sections[3]} className="mt-[194px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase">04. Final Designs</p>
           <Button href={""} variant="link-secondary">
@@ -576,13 +643,23 @@ export default function ProjectView() {
         <img src="/assets/projects/visa-point/image-11.png" alt="project" className="mt-[150px] border border-black" />
       </div>
       {/* block */}
-      <div className="mt-[100px]">THERE WILL BE CAROUSEL HERE</div>
+      <div className="mt-[100px]">
+        <Swiper
+          title="Edge Cases"
+          className="w-full mt-11"
+          images={[
+            "/assets/projects/visa-point/swiper-1-1.png",
+            "/assets/projects/visa-point/swiper-1-2.png",
+            "/assets/projects/visa-point/swiper-1-3.png",
+          ]}
+        />
+      </div>
       {/* block */}
       <div className="mt-[200px] bg-purple-50 rounded-3xl p-11">
         <p className="text-xl uppercase">
           improving <span className="font-bold">Information Accessibility & customer service</span>
         </p>
-        <p className="mt-6">
+        <p className="mt-6 text-md">
           Having 7/24 live <span className="font-bold">Chatbot</span> and{" "}
           <span className="font-bold">“Guides & Resources” page</span> will create easy access to customer support by
           offering more convenient, text-based options, available outside regular working hours. It will to reduce
@@ -590,9 +667,19 @@ export default function ProjectView() {
         </p>
       </div>
       {/* block */}
-      <div className="mt-[100px]">THERE WILL BE CAROUSEL HERE</div>
-      {/* block */}
       <div className="mt-[100px]">
+        <Swiper
+          title="ChatBot and  Guides&Resources"
+          className="w-full mt-11"
+          images={[
+            "/assets/projects/visa-point/swiper-1-1.png",
+            "/assets/projects/visa-point/swiper-1-2.png",
+            "/assets/projects/visa-point/swiper-1-3.png",
+          ]}
+        />
+      </div>
+      {/* block */}
+      <div className="mt-[150px] mb-[150px]">
         <p className="py-8 text-xl font-bold text-center rounded-3xl bg-gray-200">What Else Can be done?</p>
         <div className="mt-[100px] small">
           <div className="border border-black p-11 rounded-3xl">
@@ -634,6 +721,22 @@ export default function ProjectView() {
               <li>24/7 Support at Fingertips</li>
               <li>Offline Access for Important Information</li>
             </ul>
+          </div>
+          <div className="mt-[100px]">
+            <p className="text-lg font-bold">Reflection and What I learned</p>
+            <p className="mt-8 text-md font-medium">
+              Looking back, I realize there are areas where I could have done better. For instance,
+              <span className="font-bold"> expanding user research to include a wider range of age groups</span> and
+              accessibility needs would have provided more diverse insights. I also see the
+              <span className="font-bold"> value of addressing localization</span> earlier in the process—considering
+              language and cultural nuances could have made the experience more inclusive and user-friendly.
+            </p>
+            <p className="mt-8 text-md font-medium">
+              Another takeaway is the <span className="font-bold">importance of iterating prototypes early</span>.
+              Sharing low-fidelity prototypes sooner would have allowed me to gather feedback earlier and refine the
+              design more effectively. These reflections will definitely shape how I approach future projects, ensuring
+              a more inclusive and thoughtful design process.
+            </p>
           </div>
         </div>
       </div>
