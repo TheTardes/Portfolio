@@ -1,9 +1,13 @@
-export default function Linkedin() {
+interface Props {
+  className?: string;
+}
+
+export default function Linkedin({ className }: Props) {
   return (
     <svg
       role="link"
       aria-label="linkedin"
-      className="icon"
+      className={`${className} icon`}
       width="24"
       height="24"
       viewBox="0 0 24 24"

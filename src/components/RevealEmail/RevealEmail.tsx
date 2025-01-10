@@ -18,7 +18,7 @@ export default function Card() {
         >
           <div className="p-4 flex justify-between gap-[10px] w-fit">
             <Envelope className="envelope transition-transform duration-[400ms]" />
-            <p className="text-light text-card-desc truncate hide opacity-0">Reveal Email</p>
+            <p className="text-light text-md-alt truncate hide opacity-0">Reveal Email</p>
             <CursorClick className="hide opacity-0" />
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Card() {
             className="p-4 flex justify-between gap-[10px] w-fit
                         hover:text-purple-500 [&_path]:fill-black [&:hover_path]:fill-purple-500"
           >
-            <p className="text-card-desc">{email}</p>
+            <p className="text-md-alt">{email}</p>
             <Copy />
           </span>
         </div>

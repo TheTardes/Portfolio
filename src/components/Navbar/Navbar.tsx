@@ -8,7 +8,7 @@ export default function Navbar() {
       <nav className="sticky top-5 z-[30]">
         <div className="flex justify-between items-center h-[70px] bg-gray-100 rounded-xl px-8">
           <div>
-            <span className="text-card-desc font-bold">IM.</span>
+            <span className="text-md-alt font-bold">IM.</span>
           </div>
           <div className="flex tablet:hidden">
             <NavLink to="/about-me">hamburger</NavLink>

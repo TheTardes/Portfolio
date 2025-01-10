@@ -1,6 +1,5 @@
 import { Project } from "@/store/types";
 import { Link } from "react-router-dom";
-// import React from "react";
 
 export default function Card({ project }: { project: Project }) {
   return (
@@ -16,7 +15,7 @@ export default function Card({ project }: { project: Project }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-[12px] leading-[20px] tablet:text-[18px] tablet:leading-[28px] font-medium"
+              className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-[12px] leading-[20px] tablet:text-md font-medium"
             >
               {tag}
             </span>

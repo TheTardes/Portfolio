@@ -8,13 +8,17 @@ body {
 }
 
 .icon {
-  @apply w-11 h-11 p-2.5 rounded-[10px] flex items-center justify-center cursor-pointer bg-black;
+  @apply w-11 h-11 p-2.5 rounded-[10px] flex items-center justify-center cursor-pointer;
   & path {
     @apply fill-white;
   }
 }
 
-:has(.icon:hover) .icon:not(:hover) {
+.icon-group-item {
+  @apply bg-black;
+}
+
+:has(.icon-group-item:hover) .icon-group-item:not(:hover) {
   @apply bg-gray-500;
 }
 

@@ -1,9 +1,13 @@
-export default function Medium() {
+interface Props {
+  className?: string;
+}
+
+export default function Medium({ className }: Props) {
   return (
     <svg
       role="link"
       aria-label="medium"
-      className="icon"
+      className={`${className} icon`}
       width="24"
       height="14"
       viewBox="0 0 24 14"

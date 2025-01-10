@@ -8,20 +8,17 @@ export default {
       desktop: "1440px",
     },
     fontSize: {
-      h1: ["48px", { lineHeight: "56px", fontWeight: "700" }],
-      "card-title": ["32px", "42px"],
-      "card-desc": ["18px", "24px"],
-      "card-text": ["16px", "24px"],
-      nav: ["16px", { lineHeight: "20px", fontWeight: "700" }],
+      h1: ["48px", "56px"],
+      h2: ["32px", "42px"],
+      nav: ["16px", "20px"],
       label: ["16px", "24px"],
-      "xs": ["12px", "20px"],
-      "base": ["16px", "24px"],
+      xs: ["12px", "20px"],
+      base: ["16px", "24px"],
       "md-alt": ["18px", "24px"],
-      "md": ["18px", "28px"],
-      "lg": ["22px", "28px"],
-      "xl": ["28px", "36px"],
+      md: ["18px", "28px"],
+      lg: ["22px", "28px"],
+      xl: ["28px", "36px"],
       "2xl": ["32px", "44px"],
-
     },
     colors: {
       transparent: "transparent",
@@ -56,8 +53,7 @@ export default {
 
       primary: {
         500: "#6833FF",
-      }
-
+      },
     },
     transitionTimingFunction: {
       gentle: "cubic-bezier(0.47, 0, 0.23, 1.38)",

@@ -1,9 +1,13 @@
-export default function Behance() {
+interface Props {
+  className?: string;
+}
+
+export default function Behance({ className }: Props) {
   return (
     <svg
       role="link"
       aria-label="behance"
-      className="icon"
+      className={`${className} icon`}
       width="24"
       height="16"
       viewBox="0 0 24 16"
