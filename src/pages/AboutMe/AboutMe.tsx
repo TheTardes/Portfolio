@@ -29,9 +29,15 @@ export default function AboutMe() {
           </p>
           <div className="flex justify-between flex-wrap gap-3 mt-8 tablet:mt-14">
             <div className="flex gap-1.5">
-              <Linkedin className="bg-[#0077B5]" />
-              <Behance className="bg-[#1769FF]" />
-              <Medium className="bg-[#1A1A1A]" />
+              <a target="_blank" href="https://www.linkedin.com/in/inji-mammadli-3b7b71168">
+                <Linkedin className="bg-[#0077B5]" />
+              </a>
+              <a target="_blank" href="https://www.behance.net/injimammadli">
+                <Behance className="bg-[#1769FF]" />
+              </a>
+              <a target="_blank" href="https://medium.com/@mammadlinji">
+                <Medium className="bg-[#1A1A1A]" />
+              </a>
             </div>
             <Button className="w-fit h-[54px]" href="/about-me">
               More Professional Bio
@@ -97,11 +103,31 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <img src="/assets/arts/art1.png" alt="art" className="w-full laptop:w-[675px] h-[101px] tablet:h-[202px] rounded-xl object-cover" />
-          <img src="/assets/arts/art1.png" alt="art" className="w-full laptop:w-[483px] h-[101px] tablet:h-[202px] rounded-xl object-cover" />
-          <img src="/assets/arts/art1.png" alt="art" className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover" />
-          <img src="/assets/arts/art1.png" alt="art" className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover" />
-          <img src="/assets/arts/art1.png" alt="art" className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover" />
+          <img
+            src="/assets/arts/art1.png"
+            alt="art"
+            className="w-full laptop:w-[675px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
+          />
+          <img
+            src="/assets/arts/art1.png"
+            alt="art"
+            className="w-full laptop:w-[483px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
+          />
+          <img
+            src="/assets/arts/art1.png"
+            alt="art"
+            className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
+          />
+          <img
+            src="/assets/arts/art1.png"
+            alt="art"
+            className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
+          />
+          <img
+            src="/assets/arts/art1.png"
+            alt="art"
+            className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
+          />
         </div>
       </section>
     </>
