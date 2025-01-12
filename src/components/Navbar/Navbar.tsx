@@ -7,16 +7,16 @@ export default function Navbar() {
       {/* <div className="h-[53px]" /> */}
       <nav className="sticky top-5 z-[30]">
         <div className="flex justify-between items-center h-[70px] bg-gray-100 rounded-xl px-8">
-          <div>
+          <NavLink to="/" className="hover:text-purple-800">
             <span className="text-md-alt font-bold">IM.</span>
-          </div>
+          </NavLink>
           <div className="flex tablet:hidden">
             <NavLink to="/about-me">hamburger</NavLink>
           </div>
-          <div className="hidden tablet:flex gap-6 justify-between items-center relative px-14 text-nav uppercase font-semibold">
+          <div className="hidden tablet:flex gap-6 justify-between items-center relative text-nav uppercase font-semibold">
             <NavLink
               to="/portfolio"
-              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "hover:text-purple-800")}
             >
               Portfolio
             </NavLink>
@@ -28,16 +28,17 @@ export default function Navbar() {
             </NavLink> */}
             <NavLink
               to="/about-me"
-              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-800" : "hover:text-purple-800")}
             >
               About me
             </NavLink>
-            {/* <NavLink
-              to="/resume"
-              className={({ isActive }) => (isActive ? "text-purple-800" : "")}
+            <NavLink
+              to="/assets/pdfs/Inji%20Mammadli%20Resume.pdf"
+              className={({ isActive }) => (isActive ? "text-purple-800" : "hover:text-purple-800")}
+              target="_blank"
             >
               Resume
-            </NavLink> */}
+            </NavLink>
           </div>
         </div>
       </nav>
