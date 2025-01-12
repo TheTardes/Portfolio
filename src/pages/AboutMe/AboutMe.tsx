@@ -12,7 +12,7 @@ export default function AboutMe() {
           <img src="/assets/common/inji.jpeg" alt="inji" className="w-full h-full object-cover rounded-3xl" />
         </div>
         <div className=" grid gap-2 tablet:gap-4 text-base tablet:text-md font-medium">
-          <h2 className="text-h2 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
+          <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
           <p>
             I’m a UX/Product Designer currently pursuing my second master’s degree at
             <span className="text-red"> Parsons School of Design</span> in New York City. I’m fascinated by how people
@@ -47,7 +47,7 @@ export default function AboutMe() {
       </section>
       <section className="mt-11 tablet:mt-20 desktop:mt-[100px]">
         <div>
-          <h2 className="text-lg tablet:text-h2 font-bold">What Else</h2>
+          <h2 className="text-lg tablet:text-h3 font-bold">What Else</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">THESE SET ME APART</p>
         </div>
         <div className="grid grid-cols-2 gap-10">
@@ -80,7 +80,7 @@ export default function AboutMe() {
       </section>
       <section className="mt-20 desktop:mt-[100px]">
         <div>
-          <h2 className="text-lg tablet:text-h2 font-bold">I enjoy making digital art</h2>
+          <h2 className="text-lg tablet:text-h3 font-bold">I enjoy making digital art</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">FREETIME</p>
         </div>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-7">
@@ -97,7 +97,7 @@ export default function AboutMe() {
       </section>
       <section className="mt-20 desktop:mt-[100px]">
         <div>
-          <h2 className="text-lg tablet:text-h2 font-bold">Why am I 🧚‍♀️</h2>
+          <h2 className="text-lg tablet:text-h3 font-bold">Why am I 🧚‍♀️</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">
             GAMES WERE WHERE MY CREATIVITY SPARKED
           </p>

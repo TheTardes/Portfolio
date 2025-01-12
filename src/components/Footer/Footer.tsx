@@ -8,7 +8,7 @@ export default function Navbar() {
       <div></div>
       <div className="w-full bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row justify-between px-11 py-6 tablet:py-8 rounded-3xl">
         <div className="max-w-[460px]">
-          <p className="text-lg tablet:text-h2 font-bold mb-2">Got a query, some thoughts to share, or a wild idea? 🤔</p>
+          <p className="text-lg tablet:text-h3 font-bold mb-2">Got a query, some thoughts to share, or a wild idea? 🤔</p>
           <p className="text-base tablet:text-md font-medium">
             Drop me a message at <span className="font-bold">mammadlinji@gmail.com</span> or get to know me better
             through my other platforms.

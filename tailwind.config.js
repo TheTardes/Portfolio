@@ -9,7 +9,9 @@ export default {
     },
     fontSize: {
       h1: ["48px", "56px"],
-      h2: ["32px", "42px"],
+      h2: ["40px", "56px"],
+      h3: ["32px", "42px"],
+      h4: ["24px", "34px"],
       nav: ["16px", "20px"],
       label: ["16px", "24px"],
       xs: ["12px", "20px"],

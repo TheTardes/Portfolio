@@ -1,6 +1,7 @@
 nav,
 footer,
-main > :not(.full-width) {
+main > :not(.full-width),
+.full-width > .contain {
   width: 335px;
   margin-inline: auto;
 }
@@ -8,14 +9,16 @@ main > :not(.full-width) {
 @media (min-width: 768px) {
   nav,
   footer,
-  main > :not(.full-width) {
+  main > :not(.full-width),
+  .full-width > .contain  {
     width: 600px;
   }
 }
 @media (min-width: 1024px) {
   nav,
   footer,
-  main > :not(.full-width) {
+  main > :not(.full-width),
+  .full-width > .contain  {
     width: 900px;
   }
 }
@@ -23,7 +26,8 @@ main > :not(.full-width) {
 @media (min-width: 1440px) {
   nav,
   footer,
-  main > :not(.full-width) {
+  main > :not(.full-width),
+  .full-width > .contain  {
     width: 1170px;
   }
   main .small {
@@ -37,5 +41,5 @@ main > :not(.full-width) {
 }
 
 main {
-  margin-top: -70px;
+  margin-top: -44px;
 }
