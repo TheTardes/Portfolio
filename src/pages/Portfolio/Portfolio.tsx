@@ -6,7 +6,7 @@ import ArrowRight from "@/components/icons/ArrowRight";
 export default function Portfolio() {
   return (
     <>
-      <div className="radial-gradient flex flex-col justify-center min-h-screen full-width pt-[88px] tablet:pt-[132px] laptop:pt-[152px] desktop:pt-[137px]">
+      <div className="radial-gradient flex flex-col justify-center rounded-b-full full-width pt-[88px] tablet:pt-[132px] laptop:pt-[152px] desktop:pt-[137px]">
         <div className="contain">
           <p className="text-black text-center text-h4 tablet:text-h3 laptop:text-h2 text-pretty max-w-[1022px] mx-auto font-medium">
             Product/UX designer in <span className="text-purple-700 font-bold">New York City.</span> Currently studying

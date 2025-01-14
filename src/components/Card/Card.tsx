@@ -7,7 +7,7 @@ export default function Card({ project }: { project: Project }) {
       <img
         alt="project"
         src={`/assets/projects/${project.cardImage}`}
-        className="h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"
+        className=" w-full h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"
       />
       <div className="p-6 tablet:p-11">
         <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px] font-semibold">{project.cardTitle}</p>
