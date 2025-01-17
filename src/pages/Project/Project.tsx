@@ -103,7 +103,7 @@ export default function ProjectView() {
         <div className="mt-8 flex gap-3">
           <Button href={project?.blocks[0].presentation as string}>Presentation</Button>
           <Button href={project?.blocks[0].livePrototype as string} variant="secondary">
-            Live Prototype
+            Figma Prototype
           </Button>
         </div>
         <div className="mt-[62px] flex gap-8">
@@ -150,14 +150,14 @@ export default function ProjectView() {
         <img src="/assets/projects/visa-point/image-1.png" alt="project" className="w-full mt-11" />
         <div className="grid grid-cols-2 gap-8 mt-20">
           <div className="rounded-3xl p-11 bg-purple-50">
-            <p className="text-xl font-bold uppercase">Problem Statement</p>
+            <p className="text-xl font-bold">Problem Statement</p>
             <p className="text-md font-medium mt-6">
               Applying for a ID is often a complex, time-consuming, and confusing process due to unclear requirements,
               limited support, and disorganized steps, leaving users frustrated and uncertain about their progress.
             </p>
           </div>
-          <div className="rounded-3xl p-11 border border-black">
-            <p className="text-xl font-bold uppercase">Hypothesis</p>
+          <div className="rounded-3xl p-11 border border-gray-400">
+          <p className="text-xl font-bold">Hypothesis</p>
             <p className="text-md font-medium mt-6">
               There is a need for a reliable, user-friendly platform that provides 24/7 guidance, step-by-step
               organization, and efficient management of visa appointments to make the process straightforward and
@@ -316,9 +316,6 @@ export default function ProjectView() {
       <div className="mt-36">
         <p className="mb-11 text-lg font-bold uppercase text-center">Gathered Results</p>
         <img src="/assets/projects/visa-point/image-4.png" alt="project" className="border border-black mb-[62px]" />
-        <Button href={""} variant="secondary" className="mx-auto">
-          More Detailed Research Summary
-        </Button>
       </div>
       {/* block */}
       <div className="small mt-36">
@@ -537,9 +534,6 @@ export default function ProjectView() {
         <p className="text-md rounded-xl font-medium mt-6 py-4 px-6 border border-blue">
           Some UI elements & information allocation can be further improved
         </p>
-        <Button href={""} variant="secondary" className="mt-8 mx-auto">
-          More Detailed Test Summary
-        </Button>
       </div>
       {/* block */}
       <div className="mt-[188px]">
@@ -572,10 +566,10 @@ export default function ProjectView() {
               <p className="text-md font-bold">Flow 3: Complete the form</p>
             </div>
             <div className="flex flex-col gap-4">
-              <Button href={""} variant="link-primary" className="underline">
+              <Button href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756"} variant="link-primary" className="underline">
                 Prototype
               </Button>
-              <Button href={""} variant="link-primary" className="underline">
+              <Button href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4485-6937&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4485%3A6937"} variant="link-primary" className="underline">
                 Prototype
               </Button>
             </div>
@@ -585,8 +579,8 @@ export default function ProjectView() {
       {/* block */}
       <div className="mt-[100px] text-md font-medium">
         <div className="bg-purple-50 rounded-3xl p-11">
-          <p className="text-2xl uppercase">
-            Solutions <span className="text-xl font-bold">to Cluster and overwhelming application forms</span>
+          <p className="text-xl uppercase">
+            Solutions <span className="font-bold">to Cluster and overwhelming application forms</span>
           </p>
           <p className="mt-6">
             Reducing the tendency to <span className="font-bold">seek help</span> for “Form filling process”{" "}
@@ -617,7 +611,7 @@ export default function ProjectView() {
         </div>
         <MacbookDisplay gif="/assets/projects/visa-point/gif-2.gif" className="mt-[100px] w-[813px] mx-auto" />
         <div className="bg-purple-50 rounded-3xl p-11 mt-[200px]">
-          <p className="text-2xl uppercase font-bold">Error Prevention and Reducing Uncertainty</p>
+          <p className="text-xl uppercase font-bold">Error Prevention and Reducing Uncertainty</p>
           <p className="mt-6">
             <span className="font-bold">Improving user uncertainty and confusion</span> during technical issues, wait
             times and slot availability with additional features that the platform offers.
@@ -680,7 +674,7 @@ export default function ProjectView() {
       </div>
       {/* block */}
       <div className="mt-[150px] mb-[150px]">
-        <p className="py-8 text-xl font-bold text-center rounded-3xl bg-gray-200">What Else Can be done?</p>
+      <p className="py-8 text-xl font-bold text-center  uppercase rounded-3xl bg-gray-200">What Else Can be done?</p>
         <div className="mt-[100px] small">
           <div className="border border-black p-11 rounded-3xl">
             <p className="text-xl font-bold">01</p>
@@ -723,7 +717,7 @@ export default function ProjectView() {
             </ul>
           </div>
           <div className="mt-[100px]">
-            <p className="text-lg font-bold">Reflection and What I learned</p>
+            <p className="text-xl uppercase font-bold">Reflection and What I learned</p>
             <p className="mt-8 text-md font-medium">
               Looking back, I realize there are areas where I could have done better. For instance,
               <span className="font-bold"> expanding user research to include a wider range of age groups</span> and

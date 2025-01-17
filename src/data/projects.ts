@@ -14,8 +14,8 @@ export const projects: Project[] = [
         readTime: 5,
         description:
           "This is a platform that aims to offer 24/7 assistance to book and manage visa appointments, ensuring that each step is clear, efficient, and well-organized.",
-        presentation: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        livePrototype: "https://www.visa-point.com",
+        presentation: "https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=5004%3A29088&node-id=5021-30381&viewport=187%2C507%2C0.08&t=wVoxRhSbgnWvN7uu-1&scaling=scale-down-width&content-scaling=fixed",
+        livePrototype: "https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756&show-proto-sidebar=1",
         rolesTitle: "Role",
         roles: "UX Researcher, Product Designer,  Student - Parsons The New School",
         timelineTitle: "Timeline",
