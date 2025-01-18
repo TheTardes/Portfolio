@@ -536,7 +536,7 @@ export default function ProjectView() {
       <div className="mt-[188px]">
         <div className="flex justify-between">
           <p className="text-lg font-bold uppercase">Revised Design Sketching & Further ideation </p>
-          <Button target="_blank" href={""} variant="secondary">
+          <Button target="_blank" href={"/assets/pdfs/user-journey.pdf"} variant="secondary">
             View Detailed User Flow
           </Button>
         </div>
@@ -586,7 +586,7 @@ export default function ProjectView() {
         </div>
 
         <div className="mt-[100px] flex items-center gap-8">
-          <MacbookDisplay gif="/assets/projects/visa-point/gif-1.gif" className="min-w-[663px] max-w-[663px]" />
+          <MacbookDisplay gif="/assets/projects/visa-point/gif-4.gif" className="min-w-[663px] max-w-[663px]" />
           <div>
             <p>
               Removing the cluster from the landing page <br />
