@@ -101,8 +101,8 @@ export default function ProjectView() {
           <p className="text-[22px] leading-[34px]">{project?.blocks[0].description}</p>
         </div>
         <div className="mt-8 flex gap-3">
-          <Button href={project?.blocks[0].presentation as string}>Presentation</Button>
-          <Button href={project?.blocks[0].livePrototype as string} variant="secondary">
+          <Button target="_blank" href={project?.blocks[0].presentation as string}>Presentation</Button>
+          <Button target="_blank" href={project?.blocks[0].livePrototype as string} variant="secondary">
             Figma Prototype
           </Button>
         </div>
@@ -539,7 +539,7 @@ export default function ProjectView() {
       <div className="mt-[188px]">
         <div className="flex justify-between">
           <p className="text-lg font-bold uppercase">Revised Design Sketching & Further ideation </p>
-          <Button href={""} variant="secondary" className="">
+          <Button target="_blank" href={""} variant="secondary">
             View Detailed User Flow
           </Button>
         </div>
@@ -566,10 +566,10 @@ export default function ProjectView() {
               <p className="text-md font-bold">Flow 3: Complete the form</p>
             </div>
             <div className="flex flex-col gap-4">
-              <Button href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756"} variant="link-primary" className="underline">
+              <Button target="_blank" href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756"} variant="link-primary" className="underline">
                 Prototype
               </Button>
-              <Button href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4485-6937&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4485%3A6937"} variant="link-primary" className="underline">
+              <Button target="_blank" href={"https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4485-6937&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4485%3A6937"} variant="link-primary" className="underline">
                 Prototype
               </Button>
             </div>

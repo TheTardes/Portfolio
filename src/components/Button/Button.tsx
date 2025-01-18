@@ -7,6 +7,7 @@ interface Props {
   variant?: "primary" | "secondary" | "link-primary" | "link-secondary";
   underline?: boolean;
   noIcon?: boolean;
+  target?: string;
 }
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   variant = "primary",
   noIcon = false,
   className,
+  target,
 }: Props) {
   const variantClasses = {
     primary: "py-[15px] px-6 bg-black hover:bg-purple-800 ",
@@ -41,7 +43,7 @@ export default function Button({
   return (
     <a
       href={href}
-      target="_blank"
+      target={target}
       className={`uppercase flex items-center gap-2 w-fit rounded-xl duration-300 [&:hover>svg]:rotate-0 ${variantClasses[variant]} ${className}`}
     >
       <span className={`${variantText[variant]} leading-[20px] font-semibold`}>

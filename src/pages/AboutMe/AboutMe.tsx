@@ -39,7 +39,7 @@ export default function AboutMe() {
                 <Medium className="bg-[#1A1A1A]" />
               </a>
             </div>
-            <Button className="w-fit h-[54px]" href="/about-me">
+            <Button target="_blank" className="w-fit h-[54px]" href="/about-me">
               More Professional Bio
             </Button>
           </div>
@@ -67,7 +67,7 @@ export default function AboutMe() {
             </p>
             <div className="mt-2 flex flex-wrap gap-2.5">
               <p className="text-base tablet:text-md font-bold">I write my thoughts on </p>
-              <Button variant="link-secondary" href={"https://medium.com/@inji.yun"}>
+              <Button target="_blank" variant="link-secondary" href={"https://medium.com/@inji.yun"}>
                 medium.com
               </Button>
             </div>
