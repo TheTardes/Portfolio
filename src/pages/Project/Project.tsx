@@ -594,6 +594,7 @@ export default function ProjectView() {
             </p>
           </div>
         </div>
+        <MacbookDisplay gif="/assets/projects/visa-point/gif-5.gif" className="mt-[100px] w-[813px] mx-auto" />
         <div className="mt-[150px] flex items-center gap-8">
           <div>
             <p>
@@ -637,11 +638,12 @@ export default function ProjectView() {
       <div className="mt-[100px]">
         <Swiper
           title="Edge Cases"
-          className="w-full mt-11"
+          className="w-full mt-11 with-border"
           images={[
-            "/assets/projects/visa-point/swiper-1-1.png",
-            "/assets/projects/visa-point/swiper-1-2.png",
-            "/assets/projects/visa-point/swiper-1-3.png",
+            "/assets/projects/visa-point/swiper-2-1.png",
+            "/assets/projects/visa-point/swiper-2-2.png",
+            "/assets/projects/visa-point/swiper-2-3.png",
+            "/assets/projects/visa-point/swiper-2-4.png",
           ]}
         />
       </div>
@@ -661,11 +663,10 @@ export default function ProjectView() {
       <div className="mt-[100px]">
         <Swiper
           title="ChatBot and  Guides&Resources"
-          className="w-full mt-11"
+          className="w-full mt-11 with-border"
           images={[
-            "/assets/projects/visa-point/swiper-1-1.png",
-            "/assets/projects/visa-point/swiper-1-2.png",
-            "/assets/projects/visa-point/swiper-1-3.png",
+            "/assets/projects/visa-point/swiper-3-1.png",
+            "/assets/projects/visa-point/swiper-3-2.png",
           ]}
         />
       </div>

@@ -99,3 +99,10 @@ body {
   background-color: #f5f5f5;
   box-shadow: 0px 2px 50px 0px #00000021;
 }
+
+
+.with-border {
+  .swiper-slide {
+    border: 1px solid black;
+  }
+}
