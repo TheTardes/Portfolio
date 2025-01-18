@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ project }: { project: Project }) {
   return (
-    <Link to={`/project/${project.name}`} className="col-span-2 desktop:col-span-1 bg-gray-200 rounded-2xl tablet:rounded-3xl hover:scale-110 transition-all duration-300">
+    <Link to={project.url} className="col-span-2 desktop:col-span-1 bg-gray-200 rounded-2xl tablet:rounded-3xl hover:scale-110 transition-all duration-300">
       <img
         alt="project"
         src={`/assets/projects/${project.cardImage}`}

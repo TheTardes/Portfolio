@@ -2,12 +2,13 @@ import { Project } from "@/store/types";
 
 export const projects: Project[] = [
   {
-    url: "/visa-point",
+    url: "/project/visa-point",
     name: "visa-point",
     cardImage: "visa-point/card.png",
     projectImage: "visa-point/page.png",
     cardTitle: "Making ID 📑 applications easy, accessible, and stress-free",
     tags: ["Website, application portal", "VisaPoint"],
+    hasContent: true,
     blocks: [
       {
         type: "introduction",
@@ -34,7 +35,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    url: "/apple-health",
+    url: "/project/apple-health",
     name: "apple-health",
     cardImage: "apple-health-card.png",
     projectImage: "apple-health-page.png",
@@ -66,7 +67,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    url: "/saas-dashboard",
+    url: "/project/saas-dashboard",
     name: "saas-dashboard",
     cardImage: "saas-dashboard-card.png",
     projectImage: "saas-dashboard-page.png",
@@ -75,7 +76,7 @@ export const projects: Project[] = [
     blocks: [],
   },
   {
-    url: "/thera-pair",
+    url: "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps/modules/1233088061",
     name: "thera-pair",
     cardImage: "thera-pair-card.png",
     projectImage: "thera-pair-page.png",

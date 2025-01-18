@@ -41,6 +41,8 @@ export default function ProjectView() {
     };
   }, [sections]);
 
+  if (!project) return <div>Project not found</div>;
+
   return (
     <>
       <div className="hidden  full-width w-full fixed z-[10] laptop:flex justify-center bottom-10">
@@ -76,7 +78,7 @@ export default function ProjectView() {
         id="top"
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-cover tablet:bg-contain bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url("/assets/projects/${project?.projectImage}")`,
+          backgroundImage: `url("/assets/projects/${project.projectImage}")`,
           backgroundColor: "#222222"
         }}
       />
@@ -84,7 +86,7 @@ export default function ProjectView() {
       <div className="mt-11 laptop:mt-[100px] small">
         <div className="flex flex-wrap gap-4 justify-between">
           <div className="flex gap-3">
-            {project?.tags.map((tag) => (
+            {project.tags.map((tag) => (
               <span
                 key={tag}
                 className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-xs tablet:text-md font-medium"
@@ -95,39 +97,39 @@ export default function ProjectView() {
           </div>
           <div className="flex items-center gap-2 text-gray-600 text-base laptop:text-md">
             <img src="/assets/icons/clock.svg" alt="clock" className="h-[20px] w-[20px] laptop:h-auto laptop:w-auto" />
-            {project?.blocks[0].readTime} mins read
+            {project.blocks[0].readTime} mins read
           </div>
         </div>
         <div className="mt-11 laptop:mt-[62px]">
-          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">{project?.blocks[0].description}</p>
+          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">{project.blocks[0].description}</p>
         </div>
         <div className="mt-4 laptop:mt-8 flex flex-wrap gap-3">
-          <Button target="_blank" href={project?.blocks[0].presentation as string}>
+          <Button target="_blank" href={project.blocks[0].presentation as string}>
             Presentation
           </Button>
-          <Button target="_blank" href={project?.blocks[0].livePrototype as string} variant="secondary">
+          <Button target="_blank" href={project.blocks[0].livePrototype as string} variant="secondary">
             Figma Prototype
           </Button>
         </div>
         <div className="mt-8 laptop:mt-[62px] flex flex-wrap laptop:flex-nowrap gap-8">
           <div>
             <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project?.blocks[0].rolesTitle}
+              {project.blocks[0].rolesTitle}
             </p>
-            <p className="text-sm laptop:text-md font-medium mt-3">{project?.blocks[0].roles}</p>
+            <p className="text-sm laptop:text-md font-medium mt-3">{project.blocks[0].roles}</p>
           </div>
           <div>
             <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project?.blocks[0].timelineTitle}
+              {project.blocks[0].timelineTitle}
             </p>
-            <p className="text-sm laptop:text-md font-medium mt-3">{project?.blocks[0].timeline}</p>
+            <p className="text-sm laptop:text-md font-medium mt-3">{project.blocks[0].timeline}</p>
           </div>
           <div>
             <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project?.blocks[0].toolsTitle}
+              {project.blocks[0].toolsTitle}
             </p>
             <div className="flex gap-2 mt-3">
-              {(project?.blocks[0].tools as string[]).map((tool) => (
+              {(project.blocks[0].tools as string[]).map((tool) => (
                 <img
                   key={tool}
                   src={`/assets/icons/${tool}.svg`}
@@ -140,15 +142,16 @@ export default function ProjectView() {
           </div>
         </div>
         <div className="mt-11 laptop:mt-[100px] rounded-3xl bg-gray-200 p-6 laptop:p-11">
-          <p className="text-lg laptop:text-2xl font-bold ">{project?.blocks[0].goalTitle}</p>
+          <p className="text-lg laptop:text-2xl font-bold ">{project.blocks[0].goalTitle}</p>
           <p className="text-base laptop:text-md mt-3 laptop:mt-6 mb-4 laptop:mb-8">
-            {project?.blocks[0].goalDescription}
+            {project.blocks[0].goalDescription}
           </p>
-          <Button href={project?.blocks[0].goalLinkHref as string} noIcon variant="link-primary">
-            {project?.blocks[0].goalLink as string}
+          <Button href={project.blocks[0].goalLinkHref as string} noIcon variant="link-primary">
+            {project.blocks[0].goalLink as string}
           </Button>
         </div>
       </div>
+      {project.hasContent && <>
       {/* block */}
       <div className="mt-8 laptop:mt-20">
         <div className="flex flex-wrap justify-start laptop:justify-center gap-1 laptop:gap-3">
@@ -819,6 +822,7 @@ export default function ProjectView() {
           </div>
         </div>
       </div>
+      </>}
     </>
   );
 }
