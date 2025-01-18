@@ -1,0 +1,18 @@
+div:has(> .swiper) {
+  @apply relative z-[1];
+  .swiper {
+    @apply static;
+    .swiper-pagination {
+      @apply -bottom-9;
+      .swiper-pagination-bullet {
+        @apply bg-purple-800;
+      }
+    }
+  }
+}
+
+.with-border {
+  .swiper-slide {
+    border: 1px solid black;
+  }
+}

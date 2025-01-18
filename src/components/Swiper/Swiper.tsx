@@ -1,6 +1,6 @@
 import "swiper/css";
-// import 'swiper/css/pagination';
-// import { Pagination } from "swiper/modules";
+import 'swiper/css/pagination';
+import { Pagination } from "swiper/modules";
 import { useCallback, useRef, useState } from "react";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
@@ -63,7 +63,7 @@ export default function SwiperView({ images, className, title }: Props) {
           </div>
         )}
       </div>
-      <Swiper slidesPerView={1} ref={sliderRef}>
+      <Swiper modules={[Pagination]} pagination={{ clickable: true }} slidesPerView={1} ref={sliderRef}>
         {images?.map((image) => (
           <SwiperSlide key={image}>
             <img src={image} alt="swiper-image" className="w-full h-full object-cover" />
