@@ -717,7 +717,7 @@ export default function ProjectView() {
             </ul>
           </div>
           <div className="mt-[100px]">
-            <p className="text-xl uppercase font-bold">Reflection and What I learned</p>
+            <p className="text-xl font-bold">Reflection and what I learned</p>
             <p className="mt-8 text-md font-medium">
               Looking back, I realize there are areas where I could have done better. For instance,
               <span className="font-bold"> expanding user research to include a wider range of age groups</span> and
