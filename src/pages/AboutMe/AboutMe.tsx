@@ -30,13 +30,13 @@ export default function AboutMe() {
           <div className="flex justify-between flex-wrap gap-3 mt-8 tablet:mt-14">
             <div className="flex gap-1.5">
               <a target="_blank" href="https://www.linkedin.com/in/inji-mammadli-3b7b71168">
-                <Linkedin className="bg-[#0077B5]" />
+                <Linkedin size={54} className="bg-[#0077B5]" />
               </a>
               <a target="_blank" href="https://www.behance.net/injimammadli">
-                <Behance className="bg-[#1769FF]" />
+                <Behance size={54} className="bg-[#1769FF]" />
               </a>
               <a target="_blank" href="https://medium.com/@mammadlinji">
-                <Medium className="bg-[#1A1A1A]" />
+                <Medium size={54} className="bg-[#1A1A1A]" />
               </a>
             </div>
             <Button target="_blank" className="w-fit h-[54px]" href="/assets/pdfs/Inji%20Mammadli%20Resume.pdf">
