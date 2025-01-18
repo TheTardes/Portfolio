@@ -9,7 +9,7 @@ export default function AboutMe() {
     <>
       <section className="flex flex-col-reverse laptop:flex-row gap-11 tablet:gap-15 laptop:gap-20 pt-[114px] tablet:pt-[152px] laptop:pt-[172px]">
         <div className="min-w-[335px] h-[298px] tablet:min-w-[600px] tablet:h-[497px] laptop:min-w-[320px] desktop:min-w-[530px] desktop:h-[482px]">
-          <img src="/assets/common/inji.jpeg" alt="inji" className="w-full h-full object-cover rounded-3xl" />
+          <img src="/assets/common/me-main.jpg" alt="inji" className="w-full h-full object-cover rounded-3xl" />
         </div>
         <div className=" grid gap-2 tablet:gap-4 text-base tablet:text-md font-medium">
           <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
@@ -39,7 +39,7 @@ export default function AboutMe() {
                 <Medium className="bg-[#1A1A1A]" />
               </a>
             </div>
-            <Button target="_blank" className="w-fit h-[54px]" href="/about-me">
+            <Button target="_blank" className="w-fit h-[54px]" href="/assets/pdfs/Inji%20Mammadli%20Resume.pdf">
               More Professional Bio
             </Button>
           </div>
@@ -67,13 +67,13 @@ export default function AboutMe() {
             </p>
             <div className="mt-2 flex flex-wrap gap-2.5">
               <p className="text-base tablet:text-md font-bold">I write my thoughts on </p>
-              <Button target="_blank" variant="link-secondary" href={"https://medium.com/@inji.yun"}>
+              <Button target="_blank" variant="link-secondary" href={"https://medium.com/@mammadlinji"}>
                 medium.com
               </Button>
             </div>
           </div>
           <Slider
-            images={["/assets/arts/art1.png", "/assets/arts/art2.png", "/assets/arts/art3.png"]}
+            images={["/assets/common/uni-1.JPG", "/assets/common/friends.JPG", "/assets/common/pet.jpg"]}
             className="col-span-2 laptop:col-span-1 h-[265px] tablet:h-[475px] laptop:h-auto"
           />
         </div>
