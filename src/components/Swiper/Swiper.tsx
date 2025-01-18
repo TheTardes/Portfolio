@@ -30,7 +30,7 @@ export default function SwiperView({ images, className, title }: Props) {
 
   return (
     <div className={`w-[240px] xl:w-[310px] ${className}`}>
-      <div className="flex items-center justify-between mb-11">
+      <div className="flex items-center justify-between mb-6 laptop:mb-11">
         <p className="text-lg font-bold uppercase">{title}</p>
         {images.length > 1 && (
           <div className="flex gap-4">

@@ -37,7 +37,7 @@ export default function MenuDrawer({ close }: Props) {
             onClick={close}
             target={item.target}
             className={({ isActive }) =>
-              "text-[20px] leading-[26px] font-semibold hover:text-purple-800 " + (isActive ? "text-purple-800" : "")
+              "text-h5 font-semibold hover:text-purple-800 " + (isActive ? "text-purple-800" : "")
             }
           >
             {item.label}

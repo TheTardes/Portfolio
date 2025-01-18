@@ -18,12 +18,15 @@ export default function Button({
   className,
   target,
 }: Props) {
+
+  const borderVariants = ["primary", "secondary"]
+
   const variantClasses = {
-    primary: "py-[15px] px-6 bg-black hover:bg-purple-800 ",
+    primary: "py-[10px] laptop:py-[15px] px-4 laptop:px-6 bg-black hover:bg-purple-800 ",
     secondary:
-      "py-[15px] px-6 border border-black bg-white hover:bg-black [&:hover>span]:text-white [&:hover_*]:fill-white",
-    "link-primary": "text-purple-800 font-semibold uppercase",
-    "link-secondary": "text-black hover:text-purple-800 [&:hover_*]:fill-purple-800 font-semibold uppercase",
+      "py-[10px] laptop:py-[15px] px-4 laptop:px-6 border border-black bg-white hover:bg-black [&:hover>span]:text-white [&:hover_*]:fill-white",
+    "link-primary": "py-[10px] text-purple-800 font-semibold uppercase",
+    "link-secondary": "py-[10px] text-purple-800 laptop:text-black hover:text-purple-800 [&:hover_*]:fill-purple-800 font-semibold uppercase",
   };
 
   const variantText = {
@@ -37,7 +40,7 @@ export default function Button({
     primary: "",
     secondary: "[&_*]:fill-black",
     "link-primary": "[&_*]:fill-purple-800",
-    "link-secondary": "[&_*]:fill-black",
+    "link-secondary": "[&_*]:fill-purple-800 laptop:[&_*]:fill-black ",
   };
 
   return (
@@ -46,10 +49,10 @@ export default function Button({
       target={target}
       className={`uppercase flex items-center gap-2 w-fit rounded-xl duration-300 [&:hover>svg]:rotate-0 ${variantClasses[variant]} ${className}`}
     >
-      <span className={`${variantText[variant]} leading-[20px] font-semibold`}>
+      <span className={`${variantText[variant]} text-sm laptop:text-base laptop:leading-[20px] font-semibold`}>
         {children}
       </span>
-      {!noIcon && <LinkArrow className={`w-[24px] h-[24px] -rotate-45 duration-300 ${variantIcon[variant]}`} />}
+      {!noIcon && <LinkArrow className={`w-[24px] h-[24px] duration-300 ${borderVariants.includes(variant) ? "-rotate-45" : "laptop:-rotate-45"} ${variantIcon[variant]}`} />}
     </a>
   );
 }

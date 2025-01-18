@@ -5,7 +5,7 @@ div:has(> .swiper) {
     .swiper-pagination {
       @apply -bottom-9;
       .swiper-pagination-bullet {
-        @apply bg-purple-800;
+        @apply w-3 h-3 bg-purple-800;
       }
     }
   }

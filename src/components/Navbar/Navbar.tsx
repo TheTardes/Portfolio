@@ -52,6 +52,7 @@ export default function Navbar() {
             },
           ].map((item) => (
             <NavLink
+              key={item.label}
               to={item.to}
               target={item.target}
               className={({ isActive }) =>
