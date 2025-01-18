@@ -133,7 +133,7 @@ export default function ProjectView() {
         <div className="mt-[106px] rounded-3xl bg-gray-200 p-11">
           <p className="text-2xl font-bold ">{project?.blocks[0].goalTitle}</p>
           <p className="text-md mt-6 mb-8">{project?.blocks[0].goalDescription}</p>
-          <Button href={project?.blocks[0].goalLink as string} noIcon variant="link-primary">
+          <Button href={project?.blocks[0].goalLinkHref as string} noIcon variant="link-primary">
             {project?.blocks[0].goalLink as string}
           </Button>
         </div>
@@ -170,7 +170,7 @@ export default function ProjectView() {
       <div id={sections[0]} className="mt-[150px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase">01. Research</p>
-          <Button href={""} variant="link-secondary">
+          <Button href={"#research-results"} variant="link-secondary">
             Click for research conclusions
           </Button>
         </div>
@@ -313,7 +313,7 @@ export default function ProjectView() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-36">
+      <div id="research-results" className="mt-36 scroll-mt-28" >
         <p className="mb-11 text-lg font-bold uppercase text-center">Gathered Results</p>
         <img src="/assets/projects/visa-point/image-4.png" alt="project" className="border border-black mb-[62px]" />
       </div>
@@ -451,9 +451,6 @@ export default function ProjectView() {
       <div id={sections[2]} className="mt-[150px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase"> 03. User Testing</p>
-          <Button href={""} variant="link-secondary">
-            Click for test results
-          </Button>
         </div>
         <div className="small mt-20">
           <p className="text-md font-medium">
@@ -549,7 +546,7 @@ export default function ProjectView() {
       <div id={sections[3]} className="mt-[194px] scroll-mt-28">
         <div className="flex justify-between items-center rounded-3xl bg-gray-200 px-11 py-9">
           <p className="text-xl font-bold uppercase">04. Final Designs</p>
-          <Button href={""} variant="link-secondary">
+          <Button href={"#next-steps"} variant="link-secondary">
             Skip to next steps and Plans
           </Button>
         </div>
@@ -673,7 +670,7 @@ export default function ProjectView() {
         />
       </div>
       {/* block */}
-      <div className="mt-[150px] mb-[150px]">
+      <div id="next-steps" className="mt-[150px] mb-[150px] scroll-mt-28">
       <p className="py-8 text-xl font-bold text-center  uppercase rounded-3xl bg-gray-200">What Else Can be done?</p>
         <div className="mt-[100px] small">
           <div className="border border-black p-11 rounded-3xl">

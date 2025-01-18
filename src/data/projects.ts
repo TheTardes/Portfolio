@@ -26,6 +26,7 @@ export const projects: Project[] = [
         goalDescription:
           "My goal is to make ID applications as easy, accessible, and stress-free as possible by providing real-time support and organized, step-by-step guidance.",
         goalLink: "CLICK HERE TO JUMP TO THE DESIGNS",
+        goalLinkHref: "#final-design"
       },
     ],
   },
