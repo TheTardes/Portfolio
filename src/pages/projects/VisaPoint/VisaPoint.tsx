@@ -185,7 +185,7 @@ export default function VisaPoint() {
       <div id={sections[0]} className="mt-[100px] laptop:mt-[150px] scroll-mt-20 laptop:scroll-mt-28">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">01. Research</p>
-          <Button href={"#research-results"} variant="link-secondary">
+          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
             Click for research conclusions
           </Button>
         </div>
@@ -600,7 +600,7 @@ export default function VisaPoint() {
       <div id={sections[3]} className="mt-20 laptop:mt-[194px] scroll-mt-20 laptop:scroll-mt-28">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">04. Final Designs</p>
-          <Button href={"#next-steps"} variant="link-secondary">
+          <Button className="py-[10px] laptop:py-0" href={"#next-steps"} variant="link-secondary">
             Skip to next steps and Plans
           </Button>
         </div>

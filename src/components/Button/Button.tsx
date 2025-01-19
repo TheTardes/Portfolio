@@ -25,8 +25,8 @@ export default function Button({
     primary: "py-[10px] laptop:py-[15px] px-4 laptop:px-6 bg-black hover:bg-purple-800 ",
     secondary:
       "py-[10px] laptop:py-[15px] px-4 laptop:px-6 border border-black bg-white hover:bg-black [&:hover>span]:text-white [&:hover_*]:fill-white",
-    "link-primary": "py-[10px] text-purple-800 font-semibold uppercase",
-    "link-secondary": "py-[10px] text-purple-800 laptop:text-black hover:text-purple-800 [&:hover_*]:fill-purple-800 font-semibold uppercase",
+    "link-primary": "text-purple-800 font-semibold uppercase",
+    "link-secondary": "text-purple-800 laptop:text-black hover:text-purple-800 [&:hover_*]:fill-purple-800 font-semibold uppercase",
   };
 
   const variantText = {
