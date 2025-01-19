@@ -5,7 +5,6 @@ import { Fragment, useEffect, useMemo } from "react";
 import MacbookDisplay from "@/components/MacbookDisplay";
 
 export default function VisaPoint() {
-
   const sections = useMemo(() => ["research", "ideation", "testing", "final-design"], []);
 
   useEffect(() => {
@@ -35,35 +34,44 @@ export default function VisaPoint() {
     };
   }, [sections]);
 
-
   return (
     <>
-      <div className="hidden  full-width w-full fixed z-[10] laptop:flex justify-center bottom-10">
+      <div className="full-width w-full fixed z-[10] tablet:flex justify-center bottom-0 tablet:bottom-10">
         <div
           style={{ boxShadow: "0px 4px 6px -1px #0000001A, 0px 2px 4px -2px #0000001A" }}
-          className="flex gap-4 bg-gray-200 w-fit rounded-full px-[50px] py-6 uppercase text-nav font-semibold text-gray-700"
+          className="flex gap-4 justify-between bg-gray-200 tablet:w-fit tablet:rounded-full px-6 tablet:px-12 py-[10px] tablet:py-[14px] uppercase text-sm tablet:text-nav font-semibold text-gray-700"
         >
-          <a href="#research" className="hover:text-purple-800 section-links">
-            research
-          </a>
-          <a href="#ideation" className="hover:text-purple-800 section-links">
-            ideation
-          </a>
-          <a href="#testing" className="hover:text-purple-800 section-links">
-            testing
-          </a>
-          <a href="#final-design" className="hover:text-purple-800 section-links">
-            final design
-          </a>
+          {[
+            {
+              href: "#research",
+              title: "research",
+            },
+            {
+              href: "#ideation",
+              title: "ideation",
+            },
+            {
+              href: "#testing",
+              title: "testing",
+            },
+            {
+              href: "#final-design",
+              title: "final design",
+            },
+          ].map((link) => (
+            <a href={link.href} className="hover:text-purple-800 section-links py-[10px]">
+              {link.title}
+            </a>
+          ))}
         </div>
 
         <a
           href="#top"
           id="top-link"
           style={{ boxShadow: "0px 2px 10px -2px #00000014" }}
-          className="absolute right-0 mr-[60px] bg-gray-200 rounded-xl p-[18px] opacity-0 duration-300"
+          className="absolute bottom-[70px] tablet:bottom-0 right-[14px] tablet:right-[60px] bg-gray-200 rounded-xl p-[10px] tablet:p-[18px] opacity-0 duration-300"
         >
-          <LinkArrow className="-rotate-90 [&_path]:fill-black" />
+          <LinkArrow className="-rotate-90 [&_path]:fill-black size-5 tablet:size-6" />
         </a>
       </div>
       {/* Image */}
