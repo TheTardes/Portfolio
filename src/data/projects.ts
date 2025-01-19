@@ -90,7 +90,7 @@ export const projects: Project[] = [
       tags: ["Design a new feature", "App add-on"],
       readTime: 5,
       description:
-        "In this project I added a new feature to Apple Health, with thorought research to address user needs. I did heuristic analysis,background reseach and user interviews, which helped me to identify key issues. I prioritized essential solutions, and refined the feature through two rounds of user testing.",
+        "In this project I addressed the challenges users face in discovering new leisure activities. The solution is a user-centric app that promotes transparency and engagement by encouraging reviews through discounts. With improved trust and improving exposure to diverse experiences, the platform makes planning leisure time easier, more enjoyable, and more affordable.",
       presentation:
         "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps",
       livePrototype:
