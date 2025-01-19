@@ -73,7 +73,7 @@ export default function AboutMe() {
             </div>
           </div>
           <Slider
-            images={["/assets/common/uni-1.JPG", "/assets/common/friends.JPG", "/assets/common/pet.jpg"]}
+            images={["/assets/common/work.JPEG", "/assets/common/friends.JPG", "/assets/common/pet.jpg"]}
             className="col-span-2 laptop:col-span-1 h-[265px] tablet:h-[475px] laptop:h-auto"
           />
         </div>
