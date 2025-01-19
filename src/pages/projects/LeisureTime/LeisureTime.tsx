@@ -8,7 +8,7 @@ export default function LeisureTime() {
         id="top"
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-cover tablet:bg-contain bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url("/assets/projects/apple-health/apple-health-bg.png")`,
+          backgroundImage: `url("/assets/projects/leisure-time-bg.png")`,
           backgroundColor: "#FFF5DC",
         }}
       />
