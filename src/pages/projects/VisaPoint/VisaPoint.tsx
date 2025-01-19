@@ -1,16 +1,10 @@
-import { Fragment, useEffect, useMemo } from "react";
 import Button from "@/components/Button";
 import Swiper from "@/components/Swiper";
-import { projects } from "@/data/projects";
-import { useParams } from "react-router-dom";
 import LinkArrow from "@/components/icons/LinkArrow";
+import { Fragment, useEffect, useMemo } from "react";
 import MacbookDisplay from "@/components/MacbookDisplay";
 
-export default function ProjectView() {
-  // get project name from url
-  const params = useParams();
-
-  const project = projects.find((project) => project.name === params.projectName);
+export default function VisaPoint() {
 
   const sections = useMemo(() => ["research", "ideation", "testing", "final-design"], []);
 
@@ -41,7 +35,6 @@ export default function ProjectView() {
     };
   }, [sections]);
 
-  if (!project) return <div>Project not found</div>;
 
   return (
     <>
@@ -78,15 +71,15 @@ export default function ProjectView() {
         id="top"
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-cover tablet:bg-contain bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url("/assets/projects/${project.projectImage}")`,
-          backgroundColor: project.color || "#222222"
+          backgroundImage: `url("/assets/projects/visa-point/page.png")`,
+          backgroundColor: "#222222",
         }}
       />
       {/* block */}
       <div className="mt-11 laptop:mt-[100px] small">
         <div className="flex flex-wrap gap-4 justify-between">
           <div className="flex gap-3">
-            {project.tags.map((tag) => (
+            {["Website, application portal", "VisaPoint"].map((tag) => (
               <span
                 key={tag}
                 className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-xs tablet:text-md font-medium"
@@ -96,40 +89,46 @@ export default function ProjectView() {
             ))}
           </div>
           <div className="flex items-center gap-2 text-gray-600 text-base laptop:text-md">
-            <img src="/assets/icons/clock.svg" alt="clock" className="h-[20px] w-[20px] laptop:h-auto laptop:w-auto" />
-            {project.blocks[0].readTime} mins read
+            <img src="/assets/icons/clock.svg" alt="clock" className="h-[20px] w-[20px] laptop:h-auto laptop:w-auto" />9
+            mins read
           </div>
         </div>
         <div className="mt-11 laptop:mt-[62px]">
-          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">{project.blocks[0].description}</p>
+          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
+            This is a platform that aims to offer 24/7 assistance to book and manage visa appointments, ensuring that
+            each step is clear, efficient, and well-organized.
+          </p>
         </div>
         <div className="mt-4 laptop:mt-8 flex flex-wrap gap-3">
-          <Button target="_blank" href={project.blocks[0].presentation as string}>
+          <Button
+            target="_blank"
+            href="https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=5004%3A29088&node-id=5021-30381&viewport=187%2C507%2C0.08&t=wVoxRhSbgnWvN7uu-1&scaling=scale-down-width&content-scaling=fixed"
+          >
             Presentation
           </Button>
-          <Button target="_blank" href={project.blocks[0].livePrototype as string} variant="secondary">
+          <Button
+            target="_blank"
+            href="https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756&show-proto-sidebar=1"
+            variant="secondary"
+          >
             Figma Prototype
           </Button>
         </div>
         <div className="mt-8 laptop:mt-[62px] flex flex-wrap laptop:flex-nowrap gap-8">
           <div>
-            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project.blocks[0].rolesTitle}
+            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">Role</p>
+            <p className="text-sm laptop:text-md font-medium mt-3">
+              UX Researcher, Product Designer, Student at Parsons The New School
             </p>
-            <p className="text-sm laptop:text-md font-medium mt-3">{project.blocks[0].roles}</p>
           </div>
           <div>
-            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project.blocks[0].timelineTitle}
-            </p>
-            <p className="text-sm laptop:text-md font-medium mt-3">{project.blocks[0].timeline}</p>
+            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">Timeline</p>
+            <p className="text-sm laptop:text-md font-medium mt-3">Sep 2024 - Oct 2024 (8 Weeks)</p>
           </div>
           <div>
-            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">
-              {project.blocks[0].toolsTitle}
-            </p>
+            <p className="text-base laptop:text-md text-purple-800 font-bold uppercase">Tools</p>
             <div className="flex gap-2 mt-3">
-              {(project.blocks[0].tools as string[]).map((tool) => (
+              {["figma", "googleforms"].map((tool) => (
                 <img
                   key={tool}
                   src={`/assets/icons/${tool}.svg`}
@@ -142,16 +141,16 @@ export default function ProjectView() {
           </div>
         </div>
         <div className="mt-11 laptop:mt-[100px] rounded-3xl bg-gray-200 p-6 laptop:p-11">
-          <p className="text-lg laptop:text-2xl font-bold ">{project.blocks[0].goalTitle}</p>
+          <p className="text-lg laptop:text-2xl font-bold ">Goal Statement</p>
           <p className="text-base laptop:text-md mt-3 laptop:mt-6 mb-4 laptop:mb-8">
-            {project.blocks[0].goalDescription}
+            My goal is to make ID applications as easy, accessible, and stress-free as possible by providing real-time
+            support and organized, step-by-step guidance.
           </p>
-          <Button href={project.blocks[0].goalLinkHref as string} noIcon variant="link-primary">
-            {project.blocks[0].goalLink as string}
+          <Button href="#final-design" noIcon variant="link-primary">
+            CLICK HERE TO JUMP TO THE DESIGNS
           </Button>
         </div>
       </div>
-      {project.hasContent && <>
       {/* block */}
       <div className="mt-8 laptop:mt-20">
         <div className="flex flex-wrap justify-start laptop:justify-center gap-1 laptop:gap-3">
@@ -754,15 +753,17 @@ export default function ProjectView() {
         <Swiper
           title="ChatBot and  Guides&Resources"
           className="w-full mt-11 with-border"
-          images={[
-            "/assets/projects/visa-point/swiper-3-1.png",
-            "/assets/projects/visa-point/swiper-3-2.png",
-          ]}
+          images={["/assets/projects/visa-point/swiper-3-1.png", "/assets/projects/visa-point/swiper-3-2.png"]}
         />
       </div>
       {/* block */}
-      <div id="next-steps" className="mt-[60px] laptop:mt-[150px] mb-11 laptop:mb-[150px] scroll-mt-20 laptop:scroll-mt-28">
-      <p className="py-8 text-lg laptop:text-xl font-bold text-center  uppercase rounded-3xl bg-gray-200">What Else Can be done?</p>
+      <div
+        id="next-steps"
+        className="mt-[60px] laptop:mt-[150px] mb-11 laptop:mb-[150px] scroll-mt-20 laptop:scroll-mt-28"
+      >
+        <p className="py-8 text-lg laptop:text-xl font-bold text-center  uppercase rounded-3xl bg-gray-200">
+          What Else Can be done?
+        </p>
         <div className="mt-11 laptop:mt-[100px] small">
           <div className="border border-black p-6 laptop:p-11 rounded-3xl">
             <p className="text-lg laptop:text-xl font-bold">01</p>
@@ -771,7 +772,7 @@ export default function ProjectView() {
               past, current and planned VISA appointment booking data to be tracked.
             </p>
           </div>
-          <div className="mt-6 laptop:mt-20 flex flex-wrap items-stretch gap-6 laptop:gap-[62px]">
+          <div className="mt-6 laptop:mt-20 flex flex-wrap laptop:flex-nowrap items-stretch gap-6 laptop:gap-[62px]">
             <div className="min-w-[335px] max-w-[335px] tablet:min-w-[663px] tablet:max-w-[663px] laptop:min-w-[398px] laptop:max-w-[398px]">
               <p className="text-base font-medium text-center">Drafted Wireframe Idea for Dashboard</p>
               <img src="/assets/projects/visa-point/tabletpic.png" alt="tablet" />
@@ -822,7 +823,6 @@ export default function ProjectView() {
           </div>
         </div>
       </div>
-      </>}
     </>
   );
 }

@@ -6,7 +6,9 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
-const Project = lazy(() => import("@/pages/Project"));
+const VisaPoint = lazy(() => import("@/pages/projects/VisaPoint"));
+const AppleHealth = lazy(() => import("@/pages/projects/AppleHealth"));
+const LeisureTime = lazy(() => import("@/pages/projects/LeisureTime"));
 
 const router = createBrowserRouter([
   {
@@ -29,21 +31,21 @@ const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />,
       },
-      // {
-      //   path: "/research",
-      //   element: <Portfolio />,
-      // },
       {
         path: "/about-me",
         element: <AboutMe />,
       },
-      // {
-      //   path: "/resume",
-      //   element: <Portfolio />,
-      // },
       {
-        path: "/project/:projectName",
-        element: <Project />,
+        path: "/project/visa-point",
+        element: <VisaPoint />,
+      },
+      {
+        path: "/project/apple-health",
+        element: <AppleHealth />,
+      },
+      {
+        path: "/project/leisure-time",
+        element: <LeisureTime />,
       },
     ],
   },

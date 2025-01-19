@@ -1,13 +1,8 @@
-export type Block = Record<string, string | number | string[]> & { type: string };
-
 export interface Project {
-  hasContent?: boolean;
+  external?: boolean;
   url: string;
   name: string;
   cardImage: string;
-  projectImage?: string;
-  color?: string;
   cardTitle: string;
   tags: string[];
-  blocks: Block[];
 }
