@@ -6,6 +6,7 @@ export interface Project {
   name: string;
   cardImage: string;
   projectImage?: string;
+  color?: string;
   cardTitle: string;
   tags: string[];
   blocks: Block[];

@@ -79,7 +79,7 @@ export default function ProjectView() {
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-cover tablet:bg-contain bg-no-repeat bg-center"
         style={{
           backgroundImage: `url("/assets/projects/${project.projectImage}")`,
-          backgroundColor: "#222222"
+          backgroundColor: project.color || "#222222"
         }}
       />
       {/* block */}

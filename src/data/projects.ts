@@ -13,7 +13,7 @@ export const projects: Project[] = [
       {
         type: "introduction",
         tags: ["Website, application portal", "VisaPoint"],
-        readTime: 5,
+        readTime: 9,
         description:
           "This is a platform that aims to offer 24/7 assistance to book and manage visa appointments, ensuring that each step is clear, efficient, and well-organized.",
         presentation:
@@ -21,11 +21,11 @@ export const projects: Project[] = [
         livePrototype:
           "https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756&show-proto-sidebar=1",
         rolesTitle: "Role",
-        roles: "UX Researcher, Product Designer,  Student - Parsons The New School",
+        roles: "UX Researcher, Product Designer,  Student at Parsons The New School",
         timelineTitle: "Timeline",
-        timeline: "Sep 2024 -  Oct 2024 (8 Weeks)",
+        timeline: "Sep 2024 - Oct 2024 (8 Weeks)",
         toolsTitle: "Tools",
-        tools: ["figma", "googleforms", "chatgpt"],
+        tools: ["figma", "googleforms"],
         goalTitle: "Goal Statement",
         goalDescription:
           "My goal is to make ID applications as easy, accessible, and stress-free as possible by providing real-time support and organized, step-by-step guidance.",
@@ -38,30 +38,31 @@ export const projects: Project[] = [
     url: "/project/apple-health",
     name: "apple-health",
     cardImage: "apple-health-card.png",
-    projectImage: "apple-health-page.png",
+    projectImage: "apple-health/apple-health-bg.png",
+    color:"#222222",
     cardTitle: "Enhancing user engagement & user lifestyle for Apple Health App ❤️‍🩹",
     tags: ["Design a new feature", "App add-on"],
     blocks: [
       {
         type: "introduction",
-        tags: ["Website, application portal", "VisaPoint"],
+        tags: ["Design a new feature", "App add-on"],
         readTime: 5,
         description:
-          "This is a platform that aims to offer 24/7 assistance to book and manage visa appointments, ensuring that each step is clear, efficient, and well-organized.",
+          "In this project I added a new feature to Apple Health, with thorought research to address user needs. I did heuristic analysis,background reseach and user interviews, which helped me to identify key issues. I prioritized essential solutions, and refined the feature through two rounds of user testing.",
         presentation:
-          "https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=5004%3A29088&node-id=5021-30381&viewport=187%2C507%2C0.08&t=wVoxRhSbgnWvN7uu-1&scaling=scale-down-width&content-scaling=fixed",
+          "https://www.figma.com/deck/aL3oVfcU8CBXcMR5Iiuk28/Apple-Health---New-Feature?node-id=1-2690&viewport=377%2C417%2C0.03&t=2DeCJG2gh2vVLN1T-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
         livePrototype:
-          "https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=4866%3A38112&node-id=4473-4756&viewport=-5026%2C-2026%2C0.15&t=F7leadKDBPiYLxw9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4473%3A4756&show-proto-sidebar=1",
+          "https://www.behance.net/gallery/216350913/Reimagining-Apple-Health-Personalized-Engagement",
         rolesTitle: "Role",
-        roles: "UX Researcher, Product Designer,  Student - Parsons The New School",
+        roles: "UX Researcher, UX Designer,  Student at Parsons The New School",
         timelineTitle: "Timeline",
-        timeline: "Sep 2024 -  Oct 2024 (8 Weeks)",
+        timeline: "Nov 2024 - Dec 2024  (6 Weeks)",
         toolsTitle: "Tools",
-        tools: ["figma", "googleforms", "chatgpt"],
+        tools: ["figma", "googleforms"],
         goalTitle: "Goal Statement",
         goalDescription:
-          "My goal is to make ID applications as easy, accessible, and stress-free as possible by providing real-time support and organized, step-by-step guidance.",
-        goalLink: "CLICK HERE TO JUMP TO THE DESIGNS",
+          "Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes lifestyle improvement by fostering motivation and better health habits.",
+        goalLink: "CLICK HERE TO SEE VISUALS",
         goalLinkHref: "#final-design",
       },
     ],
@@ -76,8 +77,8 @@ export const projects: Project[] = [
     blocks: [],
   },
   {
-    url: "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps/modules/1233088061",
-    name: "thera-pair",
+    url: "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps",
+    name: "leisure-time",
     cardImage: "leisure-time.png",
     projectImage: "leisure-time.png",
     cardTitle: "Leisure Discovery ✨ by addressing trust and exposure challenges ",
