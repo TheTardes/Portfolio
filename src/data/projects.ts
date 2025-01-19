@@ -77,12 +77,35 @@ export const projects: Project[] = [
     blocks: [],
   },
   {
-    url: "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps",
+    url: "/project/leisure-time",
     name: "leisure-time",
     cardImage: "leisure-time.png",
-    projectImage: "leisure-time.png",
+    projectImage: "leisure-time-bg.png",
+    color:"#FFF5DC",
     cardTitle: "Leisure Discovery ✨ by addressing trust and exposure challenges ",
     tags: ["Mobile App", "Leisure Time"],
-    blocks: [],
+    blocks: [
+      {
+      type: "introduction",
+      tags: ["Design a new feature", "App add-on"],
+      readTime: 5,
+      description:
+        "In this project I added a new feature to Apple Health, with thorought research to address user needs. I did heuristic analysis,background reseach and user interviews, which helped me to identify key issues. I prioritized essential solutions, and refined the feature through two rounds of user testing.",
+      presentation:
+        "https://www.behance.net/gallery/216535833/Leisure-Time-Solving-Trust-Exposure-Gaps",
+      livePrototype:
+        "https://www.figma.com/proto/RC3RnSWzxNAFAYegELZ91S/Leisure-time?page-id=30%3A26&node-id=31-27&p=f&viewport=341%2C799%2C0.1&t=7OM3MdT3aGRAM3v5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=31%3A27",
+      rolesTitle: "Role",
+      roles: "UX/UI Designer, Product Designer, Participant at 'Design Sprint' workshop",
+      timelineTitle: "Timeline",
+      timeline: "Feb 13 - 20, 2024 (7 days)",
+      toolsTitle: "Tools",
+      tools: ["figma", "googleforms"],
+      goalTitle: "Goal Statement",
+      goalDescription:
+        "Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes lifestyle improvement by fostering motivation and better health habits.",
+      goalLink: "CLICK HERE TO SEE VISUALS",
+      goalLinkHref: "#final-design",
+    },],
   },
 ];
