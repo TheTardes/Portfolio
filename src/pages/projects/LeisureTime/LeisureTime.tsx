@@ -79,16 +79,6 @@ export default function LeisureTime() {
             </div>
           </div>
         </div>
-        <div className="mt-11 laptop:mt-[100px] rounded-3xl bg-gray-200 p-6 laptop:p-11">
-          <p className="text-lg laptop:text-2xl font-bold ">Goal Statement</p>
-          <p className="text-base laptop:text-md mt-3 laptop:mt-6 mb-4 laptop:mb-8">
-            Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes
-            lifestyle improvement by fostering motivation and better health habits.
-          </p>
-          <Button href="#final-design" noIcon variant="link-primary">
-            CLICK HERE TO SEE VISUALS
-          </Button>
-        </div>
       </div>
     </>
   );

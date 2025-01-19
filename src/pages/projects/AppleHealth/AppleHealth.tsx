@@ -84,9 +84,9 @@ export default function AppleHealth() {
             Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes
             lifestyle improvement by fostering motivation and better health habits.
           </p>
-          <Button href="#final-design" noIcon variant="link-primary">
+          {/* <Button href="#final-design" noIcon variant="link-primary">
             CLICK HERE TO SEE VISUALS
-          </Button>
+          </Button> */}
         </div>
       </div>
     </>

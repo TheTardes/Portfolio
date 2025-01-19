@@ -29,7 +29,7 @@ export const projects: Project[] = [
     url: "/project/leisure-time",
     name: "leisure-time",
     cardImage: "leisure-time.png",
-    cardTitle: "Leisure Discovery ✨ by addressing trust and exposure challenges ",
+    cardTitle: "Leisure Discovery ✨ addressing trust and exposure challenges ",
     tags: ["Mobile App", "Leisure Time"],
   },
 ];
