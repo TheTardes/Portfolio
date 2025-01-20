@@ -33,8 +33,12 @@ export default function AppleHealth() {
         <div className="mt-11 laptop:mt-[62px]">
           <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
             In this project I added a new feature to Apple Health, with thorought research to address user needs. I did
-            heuristic analysis,background reseach and user interviews, which helped me to identify key issues. I
+            heuristic analysis, background reseach and user interviews, which helped me to identify key issues. I
             prioritized essential solutions, and refined the feature through two rounds of user testing.
+          </p>
+          <p className="text-md mt-4 laptop:text-[22px] laptop:leading-[34px]">
+          Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes
+          lifestyle improvement by fostering motivation and better health habits.
           </p>
         </div>
         <div className="mt-4 laptop:mt-8 flex flex-wrap gap-3">
@@ -42,14 +46,14 @@ export default function AppleHealth() {
             target="_blank"
             href="https://www.figma.com/deck/aL3oVfcU8CBXcMR5Iiuk28/Apple-Health---New-Feature?node-id=1-2690&viewport=377%2C417%2C0.03&t=2DeCJG2gh2vVLN1T-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
           >
-            Presentation
+            Project Presentation
           </Button>
           <Button
             target="_blank"
             href="https://www.behance.net/gallery/216350913/Reimagining-Apple-Health-Personalized-Engagement"
             variant="secondary"
           >
-            Figma Prototype
+            Behance Version
           </Button>
         </div>
         <div className="mt-8 laptop:mt-[62px] flex flex-wrap laptop:flex-nowrap gap-8">
@@ -78,15 +82,7 @@ export default function AppleHealth() {
             </div>
           </div>
         </div>
-        <div className="mt-11 laptop:mt-[100px] rounded-3xl bg-gray-200 p-6 laptop:p-11">
-          <p className="text-lg laptop:text-2xl font-bold ">Goal Statement</p>
-          <p className="text-base laptop:text-md mt-3 laptop:mt-6 mb-4 laptop:mb-8">
-            Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes
-            lifestyle improvement by fostering motivation and better health habits.
-          </p>
-          {/* <Button href="#final-design" noIcon variant="link-primary">
-            CLICK HERE TO SEE VISUALS
-          </Button> */}
+        <div className="mt-11 laptop:mt-[40px]  p-2 laptop:p-11">
         </div>
       </div>
     </>
