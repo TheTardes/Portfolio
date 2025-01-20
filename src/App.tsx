@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       <>
       <ScrollToTop />
         <Navbar />
-        <main className="w-full mb-20">
+        <main className="w-full mb-6 laptop:mb-11">
           <Outlet />
         </main>
         <Footer />

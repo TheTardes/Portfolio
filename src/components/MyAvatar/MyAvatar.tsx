@@ -1,5 +1,5 @@
-import RevealEmail from "@/components/RevealEmail";
 import "./index.scss";
+import RevealEmail from "@/components/RevealEmail";
 
 const bubbles = [
   {
@@ -27,10 +27,7 @@ export default function MyAvatar() {
         {/* laptop */}
         <div className="hidden laptop:flex flex-col justify-between">
           {bubbles.slice(0, 2).map((bubble) => (
-            <div
-              key={bubble.text}
-              className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}
-            >
+            <div key={bubble.text} className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}>
               <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
             </div>
           ))}
@@ -64,10 +61,7 @@ export default function MyAvatar() {
         {/* laptop */}
         <div className="hidden laptop:flex flex-col justify-between">
           {bubbles.slice(2, 4).map((bubble) => (
-            <div
-              key={bubble.text}
-              className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}
-            >
+            <div key={bubble.text} className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}>
               <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
             </div>
           ))}

@@ -2,7 +2,7 @@ import Behance from "@/components/icons/Behance";
 import Linkedin from "@/components/icons/Linkedin";
 import Medium from "@/components/icons/Medium";
 
-export default function Navbar() {
+export default function Footer() {
   return (
     <footer className="mb-40">
       <div></div>
