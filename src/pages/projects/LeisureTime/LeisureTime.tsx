@@ -32,10 +32,7 @@ export default function LeisureTime() {
         </div>
         <div className="mt-11 laptop:mt-[62px]">
           <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
-            In this project I addressed the challenges users face in discovering new leisure activities. The solution is
-            a user-centric app that promotes transparency and engagement by encouraging reviews through discounts. With
-            improved trust and improving exposure to diverse experiences, the platform makes planning leisure time
-            easier, more enjoyable, and more affordable.
+          This project explored how Baku residents aged 18-40 perceive and spend their free time, addressing their frustration with limited options and mistrust of online reviews. The resulting solution is a platform that fosters trust and discovery through user-generated reviews and incentives, offering a fresh approach to planning leisure activities.
           </p>
         </div>
         <div className="mt-4 laptop:mt-8 flex flex-wrap gap-3">
@@ -78,6 +75,8 @@ export default function LeisureTime() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="mt-11 laptop:mt-[40px]  p-2 laptop:p-11">
         </div>
       </div>
     </>
