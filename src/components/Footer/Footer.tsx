@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="relative w-[222px]">
-          <img src="/assets/common/ME.png" alt="inji mammadli" className="mx-auto mt-16 w-[91px] tablet:w-[116px] h-[94px] tablet:h-[120px]" />
+          <img src="/assets/common/eyes-drawn.png" alt="inji mammadli" className="mx-auto mt-16 w-[91px] tablet:w-[116px] h-[94px] tablet:h-[120px]" />
           <a
             className="absolute top-12 left-0"
             target="_blank"
