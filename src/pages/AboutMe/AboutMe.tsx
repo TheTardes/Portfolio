@@ -84,7 +84,7 @@ export default function AboutMe() {
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">FREETIME</p>
         </div>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-7">
-          {["/assets/arts/art1.png", "/assets/arts/art2.png", "/assets/arts/art3.png"].map((images) => (
+          {["/assets/arts/art5.png", "/assets/arts/art2.png", "/assets/arts/art3.png"].map((images) => (
             <img
               key={images}
               loading="lazy"
@@ -94,6 +94,7 @@ export default function AboutMe() {
             />
           ))}
         </div>
+        
       </section>
       <section className="mt-20 desktop:mt-[100px]">
         <div>
@@ -104,27 +105,27 @@ export default function AboutMe() {
         </div>
         <div className="flex flex-wrap gap-3">
           <img
-            src="/assets/arts/art1.png"
+            src="/assets/games/mc3.png"
             alt="art"
             className="w-full laptop:w-[675px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
           <img
-            src="/assets/arts/art1.png"
+            src="/assets/games/mc2.png"
             alt="art"
             className="w-full laptop:w-[483px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
           <img
-            src="/assets/arts/art1.png"
+            src="/assets/games/mc5.png"
             alt="art"
             className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
           <img
-            src="/assets/arts/art1.png"
+            src="/assets/games/mc1.png"
             alt="art"
             className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
           <img
-            src="/assets/arts/art1.png"
+            src="/assets/games/mc4.png"
             alt="art"
             className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
