@@ -29,7 +29,7 @@ export default function Portfolio() {
       </div>
       <section
         id="projects"
-        className="pt-8 tablet:pt-[65px] laptop:pt-[61px] desktop:pt-[73px] grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]"
+        className="pt-12 tablet:pt-[65px] laptop:pt-[61px] desktop:pt-[120px] grid grid-cols-2 gap-y-[32px] tablet:gap-y-[44px] gap-x-[32px] desktop:gap-x-[44px]"
       >
         {projects.map((project) => (
           <Card key={project.cardTitle} project={project} />
