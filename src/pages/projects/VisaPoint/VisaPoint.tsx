@@ -222,7 +222,7 @@ export default function VisaPoint() {
         </div>
       </div>
       {/* block */}
-      <div className="full-width hidden laptop:flex bg-purple-50 justify-center min-w-max gap-[70px] py-6 mt-[100px]">
+      <div className="full-width hidden desktop:flex bg-purple-50 justify-center min-w-max gap-[70px] py-6 mt-[100px] overflow-x-auto">
         {["asan", "idnyc", "dol", "usa gov", "port authority ny nj", "ncdmv"].map((item) => (
           <p key={item} className="text-xl font-bold uppercase">
             {item}
@@ -661,7 +661,7 @@ export default function VisaPoint() {
           </p>
         </div>
 
-        <div className="mt-11 laptop:mt-[100px] flex flex-wrap items-center gap-8">
+        <div className="mt-11 laptop:mt-[100px] flex flex-wrap laptop:flex-nowrap items-center gap-8">
           <MacbookDisplay
             gif="/assets/projects/visa-point/gif-4.gif"
             className="min-w-[335px] max-w-[335px] tablet:min-w-[663px] tablet:max-w-[663px] laptop:min-w-[663px] laptop:max-w-[663px]"
