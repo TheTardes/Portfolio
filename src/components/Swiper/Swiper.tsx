@@ -37,7 +37,7 @@ export default function SwiperView({ images, className, title }: Props) {
             <div
               onClick={() => handlePrev()}
               className={`
-                  rounded-full p-2.5
+                  rounded-full w-11 h-11 flex items-center justify-center
                   ${
                     swiperDisabled === "prev"
                       ? "bg-gray-250 hover:bg-gray-250"
@@ -50,7 +50,7 @@ export default function SwiperView({ images, className, title }: Props) {
             <div
               onClick={() => handleNext()}
               className={`
-                  rounded-full p-2.5
+                  rounded-full w-11 h-11 flex items-center justify-center
                   ${
                     swiperDisabled === "next"
                       ? "bg-gray-250 hover:bg-gray-250"
