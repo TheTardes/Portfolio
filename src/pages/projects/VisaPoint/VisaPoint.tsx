@@ -693,9 +693,9 @@ export default function VisaPoint() {
         </div>
         <MacbookDisplay
           gif="/assets/projects/visa-point/gif-2.gif"
-          className="mt-[100px] w-[335px] tablet:w-[663px] laptop:w-[813px] mx-auto"
+          className="mt-12 tablet:mt-[100px] w-[335px] tablet:w-[663px] laptop:w-[813px] mx-auto"
         />
-        <div className="bg-purple-50 rounded-3xl p-[22px] laptop:p-11 mt-8 laptop:mt-[200px]">
+        <div className="bg-purple-50 rounded-3xl p-[22px] laptop:p-11 mt-[100px] laptop:mt-[200px]">
           <p className="text-lg laptop:text-xl uppercase font-bold">Error Prevention and Reducing Uncertainty</p>
           <p className="text-base laptop:text-md mt-3 laptop:mt-6">
             <span className="font-bold">Improving user uncertainty and confusion</span> during technical issues, wait
