@@ -31,7 +31,7 @@ export default function LeisureTime() {
           </div>
         </div>
         <div className="mt-11 laptop:mt-[62px]">
-          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
+          <p className="text-md laptop:text-lg-alt-alt">
           This project explored how Baku residents aged 18-40 perceive and spend their free time, addressing their frustration with limited options and mistrust of online reviews. The resulting solution is a platform that fosters trust and discovery through user-generated reviews and incentives, offering a fresh approach to planning leisure activities.
           </p>
         </div>

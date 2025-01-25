@@ -31,12 +31,12 @@ export default function AppleHealth() {
           </div>
         </div>
         <div className="mt-11 laptop:mt-[62px]">
-          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
+          <p className="text-md laptop:text-lg-alt-alt">
             In this project I added a new feature to Apple Health, with thorought research to address user needs. I did
             heuristic analysis, background reseach and user interviews, which helped me to identify key issues. I
             prioritized essential solutions, and refined the feature through two rounds of user testing.
           </p>
-          <p className="text-md mt-4 laptop:text-[22px] laptop:leading-[34px]">
+          <p className="text-md mt-4 laptop:text-lg-alt-alt">
           Goal was to create a feature that enhances usability, boosts user retention and engagement, and promotes
           lifestyle improvement by fostering motivation and better health habits.
           </p>

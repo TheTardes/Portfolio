@@ -22,6 +22,7 @@ export default {
       md: ["18px", "28px"],
       lg: ["22px", "28px"],
       "lg-alt": ["24px", "30px"],
+      "lg-alt-alt": ["22px", "34px"],
       xl: ["28px", "36px"],
       "2xl": ["32px", "44px"],
     },
@@ -32,12 +33,16 @@ export default {
       black: "#1A1A1A",
       light: "#FAFAFF",
       red: "#D40026",
-      green: "#157B00",
+      green: {
+        300: '#32D74B',
+        500: "#157B00"
+      },
       blue: "#0041E7",
       gray: {
         100: "#F7F7F7",
         200: "#F5F5F5",
         250: "#F3F3F4",
+        270: "#F0F0F0",
         300: "#E6E8EB",
         400: "#E2E2E5",
         500: "#999999",

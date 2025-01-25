@@ -19,7 +19,7 @@ export default function AboutMe() {
             think, what drives them, and how design can make their lives better.
           </p>
           <p>
-            Previously, I worked at <span className="text-green">Deloitte</span> as a Visual and Communication
+            Previously, I worked at <span className="text-green-500">Deloitte</span> as a Visual and Communication
             Assistant, improving in storytelling and visual design. Now, I’m balancing school projects and freelancing,
             continually growing.
           </p>

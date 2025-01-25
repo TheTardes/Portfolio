@@ -102,7 +102,7 @@ export default function VisaPoint() {
           </div>
         </div>
         <div className="mt-11 laptop:mt-[62px]">
-          <p className="text-md laptop:text-[22px] laptop:leading-[34px]">
+          <p className="text-md laptop:text-lg-alt-alt">
             This is a platform that aims to offer 24/7 assistance to book and manage visa appointments, ensuring that
             each step is clear, efficient, and well-organized.
           </p>
@@ -568,7 +568,7 @@ export default function VisaPoint() {
       </div>
       {/* block */}
       <div className="mt-11 laptop:mt-[100px]">
-        <p className="small text-md laptop:text-[22px] laptop:leading-[34px]">
+        <p className="small text-md laptop:text-lg-alt-alt">
           The results highlighted key areas for refinement, ensuring a more seamless and user-friendly experience for
           future users.
         </p>
@@ -587,7 +587,7 @@ export default function VisaPoint() {
         <p className="text-md rounded-xl font-medium mt-6 laptop:mt-8 py-4 px-6 border border-red">
           Clustered pages created dissatisfaction
         </p>
-        <p className="text-md rounded-xl font-medium mt-3 laptop:mt-6 py-4 px-6 border border-green">
+        <p className="text-md rounded-xl font-medium mt-3 laptop:mt-6 py-4 px-6 border border-green-500">
           Location and use of “help” & “resources” was successfull
         </p>
         <p className="text-md rounded-xl font-medium mt-3 laptop:mt-6 py-4 px-6 border border-blue">

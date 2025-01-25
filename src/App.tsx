@@ -6,6 +6,9 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
+
+// projects
+const Dev = lazy(() => import("@/pages/projects/Dev"));
 const VisaPoint = lazy(() => import("@/pages/projects/VisaPoint"));
 const AppleHealth = lazy(() => import("@/pages/projects/AppleHealth"));
 const LeisureTime = lazy(() => import("@/pages/projects/LeisureTime"));
@@ -46,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/project/leisure-time",
         element: <LeisureTime />,
+      },
+      {
+        path: "/project/dev",
+        element: <Dev />,
       },
     ],
   },
