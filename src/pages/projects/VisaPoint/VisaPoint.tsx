@@ -222,12 +222,21 @@ export default function VisaPoint() {
         </div>
       </div>
       {/* block */}
-      <div className="full-width hidden desktop:flex bg-purple-50 justify-center min-w-max gap-[70px] py-6 mt-[100px] overflow-x-auto">
-        {["asan", "idnyc", "dol", "usa gov", "port authority ny nj", "ncdmv"].map((item) => (
-          <p key={item} className="text-xl font-bold uppercase">
-            {item}
-          </p>
-        ))}
+      <div className="full-width bg-purple-50 py-6 mt-11 laptop:mt-[100px] marquee">
+        <ul className="marquee__content">
+          {["asan", "idnyc", "dol", "usa gov", "port authority ny nj", "ncdmv"].map((item) => (
+            <li key={item} className="text-lg laptop:text-xl font-bold uppercase">
+              {item}
+            </li>
+          ))}
+        </ul>
+        <ul className="marquee__content" aria-hidden="true">
+          {["asan", "idnyc", "dol", "usa gov", "port authority ny nj", "ncdmv"].map((item) => (
+            <li key={item} className="text-lg laptop:text-xl font-bold uppercase">
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
       {/* block */}
       <div className="mt-11 laptop:mt-20 small">
