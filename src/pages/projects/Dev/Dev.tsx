@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Swiper from "@/components/Swiper";
 
 export default function Dev() {
   return (
@@ -300,22 +301,31 @@ export default function Dev() {
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-0 mt-11 laptop:mt-[62px]">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solution</p>
-              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">Adding customizable Sport Memojis, layout as feature</p>
+              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                Adding customizable Sport Memojis, layout as feature
+              </p>
             </div>
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solves</p>
               <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium mt-3 laptop:mt-6">
                 <li>Layout, navigation, usability issues</li>
-                <li className="mt-6 laptop:mt-7">Lack of  Engagement and Fun</li>
+                <li className="mt-6 laptop:mt-7">Lack of Engagement and Fun</li>
               </ul>
             </div>
-            <img src="/assets/projects/apple-health/image-6.png" alt="" className="mt-5 laptop:mt-8 laptop:col-span-2" />
+            <img
+              src="/assets/projects/apple-health/image-6.png"
+              alt=""
+              className="mt-5 laptop:mt-8 laptop:col-span-2"
+            />
           </div>
 
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[62px]">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solution</p>
-              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">Real-time tracking updates feature which appears on different screens and includes detailed “tracked” data report</p>
+              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                Real-time tracking updates feature which appears on different screens and includes detailed “tracked”
+                data report
+              </p>
             </div>
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solves</p>
@@ -324,14 +334,24 @@ export default function Dev() {
                 <li className="mt-6 laptop:mt-7">Helps with goal-oriented usage</li>
               </ul>
             </div>
-            <img src="/assets/projects/apple-health/image-7.png" alt="" className="mt-5 laptop:mt-8 laptop:col-span-2" />
-            <img src="/assets/projects/apple-health/image-8.png" alt="" className="mt-5 laptop:mt-8 laptop:col-span-2" />
+            <img
+              src="/assets/projects/apple-health/image-7.png"
+              alt=""
+              className="mt-5 laptop:mt-8 laptop:col-span-2"
+            />
+            <img
+              src="/assets/projects/apple-health/image-8.png"
+              alt=""
+              className="mt-5 laptop:mt-8 laptop:col-span-2"
+            />
           </div>
 
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[62px]">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solution</p>
-              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">Challenge/Engagement Pages with Memojis – Social Challenges and Progress Rewards</p>
+              <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                Challenge/Engagement Pages with Memojis – Social Challenges and Progress Rewards
+              </p>
             </div>
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solves</p>
@@ -340,9 +360,228 @@ export default function Dev() {
                 <li className="mt-6 laptop:mt-7">Lack of Engagement and Fun</li>
               </ul>
             </div>
-            <img src="/assets/projects/apple-health/image-9.png" alt="" className="mt-5 laptop:mt-8 laptop:col-span-2" />
+            <img
+              src="/assets/projects/apple-health/image-9.png"
+              alt=""
+              className="mt-5 laptop:mt-8 laptop:col-span-2"
+            />
           </div>
-
+        </div>
+      </div>
+      {/* block */}
+      <div className="mt-[72px] laptop:mt-[150px]">
+        <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
+          <p className="text-lg laptop:text-xl font-bold uppercase"> 03. Testing & Final Ideation</p>
+          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
+            Click for Test Results
+          </Button>
+        </div>
+        <div className="mt-11 laptop:mt-20 small">
+          <p className="text-base laptop:text-md font-medium">
+            I conducted usability text with 6 participants to test my “feature add on” ideas. I used wireframes and
+            sketches to direct the interview and assigned 3 different topics with some scenarios for the test
+            participants.
+          </p>
+          <p className="text-h5 laptop:text-lg font-bold mt-[50px] laptop:mt-20">Interview/User Test Scenarios</p>
+          <div className="mt-4 laptop:mt-8 grid grid-cols-2 gap-3 laptop:gap-6">
+            <div className="rounded-xl border border-gray-500 p-6 laptop:p-11 col-span-2 laptop:col-span-1">
+              <p className="text-h5 laptop:text-md font-bold">01 Customizable layout and health memojis:</p>
+              <ul className="list-decimal list-outside pl-6 text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                <li>Create or edit a Sport Memoji to match your preferences.</li>
+                <li>Change the app’s theme color and card style.</li>
+                <li>Reorganize the dashboard into a layout you find most useful.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-gray-500 p-6 laptop:p-11 col-span-2 laptop:col-span-1">
+              <p className="text-h5 laptop:text-md font-bold">02 Real-time tracking updates feature</p>
+              <ul className="list-decimal list-outside pl-6 text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                <li>Check a notification about recent health data tracking.</li>
+                <li>View the details page to see how data was collected and which device was used.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-gray-500 p-6 laptop:p-11 col-span-2">
+              <p className="text-h5 laptop:text-md font-bold">03 Challenges with rewards</p>
+              <ul className="list-decimal list-outside pl-6 text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+                <li>
+                  Review Challenges Community, set personal goal or join public challenge. How would you track your
+                  progress?
+                </li>
+                <li>Explore the leaderboard</li>
+                <li>Unlock an accessory for your Sport Memoji as a reward for completing a challenge.</li>
+              </ul>
+            </div>
+          </div>
+          <Button className="mt-4 laptop:mt-8" variant="secondary" href={""}>
+            View User Test Persentation
+          </Button>
+        </div>
+        <div className="mt-[50px] laptop:mt-[100px]">
+          <div className="small">
+            <p className="text-h5 laptop:text-lg font-bold">Interview Results</p>
+            <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+              Overall, feedbacks were very positive regarding all 3 new feature ideas. Below is the gathered summary
+              from participant quotes and my analysis:
+            </p>
+          </div>
+          <p className="mt-11 laptop:mt-20 text-md-alt font-semibold">Screenshots from test iteration process</p>
+          <div className="mt-4 laptop:mt-8 grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-8">
+            <img src="/assets/projects/apple-health/image-10.png" alt="" className="border border-black" />
+            <img src="/assets/projects/apple-health/image-11.png" alt="" className="border border-black" />
+          </div>
+          <img src="/assets/projects/apple-health/image-12.png" alt="" className="mt-11 laptop:mt-20 small" />
+          <div className="mt-11 laptop:mt-[100px] smaller">
+            <p className="text-h5 laptop:text-lg font-bold text-center">Highlighted Quote</p>
+            <img src="/assets/projects/apple-health/image-13.png" alt="" className="mt-6 laptop:mt-11" />
+          </div>
+          <div className="mt-11 laptop:mt-[100px] small">
+            <p className="text-h5 laptop:text-lg font-bold">Focus On...</p>
+            <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+              Users liked all features but felt like the “information accessibility” and “customization” already had to
+              be on app, while the “challenges” feature adds additional motivational aspect. This means,
+              customization/layout, better visualization and clarity is a necessity while ‘Challenges’ is a motivational
+              addition to the app.
+            </p>
+            <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+              So, I will be focusing on fulfilling the necessities for users first:
+            </p>
+            <ul className="list-decimal list-outside pl-6 text-base laptop:text-md font-medium mt-3 laptop:mt-6">
+              <li>Customization & Personalization</li>
+              <li>Integration of MEMOJIS</li>
+              <li>Layout editing options</li>
+            </ul>
+          </div>
+          <div className="mt-[60px] laptop:mt-36 ">
+            <p className="text-h5 laptop:text-lg font-bold text-center">Creating site map, Userflow</p>
+            <img src="/assets/projects/apple-health/image-14.png" alt="" className="mt-6 laptop:mt-11" />
+          </div>
+        </div>
+      </div>
+      {/* block */}
+      <div className="mt-[60px] laptop:mt-[150px]">
+        <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
+          <p className="text-lg laptop:text-xl font-bold uppercase">04. Final Features Design</p>
+          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
+            Skip to next steps and Plans
+          </Button>
+        </div>
+        <div className="mt-11 laptop:mt-[100px]">
+          <p className="text-h5 laptop:text-lg font-bold uppercase">Adding and Customizing avatar</p>
+          <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
+            {[
+              "Less Confusion",
+              "Fun",
+              "Better recognition of the “widget”",
+              "Less Confusion",
+              "Increased Engagement",
+              "Clarity",
+            ].map((item, index) => (
+              <p
+                key={index}
+                className={`${index === 3 ? "hidden laptop:block" : index === 0 ? "block laptop:hidden" : ""}  
+                            text-base laptop:text-md font-medium py-2.5 px-3 laptop:px-6 bg-purple-50 rounded-[10px]
+                          `}
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+        <Swiper
+          className="w-full mt-10 laptop:mt-20 with-border"
+          images={[
+            "/assets/projects/apple-health/swiper-1-1.png",
+            "/assets/projects/apple-health/swiper-1-2.png",
+            "/assets/projects/apple-health/swiper-1-3.png",
+          ]}
+        />
+        <img src="/assets/projects/apple-health/image-15.png" alt="" className="mt-10 laptop:mt-20" />
+        <div className="mt-11 laptop:mt-[100px]">
+          <p className="text-h5 laptop:text-lg font-bold uppercase">
+            Simulating adding, removing new widget/feature, changing position of existing widgets
+          </p>
+          <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
+            {["Visual comfort", "Clarity", "Less Confusion", "Easy Navigation"].map((item, index) => (
+              <p
+                key={index}
+                className="text-base laptop:text-md font-medium py-2.5 px-3 laptop:px-6 bg-purple-50 rounded-[10px]"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+        <Swiper
+          title="1. EDITING LAYOUT WITH “EDIT BUTTON”"
+          className="w-full mt-10 laptop:mt-20"
+          images={["/assets/projects/apple-health/swiper-2-1.png", "/assets/projects/apple-health/swiper-2-2.png"]}
+        />
+        <Swiper
+          title="2. EDITING LAYOUT THROUGH SETTINGS"
+          className="w-full mt-10 laptop:mt-20"
+          images={[
+            "/assets/projects/apple-health/swiper-3-1.png",
+            "/assets/projects/apple-health/swiper-3-2.png",
+            "/assets/projects/apple-health/swiper-3-3.png",
+            "/assets/projects/apple-health/swiper-3-4.png",
+          ]}
+        />
+        <div className="mt-10 laptop:mt-40 flex flex-wrap gap-8 laptop:gap-[29px] desktop:gap-[120px]">
+          <div>
+            <p className="text-md laptop:text-lg font-bold">3. HOLD AND EDIT</p>
+            <p className="text-base laptop:text-lg-alt mt-1">By holding the widget user can edit or remove it too</p>
+          </div>
+          <img
+            src="/assets/projects/apple-health/image-16.png"
+            alt=""
+            className="w-[162px] tablet:w-[240px] laptop:w-[304px]"
+          />
+        </div>
+        <div className="mt-20 laptop:mt-[200px]">
+          <p className="text-h5 laptop:text-lg font-bold uppercase">Theme, Color and other customizations</p>
+          <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
+            {[
+              "Visual comfort",
+              "Clarity",
+              "Less Confusion",
+              "Easy Navigation",
+              "“App is too boring - blunt and dark”",
+            ].map((item, index) => (
+              <p
+                key={index}
+                className="text-base laptop:text-md font-medium py-2.5 px-3 laptop:px-6 bg-purple-50 rounded-[10px]"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+        <Swiper
+          className="w-full mt-10 laptop:mt-20"
+          images={[
+            "/assets/projects/apple-health/swiper-4-1.png",
+            "/assets/projects/apple-health/swiper-4-2.png",
+            "/assets/projects/apple-health/swiper-4-3.png",
+          ]}
+        />
+        <div className="mt-11 laptop:mt-[200px] mb-11 laptop:mb-[200px] small">
+          <p className="text-h5 laptop:text-lg font-bold uppercase">Enhancements to Implement</p>
+          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+            I think there is a need for better data tracking, trust, and clarity. To elevate the Apple Health app, I
+            would want to implement custom data charts. These will enhance the visualization of health metrics, making
+            the data more accessible and easier to understand for users.
+          </p>
+          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+            I already added these two icons in my redesign of “widgets” to enhance the trust of users by giving them
+            idea about how data has been tracked. So, mt next steo would be to iterate on . this and test it further to
+            understand the extend of its effects and how else it can be improved.
+          </p>
+          <img src="/assets/projects/apple-health/image-17.png" alt="" className="mt-4 laptop:mt-8" />
+          <p className="text-h5 laptop:text-lg font-bold mt-[50px] laptop:mt-36 uppercase">Next time I would...</p>
+          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+            In future iterations, I aim to expand the user base by adapting the app to cater to different types of Apple
+            Health users. I also plan to improve how data and customization features integrate with the Apple Watch,
+            making the app more functional and user-friendly across Apple devices.
+          </p>
         </div>
       </div>
     </>
