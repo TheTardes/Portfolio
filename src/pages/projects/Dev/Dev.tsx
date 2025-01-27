@@ -186,7 +186,7 @@ export default function Dev() {
           </p>
           <img src="/assets/projects/apple-health/image-3.png" className="mt-[22px] laptop:mt-8 border border-black" />
         </div>
-        <div className="flex flex-wrap gap-3 justify-center items-center mt-8 laptop:mt-[100px]">
+        <div className="flex flex-wrap gap-3 laptop:gap-6 justify-center items-center mt-8 laptop:mt-[100px]">
           {[
             "I don’t like overall design of the app, it is too boring. ",
             "There are unnecessarily too many things to do",
@@ -194,12 +194,12 @@ export default function Dev() {
           ].map((item, index) => (
             <div
               key={index}
-              className="px-3 py-2.5 laptop:p-6 rounded-2xl bg-purple-50 flex gap-8 justify-start items-center w-full laptop:w-fit"
+              className="px-3 py-2.5 laptop:p-6 rounded-2xl bg-purple-50 flex gap-4  laptop:gap-6 justify-start items-center w-full laptop:w-fit"
             >
               <img
                 src={`/assets/projects/apple-health/avatar-${index + 1}.png`}
                 alt="avatar"
-                className="size-[40px] laptop:size-[60px]"
+                className=" rounded-l tablet:rounded-xl size-[40px] laptop:size-[60px]"
               />
               <p className="text-base laptop:text-lg-alt-alt">{item}</p>
             </div>
