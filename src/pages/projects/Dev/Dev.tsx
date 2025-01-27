@@ -180,13 +180,13 @@ export default function Dev() {
           </div>
         </div>
 
-        <div className="mt-16 laptop:mt-36">
+        <div id="research-results" className="mt-16 laptop:mt-36">
           <p className="text-lg  uppercase font-bold text-center">
             Interview, Survey, secondary research Synthesis and retrieved themes
           </p>
           <img src="/assets/projects/apple-health/image-3.png" className="mt-[22px] laptop:mt-8 border border-black" />
         </div>
-        <div className="flex flex-wrap gap-6 justify-center items-center mt-8 laptop:mt-[100px]">
+        <div className="flex flex-wrap gap-3 justify-center items-center mt-8 laptop:mt-[100px]">
           {[
             "I don’t like overall design of the app, it is too boring. ",
             "There are unnecessarily too many things to do",
@@ -210,7 +210,7 @@ export default function Dev() {
       <div id={sections[1]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">02. Iteration & Ideation</p>
-          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
+          <Button target="blank" className="py-[10px] laptop:py-0" href={"https://www.figma.com/deck/GZfhRiAVzSBqFfirzhRFkc/Apple-Health-project--Sketches?node-id=1-18&p=f&viewport=279%2C166%2C0.11&t=TNHd9m1I5pGTo74B-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"} variant="link-secondary">
             Click for Sketches
           </Button>
         </div>
@@ -284,7 +284,7 @@ export default function Dev() {
             <img src="/assets/projects/apple-health/image-5.png" alt="project" className="border border-black" />
           </div>
         </div>
-        <div className="mt-11 laptop:mt-[100px] small">
+        <div className="mt-11 laptop:mt-[200px] small">
           <p className="text-h5 laptop:text-lg font-bold uppercase">Summed up problems that users Face:</p>
           <div className="flex flex-wrap gap-3 laptop:gap-4 mt-6 laptop:mt-8">
             {["Trust", "Layout, navigation, usability", "Engagement and Fun"].map((item, index) => (
@@ -323,7 +323,7 @@ export default function Dev() {
             />
           </div>
 
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[62px]">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[150px]">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solution</p>
               <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">
@@ -350,7 +350,7 @@ export default function Dev() {
             />
           </div>
 
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[62px]">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-x-6 laptop:gap-y-8 mt-11 laptop:mt-[150px]">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11">
               <p className="text-h5 laptop:text-md font-bold">Solution</p>
               <p className="text-base laptop:text-md font-medium mt-3 laptop:mt-6">
@@ -376,7 +376,7 @@ export default function Dev() {
       <div id={sections[2]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase"> 03. Testing & Final Ideation</p>
-          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
+          <Button className="py-[10px] laptop:py-0" href={"#test-results"} variant="link-secondary">
             Click for Test Results
           </Button>
         </div>
@@ -415,7 +415,7 @@ export default function Dev() {
               </ul>
             </div>
           </div>
-          <Button className="mt-4 laptop:mt-8" variant="secondary" href={""}>
+          <Button target="external" className="mt-4 laptop:mt-8" variant="secondary" href= {"https://www.figma.com/deck/3X0Wi853TNPi2aW9pQWQ57/Project-Apple-Health---User-testings-presentation?node-id=1-3013&viewport=152%2C192%2C0.37&t=pYTtbew7pj6GXQ7U-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"}>
             View User Test Persentation
           </Button>
         </div>
@@ -432,7 +432,7 @@ export default function Dev() {
             <img src="/assets/projects/apple-health/image-10.png" alt="" className="border border-black" />
             <img src="/assets/projects/apple-health/image-11.png" alt="" className="border border-black" />
           </div>
-          <img src="/assets/projects/apple-health/image-12.png" alt="" className="mt-11 laptop:mt-20 small" />
+          <img id="test-results" src="/assets/projects/apple-health/image-12.png" alt="" className="mt-11 laptop:mt-20 small" />
           <div className="mt-11 laptop:mt-[100px] smaller">
             <p className="text-h5 laptop:text-lg font-bold text-center uppercase">Highlighted Quote</p>
             <img src="/assets/projects/apple-health/image-13.png" alt="" className="mt-6 laptop:mt-11" />
@@ -462,9 +462,9 @@ export default function Dev() {
       </div>
       {/* block */}
       <div id={sections[3]} className="mt-[60px] laptop:mt-[150px]">
-        <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
+        <div  id="final-design" className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">04. Final Features Design</p>
-          <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
+          <Button className="py-[10px] laptop:py-0" href={"#next-steps"} variant="link-secondary">
             Skip to next steps and Plans
           </Button>
         </div>
@@ -567,7 +567,7 @@ export default function Dev() {
             "/assets/projects/apple-health/swiper-4-3.png",
           ]}
         />
-        <div className="mt-11 laptop:mt-[200px] mb-11 laptop:mb-[200px] small">
+        <div  id="next-steps" className="mt-11 laptop:mt-[200px] mb-11 laptop:mb-[200px] small">
           <p className="text-h5 laptop:text-lg font-bold uppercase">Enhancements to Implement</p>
           <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
             I think there is a need for better data tracking, trust, and clarity. To elevate the Apple Health app, I
