@@ -1,9 +1,13 @@
 import Button from "@/components/Button";
 import Swiper from "@/components/Swiper";
+import ProjectNavigation from "@/components/ProjectNavigation";
 
 export default function Dev() {
+  const sections = ["discovery", "ideation", "testing", "final-design"]
+
   return (
     <>
+      <ProjectNavigation sections={sections} />
       {/* Image */}
       <div
         id="top"
@@ -99,7 +103,7 @@ export default function Dev() {
         <img src="/assets/projects/apple-health/image-1.png" />
       </div>
       {/* block */}
-      <div className="mt-[72px] laptop:mt-[150px]">
+      <div id={sections[0]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">01. Discovery</p>
           <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
@@ -203,7 +207,7 @@ export default function Dev() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[72px] laptop:mt-[150px]">
+      <div id={sections[1]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">02. Iteration & Ideation</p>
           <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
@@ -369,7 +373,7 @@ export default function Dev() {
         </div>
       </div>
       {/* block */}
-      <div className="mt-[72px] laptop:mt-[150px]">
+      <div id={sections[2]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase"> 03. Testing & Final Ideation</p>
           <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
@@ -382,7 +386,7 @@ export default function Dev() {
             sketches to direct the interview and assigned 3 different topics with some scenarios for the test
             participants.
           </p>
-          <p className="text-h5 laptop:text-lg font-bold mt-[50px] laptop:mt-20">Interview/User Test Scenarios</p>
+          <p className="text-h5 laptop:text-lg font-bold mt-[50px] laptop:mt-20 uppercase">Interview/User Test Scenarios</p>
           <div className="mt-4 laptop:mt-8 grid grid-cols-2 gap-3 laptop:gap-6">
             <div className="rounded-xl border border-gray-500 p-6 laptop:p-11 col-span-2 laptop:col-span-1">
               <p className="text-h5 laptop:text-md font-bold">01 Customizable layout and health memojis:</p>
@@ -417,7 +421,7 @@ export default function Dev() {
         </div>
         <div className="mt-[50px] laptop:mt-[100px]">
           <div className="small">
-            <p className="text-h5 laptop:text-lg font-bold">Interview Results</p>
+            <p className="text-h5 laptop:text-lg font-bold uppercase">Interview Results</p>
             <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
               Overall, feedbacks were very positive regarding all 3 new feature ideas. Below is the gathered summary
               from participant quotes and my analysis:
@@ -430,11 +434,11 @@ export default function Dev() {
           </div>
           <img src="/assets/projects/apple-health/image-12.png" alt="" className="mt-11 laptop:mt-20 small" />
           <div className="mt-11 laptop:mt-[100px] smaller">
-            <p className="text-h5 laptop:text-lg font-bold text-center">Highlighted Quote</p>
+            <p className="text-h5 laptop:text-lg font-bold text-center uppercase">Highlighted Quote</p>
             <img src="/assets/projects/apple-health/image-13.png" alt="" className="mt-6 laptop:mt-11" />
           </div>
           <div className="mt-11 laptop:mt-[100px] small">
-            <p className="text-h5 laptop:text-lg font-bold">Focus On...</p>
+            <p className="text-h5 laptop:text-lg font-bold uppercase">Focus On...</p>
             <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
               Users liked all features but felt like the “information accessibility” and “customization” already had to
               be on app, while the “challenges” feature adds additional motivational aspect. This means,
@@ -451,13 +455,13 @@ export default function Dev() {
             </ul>
           </div>
           <div className="mt-[60px] laptop:mt-36 ">
-            <p className="text-h5 laptop:text-lg font-bold text-center">Creating site map, Userflow</p>
+            <p className="text-h5 laptop:text-lg font-bold text-center uppercase">Creating site map, Userflow</p>
             <img src="/assets/projects/apple-health/image-14.png" alt="" className="mt-6 laptop:mt-11" />
           </div>
         </div>
       </div>
       {/* block */}
-      <div className="mt-[60px] laptop:mt-[150px]">
+      <div id={sections[3]} className="mt-[60px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
           <p className="text-lg laptop:text-xl font-bold uppercase">04. Final Features Design</p>
           <Button className="py-[10px] laptop:py-0" href={"#research-results"} variant="link-secondary">
@@ -465,7 +469,7 @@ export default function Dev() {
           </Button>
         </div>
         <div className="mt-11 laptop:mt-[100px]">
-          <p className="text-h5 laptop:text-lg font-bold uppercase">Adding and Customizing avatar</p>
+          <p className="text-h5 laptop:text-xl font-bold uppercase">Adding and Customizing avatar</p>
           <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
             {[
               "Less Confusion",
@@ -495,9 +499,9 @@ export default function Dev() {
           ]}
         />
         <img src="/assets/projects/apple-health/image-15.png" alt="" className="mt-10 laptop:mt-20" />
-        <div className="mt-11 laptop:mt-[100px]">
-          <p className="text-h5 laptop:text-lg font-bold uppercase">
-            Simulating adding, removing new widget/feature, changing position of existing widgets
+        <div className="mt-20 laptop:mt-[200px]">
+          <p className="text-h5 laptop:text-xl font-bold uppercase">
+            Adding or removing widgets, changing features, or repositioning existing widgets.
           </p>
           <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
             {["Visual comfort", "Clarity", "Less Confusion", "Easy Navigation"].map((item, index) => (
@@ -512,12 +516,12 @@ export default function Dev() {
         </div>
         <Swiper
           title="1. EDITING LAYOUT WITH “EDIT BUTTON”"
-          className="w-full mt-10 laptop:mt-20"
-          images={["/assets/projects/apple-health/swiper-2-1.png", "/assets/projects/apple-health/swiper-2-2.png"]}
+          className="w-full mt-10 laptop:mt-20 with-border"
+          images={["/assets/projects/apple-health/swiper-2-2.png", "/assets/projects/apple-health/swiper-2-1.png"]}
         />
         <Swiper
           title="2. EDITING LAYOUT THROUGH SETTINGS"
-          className="w-full mt-10 laptop:mt-20"
+          className="w-full mt-10 laptop:mt-20 with-border"
           images={[
             "/assets/projects/apple-health/swiper-3-1.png",
             "/assets/projects/apple-health/swiper-3-2.png",
@@ -537,7 +541,7 @@ export default function Dev() {
           />
         </div>
         <div className="mt-20 laptop:mt-[200px]">
-          <p className="text-h5 laptop:text-lg font-bold uppercase">Theme, Color and other customizations</p>
+          <p className="text-h5 laptop:text-xl font-bold uppercase">Theme, Color and other customizations</p>
           <div className="flex flex-wrap gap-3 mt-4 laptop:mt-8">
             {[
               "Visual comfort",
@@ -556,7 +560,7 @@ export default function Dev() {
           </div>
         </div>
         <Swiper
-          className="w-full mt-10 laptop:mt-20"
+          className="w-full mt-10 laptop:mt-20 with-border"
           images={[
             "/assets/projects/apple-health/swiper-4-1.png",
             "/assets/projects/apple-health/swiper-4-2.png",

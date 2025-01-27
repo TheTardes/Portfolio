@@ -2,7 +2,7 @@ nav,
 footer,
 main > :not(.full-width),
 .full-width > .contain {
-  width: 335px;
+  width: clamp(335px, 100vw - 40px, 550px);
   margin-inline: auto;
 }
 

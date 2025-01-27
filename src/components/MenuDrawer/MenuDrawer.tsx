@@ -4,34 +4,24 @@ import Linkedin from "../icons/Linkedin";
 import Medium from "../icons/Medium";
 
 interface Props {
+  navLinks: {
+    label: string;
+    to: string;
+    target?: string;
+  }[];
   close: () => void;
 }
 
-export default function MenuDrawer({ close }: Props) {
+export default function MenuDrawer({ navLinks, close }: Props) {
   return (
     <div className="fixed z-[30] top-0 left-0 w-full h-full blurify backdrop-blur-[67px] flex justify-center items-center">
-      <NavLink
-        to="/"
-        className="absolute top-5 left-5 px-[9px] py-1.5 nav-container hover:text-purple-800"
-      >
-        <span className="text-[24px] leading-[32px] font-bold">IM</span>
-      </NavLink>
+      <div className="absolute top-5 w-[clamp(335px,100vw-40px,550px)]">
+        <NavLink to="/" className="block w-fit px-[9px] py-1.5 nav-container hover:text-purple-800">
+          <span className="text-[24px] leading-[32px] font-bold">IM</span>
+        </NavLink>
+      </div>
       <div className="flex flex-col justify-center items-center gap-8">
-        {[
-          {
-            label: "Portfolio",
-            to: "/portfolio",
-          },
-          {
-            label: "About Me",
-            to: "/about-me",
-          },
-          {
-            label: "Resume",
-            target: "_blank",
-            to: "/assets/pdfs/Inji%20Mammadli%20Resume.pdf",
-          },
-        ].map((item) => (
+        {navLinks.map((item) => (
           <NavLink
             to={item.to}
             onClick={close}

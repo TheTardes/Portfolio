@@ -5,6 +5,21 @@ import { useState, useEffect } from "react";
 export default function Navbar() {
   const [isMenuDrawerOpen, setIsMenuDrawerOpen] = useState(false);
 
+  const navLinks = [
+    {
+      label: "Portfolio",
+      to: "/portfolio",
+    },
+    {
+      label: "About me",
+      to: "/about-me",
+    },
+    {
+      label: "Resume",
+      to: "/assets/pdfs/Inji%20Mammadli%20Resume.pdf",
+      target: "_blank",
+    },
+  ];
   useEffect(() => {
     if (isMenuDrawerOpen) {
       document.body.style.overflow = "hidden";
@@ -16,10 +31,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky top-5 z-[31] flex justify-between">
-        <NavLink
-          to="/"
-          className="px-[9px] py-1.5 nav-container hover:text-purple-800"
-        >
+        <NavLink to="/" className="px-[9px] py-1.5 nav-container hover:text-purple-800">
           <span className="text-[24px] leading-[32px] font-bold">IM</span>
         </NavLink>
         <div>
@@ -33,24 +45,10 @@ export default function Navbar() {
               <img src="/assets/icons/menu.svg" alt="hamburger" />
             )}
           </div>
-          {isMenuDrawerOpen && <MenuDrawer close={() => setIsMenuDrawerOpen(false)} />}
+          {isMenuDrawerOpen && <MenuDrawer navLinks={navLinks} close={() => setIsMenuDrawerOpen(false)} />}
         </div>
         <div className="hidden tablet:flex justify-between items-center gap-6 nav-container px-6 py-3 relative">
-          {[
-            {
-              label: "Portfolio",
-              to: "/portfolio",
-            },
-            {
-              label: "About me",
-              to: "/about-me",
-            },
-            {
-              label: "Resume",
-              to: "/assets/pdfs/Inji%20Mammadli%20Resume.pdf",
-              target: "_blank",
-            },
-          ].map((item) => (
+          {navLinks.map((item) => (
             <NavLink
               key={item.label}
               to={item.to}
