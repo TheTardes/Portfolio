@@ -3,7 +3,7 @@ import Swiper from "@/components/Swiper";
 import ProjectNavigation from "@/components/ProjectNavigation";
 
 export default function Dev() {
-  const sections = ["discovery", "ideation", "testing", "final-design"]
+  const sections = ["discover", "ideate", "testing", "final design"]
 
   return (
     <>
@@ -111,15 +111,15 @@ export default function Dev() {
           </Button>
         </div>
         <div className="mt-11 laptop:mt-[100px] small">
-          <p className="text-h5 laptop:text-lg font-bold">Who are the type of users?</p>
-          <p className="text-base laptop:text-md font-medium mt-8">
+          <p className="text-h5 uppercase laptop:text-lg font-bold">Who are the type of users?</p>
+          <p className="text-base laptop:text-md font-medium mt-4">
             I categorized <span className="font-bold">Apple Watch & iPhone</span> users in order to better understand
             which user types I will be addressing on this project. Since Apple Health is a very common and popular app
             the user base differs when it comes to their needs.
           </p>
           <p className="text-base laptop:text-md font-medium mt-8">Hence:</p>
         </div>
-        <div className="grid grid-cols-1 laptop:grid-cols-2 gap-8 mt-8 laptop:mt-[62px]">
+        <div className="grid grid-cols-1 laptop:grid-cols-2 gap-8 mt-8 laptop:mt-[40px]">
           <div className="p-6 laptop:p-11 rounded-3xl border-[3px] border-green-300">
             <p className="text-lg laptop:text-xl font-bold">Health/Lifestyle conscious people and data enthusiasts</p>
             <p className="text-base laptop:text-md mt-6">
@@ -143,14 +143,14 @@ export default function Dev() {
             <span className="font-bold">“Health/Lifestyle conscious people and data enthusiasts”</span> because I am
             part of this crowd and getting user data from this user base is more accessible for me right now
           </p>
-          <p className="text-h5 laptop:text-lg font-bold mt-11 laptop:mt-[100px]">Finding the Problem</p>
-          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+          <p className="text-h5  uppercase laptop:text-lg font-bold mt-11 laptop:mt-[100px]">Finding the Problem</p>
+          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-4">
             I conducted app audit, secondary and competitive research first. Then, I retrieved some research questions
             to discover during interviews and survey:
           </p>
           <img src="/assets/projects/apple-health/image-2.png" className="mt-11 laptop:mt-[62px]" />
-          <p className="mt-11 laptop:mt-[100px] text-h5 laptop:text-lg font-bold">Primary Research</p>
-          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+          <p className="mt-11  uppercase laptop:mt-[100px] text-h5 laptop:text-lg font-bold">Primary Research</p>
+          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-4">
             Survey was conducted before the interviews to understand the main pain points and identify major topics to
             discuss during the interview. The focused behavioral trait for interview participants was: Anyone who had
             experience with apple health.
@@ -170,9 +170,9 @@ export default function Dev() {
             <li>Identify gaps and opportunities for improvement</li>
             <li>Understand user preferences and pain points</li>
           </ul>
-          <div className="mt-11 laptop:mt-11 p-[22px] laptop:p-11 w-[min(100%, 544px)] rounded-3xl bg-purple-50">
-            <p className="text-h5 laptop:text-md font-bold">Participant Information:</p>
-            <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+          <div className="mt-11 laptop:mt-11 p-[22px] laptop:p-11 w-[min(100%, 544px)] rounded-2xl bg-purple-50">
+            <p className="text-h5  uppercase laptop:text-md font-bold">Participant Information:</p>
+            <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium mt-2 laptop:mt-4">
               <li>4 Interviews</li>
               <li>Behavioral Trait: Using app for lifestyle improvement</li>
               <li>Age Range: 18-35</li>
@@ -181,7 +181,7 @@ export default function Dev() {
         </div>
 
         <div className="mt-16 laptop:mt-36">
-          <p className="text-lg font-bold text-center">
+          <p className="text-lg  uppercase font-bold text-center">
             Interview, Survey, secondary research Synthesis and retrieved themes
           </p>
           <img src="/assets/projects/apple-health/image-3.png" className="mt-[22px] laptop:mt-8 border border-black" />
@@ -215,8 +215,8 @@ export default function Dev() {
           </Button>
         </div>
         <div className="mt-11 laptop:mt-[100px] small">
-          <p className="text-h5 laptop:text-lg font-bold">Behavioral Insights</p>
-          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+          <p className="text-h5 uppercase laptop:text-lg font-bold">Behavioral Insights</p>
+          <p className="text-base laptop:text-md font-medium mt-2 laptop:mt-4">
             I summarized the research findings and revealed some directions that reflect the behaviour patterns.
           </p>
         </div>
@@ -254,8 +254,8 @@ export default function Dev() {
           ))}
         </div>
         <div className="mt-11 laptop:mt-[100px] small">
-          <p className="text-h5 laptop:text-lg font-bold">How Might We?</p>
-          <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">
+          <p className="text-h5  uppercase laptop:text-lg font-bold">How Might We?</p>
+          <p className="text-base laptop:text-md font-medium mt-2 laptop:mt-4">
             The behavioral insights gave me further discussion points to identify the major questions to be solved.
             Which are:
           </p>
