@@ -8,14 +8,14 @@ export const projects: Project[] = [
     name: "visa-point",
     cardImage: "visa-point/card.png",
     cardTitle: "Making ID 📑 applications easy, accessible, and stress-free",
-    tags: ["Website, application portal", "VisaPoint"],
+    tags: ["Design Research", "UX/UI", "Usability Testing"],
   },
   {
     url: "/project/apple-health",
     name: "apple-health",
     cardImage: "apple-health-card.png",
     cardTitle: "Enhancing user engagement & user lifestyle for Apple Health App ❤️‍🩹",
-    tags: ["Design a new feature", "App add-on"],
+    tags: ["User Research", "Wireframing", "User Testing"],
   },
   {
     external: true,
@@ -23,13 +23,13 @@ export const projects: Project[] = [
     name: "habit-tracker",
     cardImage: "habit.png",
     cardTitle: "Research on digital design: Better habits &  personal productivity 📈",
-    tags: ["UX Research Project", "Habit Tracking Tool"],
+    tags: ["UX Research", "Interaction Design"],
   },
   {
     url: "/project/leisure-time",
     name: "leisure-time",
     cardImage: "leisure-time.png",
     cardTitle: "Leisure Discovery ✨ addressing trust and exposure challenges ",
-    tags: ["Mobile App", "Leisure Time"],
+    tags: ["Prototyping", "Problem-solving", "UX/UI"],
   },
 ];
