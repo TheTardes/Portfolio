@@ -17,12 +17,12 @@ export default function RevealEmail({ className }: Props) {
       {!clicked ? (
         <div
           onClick={() => setClicked((prev) => !prev)}
-          className={`mt-4 bg-purple-600 rounded-xl tablet:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer
-                      max-w-[50px] laptop:max-w-[68px] hover:max-w-[220px] [&:hover_.envelope]:rotate-[-11.15deg] phase-1 ${className}`}
+          className={`mt-4 bg-purple-600 rounded-xl laptop:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer
+                      max-w-[50px] laptop:max-w-[68px] hover:max-w-[340px] [&:hover_.envelope]:rotate-[-11.15deg] phase-1 ${className}`}
         >
           <div className="px-[7px] py-[9px] laptop:p-4 flex justify-between gap-[10px] w-fit">
             <Envelope className="envelope transition-transform duration-[400ms]" />
-            <p className="text-light text-md-alt truncate hide opacity-0">Reveal Email</p>
+            <p className="text-light text-md-alt truncate hide opacity-0">Lets work together!</p>
             <CursorClick className="hide opacity-0" />
           </div>
         </div>
