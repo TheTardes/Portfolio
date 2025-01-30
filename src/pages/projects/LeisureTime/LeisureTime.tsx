@@ -8,7 +8,7 @@ export default function LeisureTime() {
         id="top"
         className="full-width h-[330px] laptop:h-[630px] desktop:h-[776px] bg-contain bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url("/assets/projects/leisure-time-bg.png")`,
+          backgroundImage: `url("/assets/projects/leisure-time-bg.webp")`,
           backgroundColor: "#FFF5DC",
         }}
       />
