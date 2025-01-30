@@ -9,7 +9,7 @@ export default function AboutMe() {
     <>
       <section className="flex flex-col-reverse laptop:flex-row gap-11 tablet:gap-15 laptop:gap-20 pt-[114px] tablet:pt-[152px] laptop:pt-[172px]">
         <div className="min-w-[335px] h-[298px] tablet:min-w-[600px] tablet:h-[497px] laptop:min-w-[320px] desktop:min-w-[530px] desktop:h-[482px]">
-          <img src="/assets/common/me-main.jpg" alt="inji" className="w-full h-full object-cover rounded-3xl" />
+          <img src="/assets/common/me-main.webp" alt="inji" className="w-full h-full object-cover rounded-3xl" />
         </div>
         <div className=" grid gap-2 tablet:gap-4 text-base tablet:text-md font-medium">
           <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
@@ -73,7 +73,7 @@ export default function AboutMe() {
             </div>
           </div>
           <Slider
-            images={["/assets/common/work.JPEG", "/assets/common/friends.JPG", "/assets/common/pet.jpg"]}
+            images={["/assets/common/work.webp", "/assets/common/friends.webp", "/assets/common/pet.webp"]}
             className="col-span-2 laptop:col-span-1 h-[265px] tablet:h-[475px] laptop:h-auto"
           />
         </div>
