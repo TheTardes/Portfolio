@@ -87,7 +87,6 @@ export default function AboutMe() {
           {["/assets/arts/art5.png", "/assets/arts/art2.png", "/assets/arts/art3.png"].map((images) => (
             <img
               key={images}
-              loading="lazy"
               src={images}
               alt="art"
               className="h-[293px] tablet:h-[270px] desktop:h-[360px] w-full rounded-3xl object-cover"

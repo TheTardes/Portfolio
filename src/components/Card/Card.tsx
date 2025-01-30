@@ -5,7 +5,6 @@ export default function Card({ project }: { project: Project }) {
   return (
     <Link target={project.external ? "_blank" : "_self"} to={project.url} className="col-span-2 desktop:col-span-1 bg-gray-200 rounded-2xl tablet:rounded-3xl hover:scale-110 transition-all duration-300">
       <img
-        loading="lazy"
         alt="project"
         src={`/assets/projects/${project.cardImage}`}
         className=" w-full h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"

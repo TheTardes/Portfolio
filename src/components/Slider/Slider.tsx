@@ -12,7 +12,7 @@ export default function Slider({ images, className }: Props) {
     <div className={`overflow-hidden relative h-full rounded-3xl slider ${className}`}>
       <div className="w-[300%] h-full absolute -left-[0%] top-0 flex">
         {images.map((image) => (
-          <img key={image} loading="lazy" src={image} alt="art" className="h-full w-1/3 object-cover" />
+          <img key={image} src={image} alt="art" className="h-full w-1/3 object-cover" />
         ))}
       </div>
       <div className="absolute bottom-7 left-1/2 -translate-x-1/2 flex items-center justify-center gap-1 rounded-full py-1.5 px-2 bg-blur">
