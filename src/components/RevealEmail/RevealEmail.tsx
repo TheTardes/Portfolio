@@ -14,7 +14,7 @@ export default function RevealEmail({ className }: Props) {
     <Link
       to={`mailto:${email}`}
       target="_blank"
-      className={`mt-4 bg-purple-600 rounded-xl laptop:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer
+      className={`bg-purple-600 rounded-xl laptop:rounded-2xl w-fit mx-auto overflow-hidden cursor-pointer
                   reveal-email ${className}`}
     >
       <div className="px-[7px] py-[9px] laptop:p-4 flex justify-between gap-[10px] w-fit">

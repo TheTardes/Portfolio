@@ -35,13 +35,13 @@ export default function MenuDrawer({ navLinks, close }: Props) {
         ))}
         <div className="flex gap-1.5">
           <a target="_blank" href="https://www.linkedin.com/in/inji-mammadli-3b7b71168">
-            <Linkedin className="bg-[#0077B5]" />
+            <Linkedin className="size-11 bg-[#0077B5]" />
           </a>
           <a target="_blank" href="https://www.behance.net/injimammadli">
-            <Behance className="bg-[#1769FF]" />
+            <Behance className="size-11 bg-[#1769FF]" />
           </a>
           <a target="_blank" href="https://medium.com/@mammadlinji">
-            <Medium className="bg-[#1A1A1A]" />
+            <Medium className="size-11 bg-[#1A1A1A]" />
           </a>
         </div>
       </div>

@@ -45,7 +45,7 @@ export default function MyAvatar() {
             <img src="/assets/star.svg" alt="stars" className="name-stars star-1" />
             <img src="/assets/star.svg" alt="stars" className="name-stars star-2" />
           </div>
-          <RevealEmail className="block laptop:hidden" />
+          <RevealEmail className="mt-4 block laptop:hidden" />
         </div>
         {/* mobile */}
         <div className="laptop:hidden flex flex-col gap-y-1.5">
@@ -67,7 +67,7 @@ export default function MyAvatar() {
           ))}
         </div>
       </div>
-      <RevealEmail className="hidden laptop:block" />
+      <RevealEmail className="mt-4 hidden laptop:block" />
     </div>
   );
 }

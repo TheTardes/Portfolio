@@ -3,6 +3,7 @@ import Slider from "@/components/Slider";
 import Medium from "@/components/icons/Medium";
 import Behance from "@/components/icons/Behance";
 import Linkedin from "@/components/icons/Linkedin";
+import Github from "@/components/icons/Github";
 
 export default function AboutMe() {
   return (
@@ -30,17 +31,20 @@ export default function AboutMe() {
           <div className="flex justify-between flex-wrap gap-3 mt-8 tablet:mt-14">
             <div className="flex gap-1.5">
               <a target="_blank" href="https://www.linkedin.com/in/inji-mammadli-3b7b71168">
-                <Linkedin size={54} className="bg-[#0077B5]" />
+                <Linkedin className="size-[54px] bg-[#0077B5]" />
               </a>
               <a target="_blank" href="https://www.behance.net/injimammadli">
-                <Behance size={54} className="bg-[#1769FF]" />
+                <Behance className="size-[54px] bg-[#1769FF]" />
               </a>
               <a target="_blank" href="https://medium.com/@mammadlinji">
-                <Medium size={54} className="bg-[#1A1A1A]" />
+                <Medium className="size-[54px] bg-black" />
+              </a>
+              <a target="_blank" href="https://github.com/TheTardes">
+                <Github className="size-[54px] bg-black" />
               </a>
             </div>
             <Button target="_blank" className="w-fit h-[54px]" href="/assets/pdfs/Inji%20Mammadli%20Resume.pdf">
-              More Professional Bio
+              Resume
             </Button>
           </div>
         </div>

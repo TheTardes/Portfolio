@@ -1,14 +1,16 @@
 nav,
-footer,
 main > :not(.full-width),
 .full-width > .contain {
   width: clamp(335px, 100vw - 40px, 550px);
   margin-inline: auto;
 }
+footer {
+  max-width: 1170px;
+  margin-inline: auto;
+}
 
 @media (min-width: 768px) {
   nav,
-  footer,
   main > :not(.full-width),
   .full-width > .contain  {
     width: 600px;
@@ -16,7 +18,6 @@ main > :not(.full-width),
 }
 @media (min-width: 1024px) {
   nav,
-  footer,
   main > :not(.full-width),
   .full-width > .contain  {
     width: 900px;

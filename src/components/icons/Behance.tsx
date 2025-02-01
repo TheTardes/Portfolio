@@ -1,18 +1,15 @@
 interface Props {
   className?: string;
-  size?: number;
 }
 
-export default function Behance({ className, size = 44 }: Props) {
+export default function Behance({ className }: Props) {
   return (
     <svg
       role="link"
       aria-label="behance"
       className={`${className} icon`}
-      width={size}
-      height={size}
       viewBox="0 0 24 16"
-      fill="none"
+      fill="#1a1a1a"
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>Behance</title>

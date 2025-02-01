@@ -8,7 +8,7 @@ body {
 }
 
 .icon {
-  @apply p-2.5 rounded-[10px] flex items-center justify-center cursor-pointer;
+  @apply p-2.5 rounded-[12px] flex items-center justify-center cursor-pointer;
   & path {
     @apply fill-white;
   }
@@ -97,7 +97,7 @@ body {
 .nav-container {
   border-radius: 8px;
   background-color: #f5f5f5;
-  box-shadow: 0px 0px 6px 0px #0000000A;
+  box-shadow: 0px 0px 6px 0px #0000000a;
 }
 
 .marquee {
@@ -117,12 +117,34 @@ body {
   animation: scroll 10s linear infinite;
 }
 
-
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.footer-bubble {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6833ff;
+    border: 3px solid white;
+  }
+  &-right::after {
+    top: 0;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  &-left::after {
+    top: 0;
+    transform: translateY(-50%);
+    right: 0;
   }
 }
