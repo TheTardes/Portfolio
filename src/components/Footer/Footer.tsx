@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="rounded-t-full mt-[108px] flex flex-col items-center justify-center pt-14 tablet:pt-20 bg-gradient-to-b from-[#C2AEEE] to-[rgba(148, 176, 233, 0.3)]">
+      <div className="rounded-t-full mt-[108px] flex flex-col items-center justify-center pt-14 tablet:pt-20 footer-gradient">
         <div className="relative w-[227px] tablet:w-[315px] pb-9">
           <img
             src="/assets/common/ME.png"
