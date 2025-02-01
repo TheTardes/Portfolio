@@ -1,9 +1,28 @@
-.phase-1 {
+.reveal-email {
+  max-width: 340px;
   transition: max-width 400ms ease-in-out;
+  .envelope {
+    transition: transform 400ms ease-in-out;
+  }
   .hide {
     transition: opacity 400ms ease-in-out;
   }
-  &:hover .hide {
-    opacity: 1 !important;
+}
+
+@media (min-width: 1024px) {
+  .reveal-email {
+    max-width: 68px;
+    &:hover {
+      max-width: 340px;
+      .hide {
+        opacity: 1;
+      }
+      .envelope {
+        transform: rotate(-11.15deg);
+      }
+    }
+    .hide {
+      opacity: 0;
+    }
   }
 }
