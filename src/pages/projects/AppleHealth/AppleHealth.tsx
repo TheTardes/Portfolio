@@ -51,8 +51,7 @@ export default function Dev() {
             target="_blank"
             href="https://www.figma.com/deck/aL3oVfcU8CBXcMR5Iiuk28/Apple-Health---New-Feature?node-id=1-2690&viewport=377%2C417%2C0.03&t=2DeCJG2gh2vVLN1T-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
           >
-            Project Presentation
-          </Button>
+Shorter Presentation          </Button>
           <Button
             target="_blank"
             href="https://www.behance.net/gallery/216350913/Reimagining-Apple-Health-Personalized-Engagement"
