@@ -126,6 +126,17 @@ body {
   }
 }
 
+.animate {
+  .footer-bubble {
+    &-right {
+      animation: slideBottomRight 800ms ease-in-out 400ms backwards;
+    }
+    &-left {
+      animation: slideBottomLeft 800ms ease-in-out 400ms backwards;
+    }
+  }
+}
+
 .footer-bubble {
   position: relative;
   &::after {
@@ -142,6 +153,7 @@ body {
     transform: translateY(-50%);
     left: 0;
   }
+
   &-left::after {
     top: 0;
     transform: translateY(-50%);
@@ -149,6 +161,28 @@ body {
   }
 }
 
+@keyframes slideBottomLeft {
+  0% {
+    opacity: 0;
+    translate: 20px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+
+@keyframes slideBottomRight {
+  0% {
+    opacity: 0;
+    translate: -20px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+
 .footer-gradient {
-  background: radial-gradient(50% 50% at 50% 50%, #C2AEEE 0%, rgba(148, 176, 233, 0.3) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #c2aeee 0%, rgba(148, 176, 233, 0.3) 100%);
 }

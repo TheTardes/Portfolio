@@ -3,8 +3,31 @@ import Linkedin from "@/components/icons/Linkedin";
 import Medium from "@/components/icons/Medium";
 import RevealEmail from "../RevealEmail";
 import Github from "../icons/Github";
+import { useEffect, useRef } from "react";
 
 export default function Footer() {
+  const footerBubblesRef = useRef<HTMLDivElement>(null);
+  function isElementInViewport(el: HTMLElement) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */ &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    );
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (footerBubblesRef.current && isElementInViewport(footerBubblesRef.current)) {
+        footerBubblesRef.current.classList.add("animate");
+      }
+    });
+
+  }, []);
+
+
+
   return (
     <footer className="mt-[100px]">
       <div className="mx-5 laptop:mx-0 bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row items-stretch tablet:items-start justify-between p-6 tablet:p-8 laptop:p-11 rounded-2xl tablet:rounded-3xl">
@@ -36,16 +59,27 @@ export default function Footer() {
           >
             <Linkedin className="size-11 tablet:size-[60px] icon-group-item tablet:p-[18px] tablet:rounded-2xl" />
           </a>
-          <a className="absolute top-0 left-[59px] tablet:left-20" target="_blank" href="https://www.behance.net/injimammadli">
+          <a
+            className="absolute top-0 left-[59px] tablet:left-20"
+            target="_blank"
+            href="https://www.behance.net/injimammadli"
+          >
             <Behance className="size-11 tablet:size-[60px] icon-group-item tablet:p-[18px] tablet:rounded-2xl" />
           </a>
-          <a className="absolute top-0 right-[59px] tablet:right-20" target="_blank" href="https://medium.com/@mammadlinji">
+          <a
+            className="absolute top-0 right-[59px] tablet:right-20"
+            target="_blank"
+            href="https://medium.com/@mammadlinji"
+          >
             <Medium className="size-11 tablet:size-[60px] icon-group-item tablet:p-[18px] tablet:rounded-2xl" />
           </a>
           <a className="absolute top-12 right-0" target="_blank" href="https://github.com/TheTardes">
             <Github className="size-11 tablet:size-[60px] icon-group-item tablet:p-2 tablet:rounded-2xl" />
           </a>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[335px] tablet:w-[539px] flex justify-between">
+          <div
+            ref={footerBubblesRef}
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[335px] tablet:w-[539px] flex justify-between"
+          >
             <div className="w-[129px] tablet:w-[172px] text-center text-sm tablet:text-md-alt font-semibold bg-purple-50 rounded-[22px] py-3 px-4 footer-bubble footer-bubble-left">
               Let's Connect
             </div>
