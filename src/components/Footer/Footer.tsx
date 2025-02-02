@@ -32,7 +32,7 @@ export default function Footer() {
     <footer className="mt-[100px]">
       <div className="mx-5 laptop:mx-0 bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row items-stretch tablet:items-start justify-between p-6 tablet:p-8 laptop:p-11 rounded-2xl tablet:rounded-3xl">
         <p className="max-w-[460px] text-h5 tablet:text-h3 font-bold mb-2">
-          Got a query, some thoughts to share, or a wild idea? 🤔
+          Want to discuss more or request for anything else? 🤔
         </p>
         <div className="bg-primary-500 text-white flex flex-col items-center justify-center rounded-3xl px-8 py-6">
           <p className="text-sm tablet:text-md font-medium">Drop me a message at</p>

@@ -48,7 +48,7 @@ export default function VisaPoint() {
             target="_blank"
             href="https://www.figma.com/proto/4L7wjlGapPbDYXadFQbr0e/Inji-Mammadli---1?page-id=5004%3A29088&node-id=5021-30381&viewport=187%2C507%2C0.08&t=wVoxRhSbgnWvN7uu-1&scaling=scale-down-width&content-scaling=fixed"
           >
-            Presentation
+            Shorter Presentation
           </Button>
           <Button
             target="_blank"
