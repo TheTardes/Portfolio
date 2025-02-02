@@ -6,9 +6,26 @@ interface Props {
 }
 
 export default function ProjectNavigation({ sections }: Props) {
-
   useEffect(() => {
     const setActiveSection = () => {
+      // hide navigator at bottom of page
+      const el = document.getElementById("project-navigator");
+      if (el) {
+        if (window.innerHeight + window.scrollY + 400 >= document.body.offsetHeight) {
+          el.classList.add("opacity-0");
+          el.classList.add("h-0");
+          el.classList.add("overflow-hidden");
+          el.classList.remove("py-[10px]");
+          el.classList.remove("tablet:py-[14px]");
+        } else {
+          el.classList.remove("opacity-0");
+          el.classList.remove("h-0");
+          el.classList.remove("overflow-hidden");
+          el.classList.add("py-[10px]");
+          el.classList.add("tablet:py-[14px]");
+        }
+      }
+
       // hide top link
       const topLink = document.getElementById("top-link");
       if (topLink) {
@@ -37,8 +54,9 @@ export default function ProjectNavigation({ sections }: Props) {
   return (
     <div className="full-width w-full fixed z-[10] tablet:flex justify-center bottom-0 tablet:bottom-10">
       <div
+        id="project-navigator"
         style={{ boxShadow: "0px 4px 6px -1px #0000001A, 0px 2px 4px -2px #0000001A" }}
-        className="flex gap-4 justify-between bg-gray-200 tablet:w-fit tablet:rounded-full px-6 tablet:px-12 py-[10px] tablet:py-[14px] uppercase text-sm tablet:text-nav font-semibold text-gray-700"
+        className="duration-300 flex gap-4 justify-between bg-gray-200 tablet:w-fit tablet:rounded-full px-6 tablet:px-12 py-[10px] tablet:py-[14px] uppercase text-sm tablet:text-nav font-semibold text-gray-700"
       >
         {sections.map((link) => (
           <a href={`#${link}`} className="hover:text-purple-800 section-links py-[10px]">
