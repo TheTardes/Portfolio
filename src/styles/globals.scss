@@ -129,16 +129,17 @@ body {
 .animate {
   .footer-bubble {
     &-right {
-      animation: slideBottomRight 800ms ease-in-out 400ms backwards;
+      animation: slideBottomRight 800ms ease-in-out 200ms forwards;
     }
     &-left {
-      animation: slideBottomLeft 800ms ease-in-out 400ms backwards;
+      animation: slideBottomLeft 800ms ease-in-out 200ms forwards;
     }
   }
 }
 
 .footer-bubble {
   position: relative;
+  opacity: 0;
   &::after {
     content: "";
     position: absolute;

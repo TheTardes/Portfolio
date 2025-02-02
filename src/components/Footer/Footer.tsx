@@ -19,14 +19,11 @@ export default function Footer() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (footerBubblesRef.current && isElementInViewport(footerBubblesRef.current)) {
-        footerBubblesRef.current.classList.add("animate");
-      }
+      const el = footerBubblesRef.current;
+      if (el && isElementInViewport(el)) el.classList.add("animate");
+      else el?.classList.remove("animate");
     });
-
   }, []);
-
-
 
   return (
     <footer className="mt-[100px]">
