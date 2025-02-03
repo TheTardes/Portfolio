@@ -454,7 +454,7 @@ Shorter Presentation          </Button>
             </ul>
           </div>
           <div className="mt-[60px] laptop:mt-36 ">
-            <p className="text-h5 laptop:text-lg font-bold text-center uppercase">Creating site map, Userflow</p>
+            <p className="text-h5 laptop:text-lg font-bold text-center uppercase">Creating site map, User flow</p>
             <img src="/assets/projects/apple-health/image-14.png" alt="" className="mt-6 laptop:mt-11" />
           </div>
         </div>
