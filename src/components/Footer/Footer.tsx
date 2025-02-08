@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-[10px]">
-      <div className="bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row items-stretch tablet:items-center justify-between p-6 tablet:p-8 laptop:p-11 rounded-2xl tablet:rounded-3xl">
+      <div className="bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row items-stretch laptop:items-center justify-between p-6 tablet:p-8 laptop:p-11 rounded-2xl tablet:rounded-3xl">
         <p className="max-w-[460px] text-h5 tablet:text-h3 font-bold mb-2">
           Want to discuss more or request for anything else? 🤔
         </p>
