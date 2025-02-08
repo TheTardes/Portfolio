@@ -1,6 +1,7 @@
 nav,
 main > :not(.full-width),
-.full-width > .contain {
+.full-width > .contain,
+footer > :first-child {
   width: clamp(335px, 100vw - 40px, 550px);
   margin-inline: auto;
 }
@@ -12,14 +13,16 @@ footer {
 @media (min-width: 768px) {
   nav,
   main > :not(.full-width),
-  .full-width > .contain  {
+  .full-width > .contain,
+  footer > :first-child {
     width: 600px;
   }
 }
 @media (min-width: 1024px) {
   nav,
   main > :not(.full-width),
-  .full-width > .contain  {
+  .full-width > .contain,
+  footer > :first-child {
     width: 900px;
   }
 }
@@ -28,7 +31,8 @@ footer {
   nav,
   footer,
   main > :not(.full-width),
-  .full-width > .contain  {
+  .full-width > .contain,
+  footer > :first-child {
     width: 1170px;
   }
   main .small {
