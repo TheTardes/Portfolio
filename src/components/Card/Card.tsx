@@ -10,12 +10,12 @@ export default function Card({ project }: { project: Project }) {
         className=" w-full h-[180px] tablet:h-[300px] laptop:h-[440px] desktop:h-[350px] object-cover rounded-t-2xl tablet:rounded-t-3xl"
       />
       <div className="p-6 tablet:p-11">
-        <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px] font-semibold">{project.cardTitle}</p>
-        <div className="flex gap-3 mt-3 tablet:mt-8">
+        <p className="text-dark text-[18px] leading-[30px] tablet:text-[28px] tablet:leading-[38px] font-semibold" dangerouslySetInnerHTML={{ __html: project.cardTitle }} />
+        <div className="flex flex-wrap gap-3 mt-3 tablet:mt-8">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-[12px] leading-[20px] tablet:text-md font-medium"
+              className="bg-purple-200 py-1.5 px-3 tablet:py-2 tablet:px-4 rounded-lg text-[12px] leading-[20px] tablet:text-md font-medium truncate"
             >
               {tag}
             </span>
