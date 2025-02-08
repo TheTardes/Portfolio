@@ -14,7 +14,7 @@ export default function Discover({ href, children, className, external }: Props)
     <Link
       to={href}
       target={external ? "_blank" : undefined}
-      className={`flex items-center justify-between gap-4 w-full bg-gray-100 rounded-3xl p-5 tablet:p-11 cursor-pointer
+      className={`flex items-center justify-between gap-4 w-full bg-gray-100 rounded-2xl tablet:rounded-3xl p-5 tablet:p-11 cursor-pointer
                   [&:hover_path]:fill-white [&:hover_svg]:bg-purple-800 [&:hover_svg]:rotate-0  ${className}
                 `}
     >

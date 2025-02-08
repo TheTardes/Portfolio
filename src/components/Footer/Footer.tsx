@@ -26,7 +26,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="mt-[100px]">
+    <footer className="mt-[10px]">
       <div className="mx-5 laptop:mx-0 bg-gray-100 flex gap-6 tablet:gap-8 flex-col laptop:flex-row items-stretch tablet:items-center justify-between p-6 tablet:p-8 laptop:p-11 rounded-2xl tablet:rounded-3xl">
         <p className="max-w-[460px] text-h5 tablet:text-h3 font-bold mb-2">
           Want to discuss more or request for anything else? 🤔
@@ -42,7 +42,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="rounded-t-full mt-[108px] flex flex-col items-center justify-center pt-14 tablet:pt-20 footer-gradient">
+      <div className="rounded-t-full mt-[50px] tablet:mt-[150px] flex flex-col items-center justify-center pt-14 tablet:pt-20 footer-gradient">
         <div className="relative w-[227px] tablet:w-[315px] pb-9">
           <img
             src="/assets/common/ME.png"

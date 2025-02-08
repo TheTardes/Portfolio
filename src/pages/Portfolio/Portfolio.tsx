@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 import { projects } from "@/data/projects";
 import MyAvatar from "@/components/MyAvatar";
 import ArrowRight from "@/components/icons/ArrowRight";
-// import Discover from "@/components/Discover";
+import Discover from "@/components/Discover";
 
 export default function Portfolio() {
   return (
@@ -35,10 +35,10 @@ export default function Portfolio() {
           <Card key={project.cardTitle} project={project} />
         ))}
       </section>
-      {/* <Discover href="/research" className="mt-6 tablet:mt-11 laptop:mt-[60px] desktop:mt-[82px]">
-        <p className="text-h5 tablet:text-h3 font-bold">Discover my <span className="text-purple-800">research</span> projects</p>
-        <p className="text-sm tablet:text-[22px] tablet:leading-[32px] text-gray-500 font-semibold">Discover my research projects</p>
-      </Discover> */}
+      <Discover external href="https://www.figma.com/deck/MNjGMJHP4995h66XqCHFja/UX%2FUI-Further-Portfolio---Inji?node-id=1-52&t=KEOlVeDFgwofVCS0-1" className="mt-6 tablet:mt-11 laptop:mt-[40px]">
+        <p className="text-h5 tablet:text-h3 font-bold">Discover more: <span className="text-purple-800">UX/UI Journey</span></p>
+        <p className="text-sm tablet:text-[22px] tablet:leading-[32px] text-gray-500 font-semibold">Concept UX, problem-solving & research</p>
+      </Discover>
     </>
   );
 }
