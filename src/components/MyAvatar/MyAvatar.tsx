@@ -34,7 +34,7 @@ export default function MyAvatar() {
         </div>
         <div>
           <img
-            src="/assets/common/inji.png"
+            src="/assets/common/inji-drawn-main.webp"
             alt="inji mammadli"
             className="mx-auto w-[95px] h-[100px] laptop:w-[185px] laptop:h-[200px] object-contain"
           />

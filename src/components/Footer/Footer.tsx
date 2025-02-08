@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="rounded-t-full mt-[50px] tablet:mt-[150px] flex flex-col items-center justify-center pt-14 tablet:pt-20 footer-gradient">
         <div className="relative w-[227px] tablet:w-[315px] pb-9">
           <img
-            src="/assets/common/ME.png"
+            src="/assets/common/inji-drawn-side.webp"
             alt="inji mammadli"
             className="mx-auto mt-16 tablet:mt-[83px] w-[107px] tablet:w-[133px] h-[111px] tablet:h-[137px]"
           />
