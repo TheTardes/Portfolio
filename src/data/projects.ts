@@ -32,4 +32,21 @@ export const projects: Project[] = [
     cardTitle: "Leisure Discovery ✨ addressing trust and exposure challenges ",
     tags: ["Prototyping", "Problem-solving", "UX/UI"],
   },
+  {
+  external: true,
+    url: "https://www.figma.com/deck/vwwPUz2WLbJ2khPYncpuFi/Deloitte-Portolio---Inji-Mammadli?node-id=1-34&t=KdxFPW2D3SHzx39S-1",
+    name: "deloitte-work",
+    cardImage: "cover-deloitte.webp",
+    cardTitle: "UX Strategy, Branding, and Marketing at Deloitte & Touche LLC",
+    tags: ["Campaign UX", "Experiential UX", "EX Branding"],
+  },
+  {
+    external: true,
+      url: "/assets/pdfs/professional-work-portfolio.pdf",
+      name: "work-projects",
+      cardImage: "cover-work.webp",
+      cardTitle: "Check out  highlights from my professional work here 👉🏻",
+      tags: ["Productivity Software", "UX/UI ", "Visual Design"],
+    }
+
 ];
