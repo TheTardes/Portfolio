@@ -3,11 +3,11 @@ import RevealEmail from "@/components/RevealEmail";
 
 const bubbles = [
   {
-    text: "Curious to explore innovative experiences",
+    text: "Curious to explore",
     class: "top-left",
   },
   {
-    text: "Messiness drives me crazy",
+    text: "This website was designed and coded by me :o",
     class: "bottom-left",
   },
   {
