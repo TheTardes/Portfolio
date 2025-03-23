@@ -48,9 +48,44 @@ export default function AboutMe() {
           </div>
         </div>
       </section>
-      <section className="mt-11 tablet:mt-20 desktop:mt-[100px]">
+
+      <section className="grid grid-cols-1 laptop:grid-cols-3 gap-6 laptop:gap-8 bg-gray-200 mt-11 tablet:mt-20 laptop:mt-[100px] rounded-3xl p-6 tablet:p-8 laptop:p-11">
         <div>
-          <h2 className="text-lg tablet:text-h3 font-bold">What Else</h2>
+          <p className="flex gap-1 text-gray-500 text-md uppercase font-semibold">
+            <img src="/assets/icons/currently.svg" alt="currently" />
+            <span>CURRENTLY</span>
+          </p>
+          <ul className="mt-3 text-base desktop:text-md grid gap-3 list-disc pl-5">
+            <li>Designing a <span className="font-bold">skill-learning simulation</span> for my Parsons thesis.</li>
+            <li><span className="font-bold">Exploring</span> storytelling, design, and habit-building.</li>
+          </ul>
+        </div>
+        <div>
+          <p className="flex gap-1 text-gray-500 text-md uppercase font-semibold">
+            <img src="/assets/icons/past.svg" alt="past" />
+            <span>PREVIOUSLY</span>
+          </p>
+          <ul className="mt-3 text-base desktop:text-md grid gap-3 list-disc pl-5">
+            <li><span className="font-bold">2+ years</span> in UX research, product design, and strategy.</li>
+            <li>Worked across tech, finance, and digital teams.</li>
+          </ul>
+        </div>
+        <div>
+          <p className="flex gap-1 text-gray-500 text-md uppercase font-semibold">
+            <img src="/assets/icons/education.svg" alt="education" />
+            <span>EDUCATION</span>
+          </p>
+          <ul className="mt-3 text-base desktop:text-md grid gap-3 list-disc pl-5">
+            <li><span className="font-bold">The New School</span> (2025) - NY, US</li>
+            <li><span className="font-bold">Lancaster University</span> (2022) - UK</li>
+            <li><span className="font-bold">Bilkent University</span> (2021) - Ankara, TR</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mt-20 tablet:mt-20 desktop:mt-[100px] ">
+        <div>
+          <h2 className="text-lg tablet:text-h3 font-bold">What Else 💡</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">THESE SET ME APART</p>
         </div>
         <div className="grid grid-cols-2 gap-10">
@@ -83,7 +118,7 @@ export default function AboutMe() {
       </section>
       <section className="mt-20 desktop:mt-[100px]">
         <div>
-          <h2 className="text-lg tablet:text-h3 font-bold">I enjoy making digital art</h2>
+          <h2 className="text-lg tablet:text-h3 font-bold">I enjoy making digital art 🎨</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">FREETIME</p>
         </div>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-7">
@@ -96,7 +131,7 @@ export default function AboutMe() {
             />
           ))}
         </div>
-        
+
       </section>
       <section className="mt-20 desktop:mt-[100px]">
         <div>
