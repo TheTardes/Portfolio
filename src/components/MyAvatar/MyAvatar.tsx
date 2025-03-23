@@ -1,38 +1,12 @@
 import "./index.scss";
 import RevealEmail from "@/components/RevealEmail";
 
-const bubbles = [
-  {
-    text: "Curious to explore",
-    class: "top-left",
-  },
-  {
-    text: "This website was designed and coded by me :o",
-    class: "bottom-left",
-  },
-  {
-    text: "Continously intrigued by people",
-    class: "top-right",
-  },
-  {
-    text: "Overthinking actually helps to analyze better :D",
-    class: "bottom-right",
-  },
-];
-
 export default function MyAvatar() {
   return (
     <div className="mt-8 tablet:mt-11 laptop:mt-[60px] desktop:mt-[82px]">
-      <div className="flex flex-col laptop:flex-row justify-center items-center laptop:items-stretch gap-x-[38px] gap-y-3">
-        {/* laptop */}
-        <div className="hidden laptop:flex flex-col justify-between">
-          {bubbles.slice(0, 2).map((bubble) => (
-            <div key={bubble.text} className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}>
-              <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
-            </div>
-          ))}
-        </div>
-        <div>
+      <div className="flex justify-center items-start laptop:items-stretch gap-x-0 laptop:gap-x-[38px] gap-y-3">
+        <img src="/assets/icons/left-bubble.svg" alt="stars" className="h-fit max-w-[110px] laptop:max-w-[200px] -mr-[10px] left-bubble" />
+        <div className="mt-10 laptop:mt-0">
           <img
             src="/assets/common/inji-drawn-main.webp"
             alt="inji mammadli"
@@ -47,25 +21,7 @@ export default function MyAvatar() {
           </div>
           <RevealEmail className="mt-4 block laptop:hidden" />
         </div>
-        {/* mobile */}
-        <div className="laptop:hidden flex flex-col gap-y-1.5">
-          {bubbles.map((bubble) => (
-            <div
-              key={bubble.text}
-              className={`relative bg-purple-50 rounded-xl p-3 w-fit mx-auto shadow-[0px_4px_6px_-1px_#0000001A,0px_2px_4px_-2px_#0000001A] ${bubble.class}`}
-            >
-              <span className="text-black font-semibold text-[14px] leading-[18px]">{bubble.text}</span>
-            </div>
-          ))}
-        </div>
-        {/* laptop */}
-        <div className="hidden laptop:flex flex-col justify-between">
-          {bubbles.slice(2, 4).map((bubble) => (
-            <div key={bubble.text} className={`relative ${bubble.class} w-[324px] bg-purple-50 rounded-2xl py-4 px-6`}>
-              <span className="text-black font-semibold text-[18px] leading-[24px]">{bubble.text}</span>
-            </div>
-          ))}
-        </div>
+        <img src="/assets/icons/right-bubble.svg" alt="stars" className="h-fit max-w-[110px] laptop:max-w-[200px] -ml-[10px] right-bubble" />
       </div>
       <RevealEmail className="mt-4 hidden laptop:block" />
     </div>

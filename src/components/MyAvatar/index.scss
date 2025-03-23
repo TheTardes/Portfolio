@@ -1,8 +1,13 @@
-.top-right,
-.top-left,
-.bottom-right,
-.bottom-left {
-  animation: appear 800ms ease-in-out 0ms backwards;
+.left-bubble,
+.right-bubble {
+  animation: appear 1200ms ease-in-out 0ms backwards;
+}
+
+.right-bubble {
+  animation: slideTopRight 1200ms ease-in-out 200ms backwards;
+}
+.left-bubble {
+  animation: slideTopLeft 1200ms ease-in-out 0ms backwards;
 }
 
 @keyframes appear {
@@ -16,99 +21,24 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .top-right,
-  .top-left,
-  .bottom-right,
-  .bottom-left {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #6833ff;
-      border: 3px solid white;
-    }
+@keyframes slideTopRight {
+  0% {
+    opacity: 0;
+    translate: -20px 20px;
   }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 
-  //* Top right
-  .top-right {
-    animation: slideTopRight 800ms ease-in-out 0ms backwards;
-    &::after {
-      bottom: 0;
-      transform: translateY(50%);
-      left: 0;
-    }
+@keyframes slideTopLeft {
+  0% {
+    opacity: 0;
+    translate: 20px 20px;
   }
-  @keyframes slideTopRight {
-    0% {
-      opacity: 0;
-      translate: -20px 20px;
-    }
-    100% {
-      opacity: 1;
-      translate: 0 0;
-    }
-  }
-
-  //* Top left
-  .top-left {
-    animation: slideTopLeft 800ms ease-in-out 200ms backwards;
-    &::after {
-      bottom: 0;
-      transform: translateY(50%);
-      right: 0;
-    }
-  }
-  @keyframes slideTopLeft {
-    0% {
-      opacity: 0;
-      translate: 20px 20px;
-    }
-    100% {
-      opacity: 1;
-      translate: 0 0px;
-    }
-  }
-
-  //* Bottom right
-  .bottom-right {
-    animation: slideBottomRight 800ms ease-in-out 400ms backwards;
-    &::after {
-      top: 0;
-      transform: translateY(-50%);
-      left: 0;
-    }
-  }
-  @keyframes slideBottomRight {
-    0% {
-      opacity: 0;
-      translate: -20px -20px;
-    }
-    100% {
-      opacity: 1;
-      translate: 0 0px;
-    }
-  }
-
-  //* Bottom left
-  .bottom-left {
-    animation: slideBottomLeft 800ms ease-in-out 600ms backwards;
-    &::after {
-      top: 0;
-      transform: translateY(-50%);
-      right: 0;
-    }
-  }
-  @keyframes slideBottomLeft {
-    0% {
-      opacity: 0;
-      translate: 20px -20px;
-    }
-    100% {
-      opacity: 1;
-      translate: 0 0px;
-    }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
   }
 }
