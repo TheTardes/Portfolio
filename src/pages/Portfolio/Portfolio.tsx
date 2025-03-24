@@ -10,11 +10,11 @@ export default function Portfolio() {
       <div className="radial-gradient max-w-[1900px] mx-auto flex flex-col justify-center rounded-b-full full-width pt-[88px] tablet:pt-[132px] laptop:pt-[152px] desktop:pt-[137px]">
         <div className="contain">
           <p className="text-black text-center text-h4 tablet:text-h3 laptop:text-h2 text-pretty max-w-[1022px] mx-auto font-medium">
-            <span className="font-bold">Curious</span> UX Designer in NYC, <span className="font-bold">intrigued</span> by people, <span className=" font-bold">thinking</span> with purpose, and <span className=" font-bold">bringing structure</span> to complexity.
+            <span className="text-purple-500 font-bold">Curious</span> UX Designer, <span className="text-purple-500 font-bold">intrigued</span> by people, <span className="text-purple-500 font-bold">thinking</span> with purpose, and <span className="text-purple-500 font-bold">bringing structure</span> to complexity.
           </p>
           <MyAvatar />
           <section className="flex flex-col items-center mt-8 tablet:mt-11 laptop:mt-[60px] desktop:mt-[82px]">
-            <p className="text-purple-600 font-bold uppercase text-xs laptop:text-base">View my work</p>
+            <p className="text-gray-500 font-bold uppercase text-xs laptop:text-base">View my work</p>
             <a
               href="#projects"
               className="w-fit flex justify-center mt-4 mb-7 laptop:mb-11 desktop:mb-[54px] pb-5 hover:pt-5 hover:pb-0 transition-all duration-300"

@@ -31,12 +31,12 @@ export default function Footer() {
         <p className="max-w-[460px] text-h5 tablet:text-h3 font-bold mb-2">
           Want to discuss more or request for anything else? 🤔
         </p>
-        <div className="bg-primary-500 text-white flex flex-col items-center justify-center rounded-3xl px-8 py-6">
+        <div className="bg-purple-200 text-black flex flex-col items-center justify-center rounded-3xl px-8 py-6">
           <p className="text-sm tablet:text-md font-medium">Drop me a message at</p>
           <a
             href="mailto:mammadlinji@gmail.com"
             target="_blank"
-            className="text-md-alt tablet:text-[22px] tablet:leading-[32px] font-bold underline"
+            className="text-md-alt tablet:text-[22px] tablet:leading-[32px] underline"
           >
             mammadlinji@gmail.com
           </a>
