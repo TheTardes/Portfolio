@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     external: true,
-    url: "https://medium.com/@mammadlinji/research-on-digital-design-better-habits-personal-productivity-c50e970ffb46#0168-16a959afbf13",
+    url: "https://medium.com/design-bootcamp/research-on-digital-design-better-habits-personal-productivity-c50e970ffb46",
     name: "habit-tracker",
     cardImage: "habit.webp",
     cardTitle: "Research on digital design: Better habits &  personal productivity 📈",
