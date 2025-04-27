@@ -15,6 +15,11 @@ export default function Navbar() {
       to: "/about-me",
     },
     {
+      label: "InterPlay",
+      to: "https://thetardes.github.io/",
+      target: "_blank",
+    },
+    {
       label: "Resume",
       to: "/assets/pdfs/Inji%20Mammadli%20Resume.pdf",
       target: "_blank",
