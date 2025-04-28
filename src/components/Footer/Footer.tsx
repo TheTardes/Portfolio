@@ -88,7 +88,7 @@ export default function Footer() {
         <RevealEmail className="mt-4 block" />
         <div className="mt-11 laptop:mt-16 pb-[50px] text-center">
           <p className="font-semibold text-sm tablet:text-md-alt mb-2">
-            Built from scratch by Inji 🌻 - much love to XT for the help!
+            Built from scratch by Inji 🌻
           </p>
           <p className="font-medium text-purple-700 text-base tablet:text-md">© Inji Mammadli 2024</p>
         </div>
