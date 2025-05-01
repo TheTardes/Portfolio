@@ -7,13 +7,13 @@ import Discover from "@/components/Discover";
 export default function Portfolio() {
   return (
     <>
-      <div className="radial-gradient max-w-[1900px] mx-auto flex flex-col justify-center rounded-b-full full-width pt-[88px] tablet:pt-[132px] laptop:pt-[152px] desktop:pt-[137px]">
+      <div className="radial-gradient max-w-[1900px] mx-auto flex flex-col justify-center rounded-b-full full-width pt-[100px] tablet:pt-[132px] laptop:pt-[142px] desktop:pt-[137px]">
         <div className="contain">
-          <p className="text-black text-center text-h4 tablet:text-h3 laptop:text-h2 text-pretty max-w-[1022px] mx-auto font-medium">
+          <p className="text-black text-center text-h4 tablet:text-h3 laptop:text-h2 text-pretty max-w-[900px] mx-auto font-medium">
             <span className="text-purple-500 font-bold">Curious</span> UX Designer, <span className="text-purple-500 font-bold">intrigued</span> by people, <span className="text-purple-500 font-bold">thinking</span> with purpose, and <span className="text-purple-500 font-bold">bringing structure</span> to complexity.
           </p>
           <MyAvatar />
-          <section className="flex flex-col items-center mt-8 tablet:mt-11 laptop:mt-[60px] desktop:mt-[82px]">
+          <section className="flex flex-col items-center mt-4 tablet:mt-8 laptop:mt-[40px] desktop:mt-[60px]">
             <p className="text-gray-500 font-bold uppercase text-xs laptop:text-base">View my work</p>
             <a
               href="#projects"

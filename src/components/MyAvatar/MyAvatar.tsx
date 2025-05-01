@@ -3,7 +3,7 @@ import RevealEmail from "@/components/RevealEmail";
 
 export default function MyAvatar() {
   return (
-    <div className="mt-8 tablet:mt-11 laptop:mt-[60px] desktop:mt-[82px]">
+    <div className="mt-4 tablet:mt-8 laptop:mt-[40px] desktop:mt-[60px]">
       <div className="flex justify-center items-start laptop:items-stretch gap-x-0 laptop:gap-x-[38px] gap-y-3">
         <img src="/assets/icons/puzzle.svg" alt="stars" className="h-fit max-w-[110px] laptop:max-w-[200px] -mr-[10px] left-bubble" />
         <div className="mt-10 laptop:mt-0">
