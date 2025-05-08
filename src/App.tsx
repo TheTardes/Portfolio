@@ -12,6 +12,7 @@ const Dev = lazy(() => import("@/pages/projects/Dev"));
 const VisaPoint = lazy(() => import("@/pages/projects/VisaPoint"));
 const AppleHealth = lazy(() => import("@/pages/projects/AppleHealth"));
 const LeisureTime = lazy(() => import("@/pages/projects/LeisureTime"));
+const Deslab = lazy(() => import("@/pages/projects/Deslab"));
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/project/leisure-time",
         element: <LeisureTime />,
+      },
+      {
+        path: "/project/Des-lab",
+        element: <Deslab />,
       },
       {
         path: "/project/dev",
