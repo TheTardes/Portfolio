@@ -15,7 +15,7 @@ export default function AboutMe() {
         <div className=" grid gap-2 tablet:gap-4 text-base tablet:text-md font-medium">
           <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
           <p>
-            I’m a UX/Product Designer currently pursuing my second master’s degree at
+            I am a UX Designer recently graduated from my second master’s degree at
             <span className="text-red"> Parsons School of Design</span> in New York City. I’m fascinated by how people
             think, what drives them, and how design can make their lives better.
           </p>
@@ -56,7 +56,7 @@ export default function AboutMe() {
             <span>CURRENTLY</span>
           </p>
           <ul className="mt-3 text-base desktop:text-md grid gap-3 list-disc pl-5">
-            <li>Designing a <span className="font-bold">skill-learning simulation</span> for my Parsons thesis.</li>
+            <li>Designing and exploring a <span className="font-bold">skill-learning methodologies</span></li>
             <li><span className="font-bold">Exploring</span> storytelling, design, and habit-building.</li>
           </ul>
         </div>
