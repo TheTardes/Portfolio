@@ -11,6 +11,7 @@ export const projects: Project[] = [
     tags: ["User Research", "Wireframing", "User Testing"],
   },
   {
+    external: true,
     url: "https://www.figma.com/deck/HwtdXCD0w7OKGAgCJXGQzY/Deslab--ProjectPresentation-InjiMammadli?node-id=1-250&viewport=-109%2C-25%2C0.52&t=BXPKrpIX6sVgHt1y-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     name: "Des-lab",
     cardImage: "deslab-cover.webp",
