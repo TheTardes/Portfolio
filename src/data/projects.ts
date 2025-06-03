@@ -6,7 +6,7 @@ export const projects: Project[] = [
   {
     url: "/project/apple-health",
     name: "apple-health",
-    cardImage: "apple-health-card.webp",
+    cardImage: "/apple-health-card-image.gif",
     cardTitle: "Enhancing user engagement & user lifestyle for Apple Health App ❤️‍🩹",
     tags: ["User Research", "Wireframing", "User Testing"],
   },
@@ -39,6 +39,13 @@ export const projects: Project[] = [
   //   cardImage: "leisure-time.webp",
   //   cardTitle: "Leisure Discovery ✨ addressing trust and exposure challenges ",
   //   tags: ["Prototyping", "Problem-solving", "UX/UI"],
+  // },
+  //  {
+  //   url: "/project/Glybe-app",
+  //   name: "Glybe-app",
+  //   cardImage: "glybe-app/Glybe-cover.gif",
+  //   cardTitle: "Leisure Discovery ✨ addressing trust and exposure challenges ",
+  //   tags: ["Visual Design", "UI", "Typography"],
   // },
   {
   external: true,
