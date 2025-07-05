@@ -21,7 +21,7 @@ export default function AboutMe() {
           </p>
           <p>
             Previously, I worked at <span className="text-green-500">Deloitte</span> as a Designer, Marketing and Communications
-            assistant, refining storytelling through visual design and digital strategy. Now, I am working on new creative challenges—balancing school projects while exploring fresh ideas.
+            assistant, refining storytelling through visual design and digital strategy. 
           </p>
           <p>
             <span className="text-blue">I love what I do</span>, and I’m always looking for ways to bring empathy,
