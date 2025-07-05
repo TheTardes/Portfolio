@@ -69,7 +69,7 @@ export default function ProjectNavigation({ sections }: Props) {
         href="#top"
         id="top-link"
         style={{ boxShadow: "0px 4px 6px -1px #0000001A, 0px 2px 4px -2px #0000001A" }}
-        className="absolute bottom-[70px] tablet:bottom-0 right-[14px] tablet:right-[60px] bg-gray-200 hover:bg-primary-500 rounded-xl p-[10px] tablet:p-[18px] opacity-0 duration-300 [&_path]:fill-black [&:hover_path]:fill-white"
+        className="absolute bottom-[70px] cursor-pointer tablet:bottom-0 right-[14px] tablet:right-[60px] bg-gray-200 hover:bg-primary-500 rounded-xl p-[10px] tablet:p-[18px] opacity-0 duration-300 [&_path]:fill-black [&:hover_path]:fill-white"
       >
         <LinkArrow className="-rotate-90 size-5 tablet:size-6" />
       </a>
