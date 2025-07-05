@@ -292,7 +292,7 @@ export default function Dev() {
       {/* block */}
       <div id={sections[2]} className="mt-[72px] laptop:mt-[150px]">
         <div className="flex flex-wrap justify-between items-center gap-1 rounded-3xl bg-gray-200 px-6 laptop:px-11 pt-[22px] pb-[16px] laptop:py-9">
-          <p  id="final-design" className="text-lg laptop:text-xl font-bold uppercase"> Key Screens</p>
+          <p id="final-design" className="text-lg laptop:text-xl font-bold uppercase"> Key Screens</p>
           <Button className="py-[10px] laptop:py-0" href={"#final-screens"} variant="link-secondary">
             Click for final screens
           </Button>
@@ -392,6 +392,9 @@ export default function Dev() {
             "/assets/projects/des-lab/feedback-2.png",
           ]}
         />
+        <video width="320" height="240" autoPlay className="w-full mt-10 laptop:mt-20 rounded-l laptop:rounded-xl border border-gray-700">
+          <source src="/assets/projects/des-lab/4.mp4" type="video/mp4"/>
+        </video>
         <img src="/assets/projects/des-lab/video-4.gif" alt="" className="mt-10 laptop:mt-20 rounded-l laptop:rounded-xl border border-gray-700" />
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 gap-3 laptop:gap-6 mt-8 laptop:mt-6">
           {[
@@ -520,15 +523,15 @@ export default function Dev() {
             </div>
           </div>
         </div>
-         <div className="mt-11 laptop:mt-11 p-[22px] laptop:p-11">
-            <p className="text-h5  uppercase laptop:text-md font-bold small">Key Takeways</p>
-            <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium mt-2 laptop:mt-4 small">
-              <li>Soft skill learning shouldn’t feel like checking boxes. People need space to reflect, choose, and grow based on what really matters to them</li>
-              <li className="mt-2 laptop:mt-3">Giving learners control through flexible paths and personalized scenarios made the experience feel more real and engaging.</li>
-              <li className="mt-2 laptop:mt-3">Building with AI wasn’t about automation, but about making feedback and practice more meaningful, timely, and connected to the learner with limited resources.</li>
-              <li className="mt-2 laptop:mt-3">This project helped me reimagine learning as something exploratory, emotional, and ongoing not just a set of modules to finish.</li>
-            </ul>
-          </div>
+        <div className="mt-11 laptop:mt-11 p-[22px] laptop:p-11">
+          <p className="text-h5  uppercase laptop:text-md font-bold small">Key Takeways</p>
+          <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium mt-2 laptop:mt-4 small">
+            <li>Soft skill learning shouldn’t feel like checking boxes. People need space to reflect, choose, and grow based on what really matters to them</li>
+            <li className="mt-2 laptop:mt-3">Giving learners control through flexible paths and personalized scenarios made the experience feel more real and engaging.</li>
+            <li className="mt-2 laptop:mt-3">Building with AI wasn’t about automation, but about making feedback and practice more meaningful, timely, and connected to the learner with limited resources.</li>
+            <li className="mt-2 laptop:mt-3">This project helped me reimagine learning as something exploratory, emotional, and ongoing not just a set of modules to finish.</li>
+          </ul>
+        </div>
 
       </div>
     </>
