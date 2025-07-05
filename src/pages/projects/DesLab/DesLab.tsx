@@ -116,13 +116,13 @@ export default function Dev() {
           </div>
           <p className="mt-11  uppercase laptop:mt-[100px] text-h5 laptop:text-lg font-bold">Primary Research</p>
           <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-4">
-            Then, I interviewed 10 people who used any kind of soft skill learning platform or attemped to learn leadership concepts in any context including early-career employees and corporate leaders.Also, I chatted breifly with 3 professional leaderhsip and soft skill trainers to understand methodologies and important factors even further.
+            Then, I interviewed 10 people who used any kind of soft skill learning platform or attemped to learn leadership concepts in any context including early-career employees and corporate leaders. Also, I chatted breifly with 3 professional leaderhsip and soft skill trainers to understand methodologies and important factors even further.
           </p>
           <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">Key quotes:</p>
           <ul className="list-disc list-outside pl-6 text-base laptop:text-md font-medium">
             <li>“I want to practice with real-life scenarios, not watch another video.”</li>
             <li>“Leadership training should feel relevant to what I’m going through now.”</li>
-            <li>“I want to build my own path—not be forced into someone else’s.”</li>
+            <li>“I want to build my own path and not be forced into someone else’s.”</li>
           </ul>
           <p className="text-base laptop:text-md font-medium mt-4 laptop:mt-8">These findings pointed to the need for real-world relevance, autonomy, and feedback-driven growth.</p>
 

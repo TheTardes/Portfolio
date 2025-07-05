@@ -657,19 +657,6 @@ export default function VisaPoint() {
             date/application before payment.
           </p>
         </div>
-        <div className="mt-8 laptop:mt-[100px] flex flex-wrap laptop:flex-nowrap items-center gap-8">
-          <p className="text-md font-medium">
-            <span className="font-bold">Save, leave and come back later option.</span>
-            <br />
-            <br />
-            This will give giving space & chance <span className="font-bold">not to get exhausted</span> from
-            application process.
-          </p>
-          <MacbookDisplay
-            gif="/assets/projects/visa-point/image-10.png"
-            className="min-w-[335px] max-w-[335px] tablet:min-w-[663px] tablet:max-w-[663px] laptop:min-w-[663px] laptop:max-w-[663px]"
-          />
-        </div>
         <img
           src="/assets/projects/visa-point/image-11.png"
           alt="project"
