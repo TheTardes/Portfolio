@@ -16,7 +16,7 @@ export default function AboutMe() {
           <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
           <p>
             I am a UX Designer recently graduated from my second master’s degree at
-            <span className="text-red"> Parsons School of Design</span> in New York City. I’m fascinated by how people
+            <span className="text-red"> Parsons School of Design</span>. I’m fascinated by how people
             think, what drives them, and how design can make their lives better.
           </p>
           <p>
