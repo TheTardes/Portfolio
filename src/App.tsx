@@ -8,7 +8,6 @@ const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const AboutMe = lazy(() => import("@/pages/AboutMe"));
 
 // projects
-const Dev = lazy(() => import("@/pages/projects/Dev"));
 const VisaPoint = lazy(() => import("@/pages/projects/VisaPoint"));
 const AppleHealth = lazy(() => import("@/pages/projects/AppleHealth"));
 const LeisureTime = lazy(() => import("@/pages/projects/LeisureTime"));
@@ -59,10 +58,6 @@ const router = createBrowserRouter([
       {
         path: "/project/glybe-app",
         element: <Glybe />,
-      },
-      {
-        path: "/project/dev",
-        element: <Dev />,
       },
     ],
   },

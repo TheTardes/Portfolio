@@ -395,7 +395,6 @@ export default function Dev() {
         <video width="320" height="240" autoPlay loop className="w-full mt-10 laptop:mt-20 rounded-l laptop:rounded-xl border border-gray-700">
           <source src="/assets/projects/des-lab/4.mp4" type="video/mp4"/>
         </video>
-        <img src="/assets/projects/des-lab/video-4.gif" alt="" className="mt-10 laptop:mt-20 rounded-l laptop:rounded-xl border border-gray-700" />
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 gap-3 laptop:gap-6 mt-8 laptop:mt-6">
           {[
             {
