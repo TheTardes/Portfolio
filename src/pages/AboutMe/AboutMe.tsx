@@ -16,16 +16,14 @@ export default function AboutMe() {
           <h2 className="text-h3 tablet:text-h1 font-bold mb-2 tablet:mb-4">What about me? 🌻</h2>
           <p>
             I am a Product Designer recently graduated from my second master’s degree at
-            <span className="text-red"> Parsons School of Design</span>. I’m fascinated by how people
-            think, what drives them, and how design can make their lives better.
+            <span className="text-red"> Parsons School of Design</span> in New York. Alongside a design degree, and with a background in business and marketing, I bring a strategic lens to design projects, focusing on scalable solutions.
           </p>
           <p>
             Previously, I worked at <span className="text-green-500">Deloitte</span> as a Designer, Marketing and Communications
-            assistant, refining storytelling through visual design and digital strategy. 
+            assistant, refining storytelling through visual design and digital strategy. Currently, I am working as a UX Research & Design Intern at Marketeq Digital, focusing on enterprise tools and workflow optimization. 
           </p>
           <p>
-            <span className="text-blue">I love what I do</span>, and I’m always looking for ways to bring empathy,
-            insight, and creativity to every project.
+            <span className="text-blue">I love what I do</span>, and I am always looking for ways to bring clarity, strategic insight, and creative thinking to every project.
           </p>
           <div className="flex justify-between flex-wrap gap-3 mt-8 tablet:mt-14">
             <div className="flex gap-1.5">
@@ -133,7 +131,7 @@ export default function AboutMe() {
         </div>
 
       </section>
-      <section className="mt-20 desktop:mt-[100px]">
+      {/* <section className="mt-20 desktop:mt-[100px]">
         <div>
           <h2 className="text-lg tablet:text-h3 font-bold">Why am I 🧚‍♀️</h2>
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">
@@ -167,7 +165,7 @@ export default function AboutMe() {
             className="w-full laptop:w-[382px] h-[101px] tablet:h-[202px] rounded-xl object-cover"
           />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
