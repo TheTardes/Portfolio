@@ -120,7 +120,7 @@ export default function AboutMe() {
           <p className="mt-1 mb-6 tablet:mb-8 text-base tablet:text-md uppercase">FREETIME</p>
         </div>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-7">
-          {["/assets/arts/art5.png", "/assets/arts/art2.png", "/assets/arts/art3.png"].map((images) => (
+          {["/assets/arts/art6.png", "/assets/arts/art7.png", "/assets/arts/art8.png","/assets/arts/art2.png", "/assets/arts/art1.png", "/assets/arts/art4.png","/assets/arts/art11.png", "/assets/arts/art12.png", "/assets/arts/art10.png"].map((images) => (
             <img
               key={images}
               src={images}
